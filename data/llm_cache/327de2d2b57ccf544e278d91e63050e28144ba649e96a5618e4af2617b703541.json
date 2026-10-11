@@ -1,0 +1,23 @@
+{
+ "output": {
+  "headline": "Go paperless to support your digital banking habits",
+  "text": "Since you already bank digitally with an average of 3.7 monthly app logins, you could benefit from our paperless statements. Making this switch provides an estimated impact of about 0.1 kg CO2e per year and about 12 sheets of paper per year.",
+  "reasons_used": [
+   "DIGITAL_ENGAGEMENT"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 633,
+  "output_tokens": 103,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 14.31
+ }
+}

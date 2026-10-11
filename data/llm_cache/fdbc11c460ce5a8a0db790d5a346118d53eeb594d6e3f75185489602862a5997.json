@@ -1,0 +1,15 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B is more useful and relevant because it provides context for the reduction (comparing to current petrol or diesel car) which is aligns with the evidence in the RECORD and makes the more complete sentence structure. Version A is a bit too clinical and sounds like a sentence fragment. Version B also includes the data date which is a provided piece of information in the RECORD. Version B is more customer-facing and extendable."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 478,
+  "output_tokens": 94,
+  "failures": [
+   "gemma-4-26b-a4b-it: 500"
+  ],
+  "latency_s": 6.74
+ }
+}

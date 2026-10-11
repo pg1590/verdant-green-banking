@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A uses clearer, more direct language and a concise headline that immediately tells the customer how a heat pump will improve their home’s efficiency. The text straightforwardly references the EPC rating and gas/oil heating from the record and presents the estimated CO2e and energy savings without extra filler, making it more personally relevant and easier to understand than the wordier Version B."
+ },
+ "_meta": {
+  "model": "openai/gpt-oss-120b",
+  "input_tokens": 687,
+  "output_tokens": 430,
+  "failures": [],
+  "latency_s": 1.5
+ }
+}

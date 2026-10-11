@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B is more customer-centric and flows better. It connects the user's behavior (app logins) directly to the claim, whereas Version A is a list of data points. Version B also uses more natural language ('annually' vs 'per year') and a more engaging headline. Both versions are accurately faithful to the RECORD."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 516,
+  "output_tokens": 79,
+  "failures": [],
+  "latency_s": 2.98
+ }
+}

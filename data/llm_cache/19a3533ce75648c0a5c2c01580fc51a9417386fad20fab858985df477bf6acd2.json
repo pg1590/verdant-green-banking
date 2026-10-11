@@ -1,0 +1,16 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is significantly clearer and more useful. It synthesizes the complex data (income band, mortgage status, high energy spend) into coherent, natural language ('Because you have a mortgage... and fall into the Q5 income band...'). In contrast, Version B lists raw internal codes and labels like a debug log ('recorded income profile contributes to this suggestion', 'has mortgage yes'), which is confusing and irrelevant to a typical customer. Version A also weaves the specific evidence (£106 spend) directly into the benefit statement, making the advice feel personalized and logical, whereas Version B separates the observation from the impact in a clunky way."
+ },
+ "_meta": {
+  "model": "qwen/qwen3.8-27b",
+  "input_tokens": 738,
+  "output_tokens": 143,
+  "failures": [
+   "openai/gpt-oss-120b: 429",
+   "openai/gpt-oss-120b: 429"
+  ],
+  "latency_s": 10.14
+ }
+}

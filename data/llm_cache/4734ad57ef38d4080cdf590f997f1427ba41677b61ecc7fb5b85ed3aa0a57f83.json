@@ -1,0 +1,24 @@
+{
+ "output": {
+  "headline": "Lower your carbon footprint with a heat pump",
+  "text": "Since you have a mortgage with us and your home uses gas or oil heating, you could reduce your impact by switching to a heat pump. This estimated switch could save about 1,171 kg CO2e per year and about 5,894 kWh of energy per year based on data from 30 June 2026.",
+  "reasons_used": [
+   "EXISTING_MORTGAGE",
+   "GAS_HEATING"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 703,
+  "output_tokens": 128,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 15.02
+ }
+}

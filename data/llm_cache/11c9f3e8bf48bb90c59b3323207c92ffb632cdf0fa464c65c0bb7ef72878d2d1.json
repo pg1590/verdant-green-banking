@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is clearer and more direct. It links the user's current behavior (banking digitally) as a reason to make the switch, which is makes the insight more personally relevant. Version B is a bit more vague and uses more cautious language ('this may be relevant to you') which is a considered loss in a customer-facing insight."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 365,
+  "output_tokens": 77,
+  "failures": [],
+  "latency_s": 2.97
+ }
+}

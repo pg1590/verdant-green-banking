@@ -1,0 +1,25 @@
+{
+ "output": {
+  "headline": "Generating your own electricity with solar panels",
+  "text": "As you have a mortgage with us, your recorded income profile is in the Q4 band, and your electricity use is 5,635 kWh, you could look into solar panels. This change is estimated to avoid about 158 kg CO2e per year and about 1,094 kWh of energy per year.",
+  "reasons_used": [
+   "INCOME_PROFILE",
+   "EXISTING_MORTGAGE",
+   "HIGH_ELECTRICITY_SPEND"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 779,
+  "output_tokens": 135,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 14.32
+ }
+}

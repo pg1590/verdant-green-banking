@@ -1,0 +1,16 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version B frames the impact as savings ('could save'), which implies direct personal benefits or financial gains, whereas the RECORD explicitly states the method is 'Avoided paper production' (an external environmental metric). Version A correctly uses the phrasing 'avoid about 0.1 kg CO2e', which accurately reflects the RECORD's estimated impact and method. Additionally, Version A adheres more closely to the specific details in the 'reasons' field ('you already bank digitally') and 'estimated_impact' text."
+ },
+ "_meta": {
+  "model": "qwen/qwen3.8-27b",
+  "input_tokens": 571,
+  "output_tokens": 121,
+  "failures": [
+   "openai/gpt-oss-120b: 429",
+   "openai/gpt-oss-120b: 429"
+  ],
+  "latency_s": 10.06
+ }
+}

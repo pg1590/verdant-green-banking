@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is much better structured. It provides a reason for the suggestion (the mortgage and income) in a natural language sentence, whereas Version B reads like a list of raw data points which is not helpful for a customer-facing insight. Version A is more conversational and professional."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 565,
+  "output_tokens": 64,
+  "failures": [],
+  "latency_s": 2.2
+ }
+}

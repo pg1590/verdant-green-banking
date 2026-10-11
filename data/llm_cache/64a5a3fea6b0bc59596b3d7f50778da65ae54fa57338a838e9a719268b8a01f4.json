@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is much more natural and better written for a customer. Version B includes raw data fields like 'has mortgage yes' which makes it look like a unformatted un-processed data output rather than a customer-facing insight. Version A correctly incorporates the evidence into a sentence structure."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 536,
+  "output_tokens": 68,
+  "failures": [],
+  "latency_s": 2.88
+ }
+}

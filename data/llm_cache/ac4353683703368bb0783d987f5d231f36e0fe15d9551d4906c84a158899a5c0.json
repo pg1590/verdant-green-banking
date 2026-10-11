@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B is more cohesive and connects the user's behavior (app logins) directly to the reason for the suggestion (digital banking habits). It flows better as a single narrative, making it more relevant to the user. Version A feels a bit more like a list of disconnected facts."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 472,
+  "output_tokens": 68,
+  "failures": [],
+  "latency_s": 2.17
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is much more natural and customer-facing. Version B feels like a list of data points being read out, which is less engaging and useful. Version A also flows better as a sentence-based narrative, whereas Version B includes 'Key figures' which makes it look like a document extract rather than a personalized insight. Version A also adheres better to the'impact' section of the record."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 471,
+  "output_tokens": 88,
+  "failures": [],
+  "latency_s": 2.79
+ }
+}

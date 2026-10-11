@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B is more customer-facing and more engaging. Version A is quite robotic and robotic/technical ("
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 448,
+  "output_tokens": 34,
+  "failures": [],
+  "latency_s": 1.48
+ }
+}

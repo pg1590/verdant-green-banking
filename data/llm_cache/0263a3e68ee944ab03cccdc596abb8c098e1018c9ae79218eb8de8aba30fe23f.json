@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is more faithful to the record because it explicitly acknowledges the low certainty/limited data (stating \"limited data we have\") which is the certainty field in the record. Version B is more concise but fails to certain information about data certainty which is important for transparency in a customer-facing sustainability insight."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 591,
+  "output_tokens": 70,
+  "failures": [],
+  "latency_s": 2.43
+ }
+}

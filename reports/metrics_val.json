@@ -1,0 +1,971 @@
+{
+  "GP01": {
+    "selected": "logreg",
+    "cv_scores": {
+      "lgbm": 0.2048,
+      "logreg": 0.2162
+    },
+    "sign_violations": [
+      "num_vehicles",
+      "spend_automotive_m"
+    ],
+    "models": {
+      "B1_rule": {
+        "n": 1025,
+        "n_pos": 86,
+        "base_rate": 0.08390243902439025,
+        "roc_auc": 0.6238885999455135,
+        "pr_auc": 0.12025600007090187,
+        "brier": 0.07501316127803906,
+        "ece": 0.008076602089195634,
+        "precision_at_10pct": 0.19607843137254902,
+        "lift_at_10pct": 2.3369813041495666,
+        "roc_auc_ci95": [
+          0.5638755225275353,
+          0.6721512489246946
+        ],
+        "pr_auc_ci95": [
+          0.0897667069768935,
+          0.14742628252951298
+        ]
+      },
+      "B2_logreg": {
+        "n": 1025,
+        "n_pos": 86,
+        "base_rate": 0.08390243902439025,
+        "roc_auc": 0.7457463407385393,
+        "pr_auc": 0.21440480252700697,
+        "brier": 0.07211585862641422,
+        "ece": 0.011730093249906112,
+        "precision_at_10pct": 0.22549019607843138,
+        "lift_at_10pct": 2.687528499772002,
+        "roc_auc_ci95": [
+          0.6915129693216999,
+          0.7867867695055305
+        ],
+        "pr_auc_ci95": [
+          0.15297006352653486,
+          0.30335918917456733
+        ]
+      },
+      "lgbm_calibrated": {
+        "n": 1025,
+        "n_pos": 86,
+        "base_rate": 0.08390243902439025,
+        "roc_auc": 0.7300814820318499,
+        "pr_auc": 0.22504339258933842,
+        "brier": 0.07192721184501438,
+        "ece": 0.009060260767581091,
+        "precision_at_10pct": 0.2549019607843137,
+        "lift_at_10pct": 3.0380756953944363,
+        "roc_auc_ci95": [
+          0.671313202922065,
+          0.7810698562901714
+        ],
+        "pr_auc_ci95": [
+          0.15669630510454216,
+          0.3264009128501593
+        ]
+      },
+      "selected_raw": {
+        "n": 1025,
+        "n_pos": 86,
+        "base_rate": 0.08390243902439025,
+        "roc_auc": 0.7411397577828962,
+        "pr_auc": 0.2420392901661873,
+        "brier": 0.07185247804034445,
+        "ece": 0.013384249414262556,
+        "precision_at_10pct": 0.22549019607843138,
+        "lift_at_10pct": 2.687528499772002,
+        "roc_auc_ci95": [
+          0.6822967390533698,
+          0.7834500392876119
+        ],
+        "pr_auc_ci95": [
+          0.17409088065899203,
+          0.3233861025466337
+        ]
+      },
+      "selected_calibrated": {
+        "n": 1025,
+        "n_pos": 86,
+        "base_rate": 0.08390243902439025,
+        "roc_auc": 0.7411397577828962,
+        "pr_auc": 0.2420392901661873,
+        "brier": 0.07179423773319984,
+        "ece": 0.010045818859803447,
+        "precision_at_10pct": 0.22549019607843138,
+        "lift_at_10pct": 2.687528499772002,
+        "roc_auc_ci95": [
+          0.6822967390533698,
+          0.7834500392876119
+        ],
+        "pr_auc_ci95": [
+          0.17409088065899203,
+          0.3233861025466337
+        ]
+      }
+    },
+    "lift": [
+      {
+        "decile": 1,
+        "n": 103,
+        "positives": 24,
+        "mean_score": 0.2344779810151013,
+        "take_up_rate": 0.23300970873786409,
+        "lift": 2.777150598329194,
+        "cum_capture": 0.27906976744186046
+      },
+      {
+        "decile": 2,
+        "n": 102,
+        "positives": 17,
+        "mean_score": 0.14239089513123687,
+        "take_up_rate": 0.16666666666666666,
+        "lift": 1.9864341085271315,
+        "cum_capture": 0.47674418604651164
+      },
+      {
+        "decile": 3,
+        "n": 103,
+        "positives": 14,
+        "mean_score": 0.10701975243900008,
+        "take_up_rate": 0.13592233009708737,
+        "lift": 1.6200045156920297,
+        "cum_capture": 0.6395348837209303
+      },
+      {
+        "decile": 4,
+        "n": 102,
+        "positives": 6,
+        "mean_score": 0.08422305565695536,
+        "take_up_rate": 0.058823529411764705,
+        "lift": 0.7010943912448699,
+        "cum_capture": 0.7093023255813954
+      },
+      {
+        "decile": 5,
+        "n": 103,
+        "positives": 8,
+        "mean_score": 0.06507430244895607,
+        "take_up_rate": 0.07766990291262135,
+        "lift": 0.9257168661097311,
+        "cum_capture": 0.8023255813953488
+      },
+      {
+        "decile": 6,
+        "n": 102,
+        "positives": 6,
+        "mean_score": 0.052351688086421405,
+        "take_up_rate": 0.058823529411764705,
+        "lift": 0.7010943912448699,
+        "cum_capture": 0.872093023255814
+      },
+      {
+        "decile": 7,
+        "n": 102,
+        "positives": 5,
+        "mean_score": 0.0400355869115057,
+        "take_up_rate": 0.049019607843137254,
+        "lift": 0.5842453260373917,
+        "cum_capture": 0.9302325581395349
+      },
+      {
+        "decile": 8,
+        "n": 103,
+        "positives": 3,
+        "mean_score": 0.030048055712638883,
+        "take_up_rate": 0.02912621359223301,
+        "lift": 0.34714382479114925,
+        "cum_capture": 0.9651162790697675
+      },
+      {
+        "decile": 9,
+        "n": 102,
+        "positives": 2,
+        "mean_score": 0.020671844269590595,
+        "take_up_rate": 0.0196078431372549,
+        "lift": 0.23369813041495666,
+        "cum_capture": 0.9883720930232558
+      },
+      {
+        "decile": 10,
+        "n": 103,
+        "positives": 1,
+        "mean_score": 0.010542204150562456,
+        "take_up_rate": 0.009708737864077669,
+        "lift": 0.11571460826371639,
+        "cum_capture": 1.0
+      }
+    ],
+    "shap_importance": [
+      {
+        "feature": "income_band_ord",
+        "mean_abs_shap": 0.4181908100328009
+      },
+      {
+        "feature": "has_vehicle_loan",
+        "mean_abs_shap": 0.16596458358486266
+      },
+      {
+        "feature": "spend_fuel_prior_m",
+        "mean_abs_shap": 0.15610281576976354
+      },
+      {
+        "feature": "is_urban",
+        "mean_abs_shap": 0.15197684366323477
+      },
+      {
+        "feature": "spend_fuel_m",
+        "mean_abs_shap": 0.14688635506534778
+      },
+      {
+        "feature": "km_per_vehicle",
+        "mean_abs_shap": 0.12893627900699736
+      },
+      {
+        "feature": "est_annual_km",
+        "mean_abs_shap": 0.10617446202522482
+      },
+      {
+        "feature": "avg_app_logins_m",
+        "mean_abs_shap": 0.10087640098639974
+      },
+      {
+        "feature": "spend_fuel_recent_m",
+        "mean_abs_shap": 0.0969685763335302
+      },
+      {
+        "feature": "spend_automotive_m",
+        "mean_abs_shap": 0.04552156985707969
+      },
+      {
+        "feature": "num_vehicles",
+        "mean_abs_shap": 0.008485097118969056
+      }
+    ],
+    "reason_code_coverage": 0.8585365853658536,
+    "reason_code_counts": {
+      "INCOME_PROFILE": 628,
+      "EXISTING_VEHICLE_LOAN": 354,
+      "HIGH_FUEL_SPEND": 249,
+      "HIGH_MILEAGE_PER_VEHICLE": 182,
+      "HIGH_ANNUAL_MILEAGE": 167,
+      "RECENT_HIGH_FUEL_SPEND": 114
+    }
+  },
+  "GP02": {
+    "selected": "lgbm",
+    "cv_scores": {
+      "lgbm": 0.1458,
+      "logreg": 0.1396
+    },
+    "sign_violations": [],
+    "models": {
+      "B1_rule": {
+        "n": 388,
+        "n_pos": 19,
+        "base_rate": 0.04896907216494845,
+        "roc_auc": 0.4724718299814577,
+        "pr_auc": 0.046915727766961374,
+        "brier": 0.04680242049552419,
+        "ece": 0.007958575556986286,
+        "precision_at_10pct": 0.0,
+        "lift_at_10pct": 0.0,
+        "roc_auc_ci95": [
+          0.3877495416348357,
+          0.5860904188671114
+        ],
+        "pr_auc_ci95": [
+          0.027007370120374616,
+          0.07389986163679835
+        ]
+      },
+      "B2_logreg": {
+        "n": 388,
+        "n_pos": 19,
+        "base_rate": 0.04896907216494845,
+        "roc_auc": 0.7904721152474683,
+        "pr_auc": 0.17701103902202261,
+        "brier": 0.043855677426807384,
+        "ece": 0.006536169596964088,
+        "precision_at_10pct": 0.1794871794871795,
+        "lift_at_10pct": 3.6653171390013495,
+        "roc_auc_ci95": [
+          0.6942561813186814,
+          0.8820302650691992
+        ],
+        "pr_auc_ci95": [
+          0.09178218361867398,
+          0.35121318961392617
+        ]
+      },
+      "logreg_calibrated": {
+        "n": 388,
+        "n_pos": 19,
+        "base_rate": 0.04896907216494845,
+        "roc_auc": 0.7512480387961774,
+        "pr_auc": 0.13895096150030914,
+        "brier": 0.04475908633924914,
+        "ece": 0.009201022579153789,
+        "precision_at_10pct": 0.1794871794871795,
+        "lift_at_10pct": 3.6653171390013495,
+        "roc_auc_ci95": [
+          0.6522731757785001,
+          0.8600846728901819
+        ],
+        "pr_auc_ci95": [
+          0.07264080543844574,
+          0.26922222989017053
+        ]
+      },
+      "selected_raw": {
+        "n": 388,
+        "n_pos": 19,
+        "base_rate": 0.04896907216494845,
+        "roc_auc": 0.6733704179147054,
+        "pr_auc": 0.09350285099025123,
+        "brier": 0.04725099416262704,
+        "ece": 0.013241191322401105,
+        "precision_at_10pct": 0.1282051282051282,
+        "lift_at_10pct": 2.6180836707152495,
+        "roc_auc_ci95": [
+          0.5623133560208313,
+          0.779415285456815
+        ],
+        "pr_auc_ci95": [
+          0.05268066183457439,
+          0.17161503195503292
+        ]
+      },
+      "selected_calibrated": {
+        "n": 388,
+        "n_pos": 19,
+        "base_rate": 0.04896907216494845,
+        "roc_auc": 0.6733704179147054,
+        "pr_auc": 0.09350285099025123,
+        "brier": 0.046006907592651934,
+        "ece": 0.006895767207261297,
+        "precision_at_10pct": 0.1282051282051282,
+        "lift_at_10pct": 2.6180836707152495,
+        "roc_auc_ci95": [
+          0.5623133560208313,
+          0.779415285456815
+        ],
+        "pr_auc_ci95": [
+          0.05268066183457439,
+          0.17161503195503292
+        ]
+      }
+    },
+    "lift": [
+      {
+        "decile": 1,
+        "n": 39,
+        "positives": 5,
+        "mean_score": 0.12240478718047723,
+        "take_up_rate": 0.1282051282051282,
+        "lift": 2.6180836707152495,
+        "cum_capture": 0.2631578947368421
+      },
+      {
+        "decile": 2,
+        "n": 39,
+        "positives": 5,
+        "mean_score": 0.08796471822247959,
+        "take_up_rate": 0.1282051282051282,
+        "lift": 2.6180836707152495,
+        "cum_capture": 0.5263157894736842
+      },
+      {
+        "decile": 3,
+        "n": 39,
+        "positives": 2,
+        "mean_score": 0.06943334569644424,
+        "take_up_rate": 0.05128205128205128,
+        "lift": 1.0472334682860998,
+        "cum_capture": 0.631578947368421
+      },
+      {
+        "decile": 4,
+        "n": 38,
+        "positives": 0,
+        "mean_score": 0.061300568845818734,
+        "take_up_rate": 0.0,
+        "lift": 0.0,
+        "cum_capture": 0.631578947368421
+      },
+      {
+        "decile": 5,
+        "n": 39,
+        "positives": 1,
+        "mean_score": 0.05282968260875176,
+        "take_up_rate": 0.02564102564102564,
+        "lift": 0.5236167341430499,
+        "cum_capture": 0.6842105263157895
+      },
+      {
+        "decile": 6,
+        "n": 39,
+        "positives": 1,
+        "mean_score": 0.04526318293070457,
+        "take_up_rate": 0.02564102564102564,
+        "lift": 0.5236167341430499,
+        "cum_capture": 0.7368421052631579
+      },
+      {
+        "decile": 7,
+        "n": 38,
+        "positives": 2,
+        "mean_score": 0.03897393771434212,
+        "take_up_rate": 0.05263157894736842,
+        "lift": 1.074792243767313,
+        "cum_capture": 0.8421052631578947
+      },
+      {
+        "decile": 8,
+        "n": 39,
+        "positives": 2,
+        "mean_score": 0.03255116328472127,
+        "take_up_rate": 0.05128205128205128,
+        "lift": 1.0472334682860998,
+        "cum_capture": 0.9473684210526315
+      },
+      {
+        "decile": 9,
+        "n": 39,
+        "positives": 1,
+        "mean_score": 0.02779404542315743,
+        "take_up_rate": 0.02564102564102564,
+        "lift": 0.5236167341430499,
+        "cum_capture": 1.0
+      },
+      {
+        "decile": 10,
+        "n": 39,
+        "positives": 0,
+        "mean_score": 0.01983923945150154,
+        "take_up_rate": 0.0,
+        "lift": 0.0,
+        "cum_capture": 1.0
+      }
+    ],
+    "shap_importance": [
+      {
+        "feature": "spend_home_improvement_m",
+        "mean_abs_shap": 0.4144187496931287
+      },
+      {
+        "feature": "energy_spend_per_person_m",
+        "mean_abs_shap": 0.3982354674995961
+      },
+      {
+        "feature": "income_band_ord",
+        "mean_abs_shap": 0.3739243174404637
+      },
+      {
+        "feature": "est_electricity_kwh_year",
+        "mean_abs_shap": 0.2656419185522104
+      },
+      {
+        "feature": "has_mortgage",
+        "mean_abs_shap": 0.2403245954679849
+      },
+      {
+        "feature": "epc_rating_ord",
+        "mean_abs_shap": 0.23463128038080996
+      },
+      {
+        "feature": "est_gas_kwh_year",
+        "mean_abs_shap": 0.07965149418792088
+      },
+      {
+        "feature": "household_size",
+        "mean_abs_shap": 0.0515801545884717
+      },
+      {
+        "feature": "gas_or_oil_heating",
+        "mean_abs_shap": 0.020496477887053024
+      }
+    ],
+    "reason_code_coverage": 0.9768041237113402,
+    "reason_code_counts": {
+      "GAS_HEATING": 239,
+      "EXISTING_MORTGAGE": 171,
+      "INCOME_PROFILE": 144,
+      "HIGH_ENERGY_SPEND_PER_PERSON": 88,
+      "HIGH_GAS_SPEND": 80,
+      "POOR_EPC_RATING": 77,
+      "HIGH_HOME_IMPROVEMENT_SPEND": 73
+    }
+  },
+  "GP03": {
+    "selected": "logreg",
+    "cv_scores": {
+      "lgbm": 0.1215,
+      "logreg": 0.13
+    },
+    "sign_violations": [
+      "has_savings"
+    ],
+    "models": {
+      "B1_rule": {
+        "n": 688,
+        "n_pos": 37,
+        "base_rate": 0.05377906976744186,
+        "roc_auc": 0.5203844397392785,
+        "pr_auc": 0.056163002563577424,
+        "brier": 0.05124479268630232,
+        "ece": 0.01215974299314708,
+        "precision_at_10pct": 0.057971014492753624,
+        "lift_at_10pct": 1.0779475127301215,
+        "roc_auc_ci95": [
+          0.4451243545276977,
+          0.5853918598865764
+        ],
+        "pr_auc_ci95": [
+          0.040988143295586775,
+          0.07824915782924961
+        ]
+      },
+      "B2_logreg": {
+        "n": 688,
+        "n_pos": 37,
+        "base_rate": 0.05377906976744186,
+        "roc_auc": 0.7233777556358202,
+        "pr_auc": 0.21009032184346405,
+        "brier": 0.047353646530475454,
+        "ece": 0.011968946991843178,
+        "precision_at_10pct": 0.2463768115942029,
+        "lift_at_10pct": 4.581276929103017,
+        "roc_auc_ci95": [
+          0.6407194360832932,
+          0.8213261903779622
+        ],
+        "pr_auc_ci95": [
+          0.10939061325346647,
+          0.36562865425426033
+        ]
+      },
+      "lgbm_calibrated": {
+        "n": 688,
+        "n_pos": 37,
+        "base_rate": 0.05377906976744186,
+        "roc_auc": 0.7262838875742101,
+        "pr_auc": 0.23956044781868033,
+        "brier": 0.048055595116560025,
+        "ece": 0.010914696950977989,
+        "precision_at_10pct": 0.2028985507246377,
+        "lift_at_10pct": 3.7728162945554256,
+        "roc_auc_ci95": [
+          0.6326437821750321,
+          0.8243903526402975
+        ],
+        "pr_auc_ci95": [
+          0.13904885024874192,
+          0.39287919078702843
+        ]
+      },
+      "selected_raw": {
+        "n": 688,
+        "n_pos": 37,
+        "base_rate": 0.05377906976744186,
+        "roc_auc": 0.715904844937103,
+        "pr_auc": 0.19966276677322,
+        "brier": 0.0481940384299271,
+        "ece": 0.01018948018948758,
+        "precision_at_10pct": 0.21739130434782608,
+        "lift_at_10pct": 4.042303172737955,
+        "roc_auc_ci95": [
+          0.6206418495297805,
+          0.8160558626833404
+        ],
+        "pr_auc_ci95": [
+          0.10526331321625133,
+          0.3583998525383005
+        ]
+      },
+      "selected_calibrated": {
+        "n": 688,
+        "n_pos": 37,
+        "base_rate": 0.05377906976744186,
+        "roc_auc": 0.715904844937103,
+        "pr_auc": 0.19966276677322,
+        "brier": 0.04795254834303046,
+        "ece": 0.011692342506789254,
+        "precision_at_10pct": 0.21739130434782608,
+        "lift_at_10pct": 4.042303172737955,
+        "roc_auc_ci95": [
+          0.6206418495297805,
+          0.8160558626833404
+        ],
+        "pr_auc_ci95": [
+          0.10526331321625133,
+          0.3583998525383005
+        ]
+      }
+    },
+    "lift": [
+      {
+        "decile": 1,
+        "n": 69,
+        "positives": 15,
+        "mean_score": 0.15674040601626557,
+        "take_up_rate": 0.21739130434782608,
+        "lift": 4.042303172737955,
+        "cum_capture": 0.40540540540540543
+      },
+      {
+        "decile": 2,
+        "n": 69,
+        "positives": 4,
+        "mean_score": 0.07443230205695484,
+        "take_up_rate": 0.057971014492753624,
+        "lift": 1.0779475127301215,
+        "cum_capture": 0.5135135135135135
+      },
+      {
+        "decile": 3,
+        "n": 69,
+        "positives": 3,
+        "mean_score": 0.052626094930773346,
+        "take_up_rate": 0.043478260869565216,
+        "lift": 0.8084606345475911,
+        "cum_capture": 0.5945945945945946
+      },
+      {
+        "decile": 4,
+        "n": 68,
+        "positives": 4,
+        "mean_score": 0.041715069022676084,
+        "take_up_rate": 0.058823529411764705,
+        "lift": 1.0937996820349762,
+        "cum_capture": 0.7027027027027027
+      },
+      {
+        "decile": 5,
+        "n": 69,
+        "positives": 2,
+        "mean_score": 0.03385566214179724,
+        "take_up_rate": 0.028985507246376812,
+        "lift": 0.5389737563650607,
+        "cum_capture": 0.7567567567567568
+      },
+      {
+        "decile": 6,
+        "n": 69,
+        "positives": 2,
+        "mean_score": 0.02773883559617291,
+        "take_up_rate": 0.028985507246376812,
+        "lift": 0.5389737563650607,
+        "cum_capture": 0.8108108108108109
+      },
+      {
+        "decile": 7,
+        "n": 68,
+        "positives": 2,
+        "mean_score": 0.02144030917051128,
+        "take_up_rate": 0.029411764705882353,
+        "lift": 0.5468998410174881,
+        "cum_capture": 0.8648648648648649
+      },
+      {
+        "decile": 8,
+        "n": 69,
+        "positives": 1,
+        "mean_score": 0.016242097512484094,
+        "take_up_rate": 0.014492753623188406,
+        "lift": 0.26948687818253036,
+        "cum_capture": 0.8918918918918919
+      },
+      {
+        "decile": 9,
+        "n": 69,
+        "positives": 2,
+        "mean_score": 0.010285352131035229,
+        "take_up_rate": 0.028985507246376812,
+        "lift": 0.5389737563650607,
+        "cum_capture": 0.9459459459459459
+      },
+      {
+        "decile": 10,
+        "n": 69,
+        "positives": 2,
+        "mean_score": 0.005723192968224736,
+        "take_up_rate": 0.028985507246376812,
+        "lift": 0.5389737563650607,
+        "cum_capture": 1.0
+      }
+    ],
+    "shap_importance": [
+      {
+        "feature": "income_band_ord",
+        "mean_abs_shap": 0.48671919543313635
+      },
+      {
+        "feature": "electricity_kwh_per_person",
+        "mean_abs_shap": 0.23438552144039299
+      },
+      {
+        "feature": "has_mortgage",
+        "mean_abs_shap": 0.1591195930796946
+      },
+      {
+        "feature": "is_detached_or_semi",
+        "mean_abs_shap": 0.14670141669208428
+      },
+      {
+        "feature": "energy_spend_per_person_m",
+        "mean_abs_shap": 0.1416295281267583
+      },
+      {
+        "feature": "is_electric_heating",
+        "mean_abs_shap": 0.08337503018013401
+      },
+      {
+        "feature": "est_electricity_kwh_year",
+        "mean_abs_shap": 0.07526143375336702
+      },
+      {
+        "feature": "has_savings",
+        "mean_abs_shap": 0.043306077384280335
+      },
+      {
+        "feature": "is_urban",
+        "mean_abs_shap": 0.03459897359328013
+      },
+      {
+        "feature": "epc_rating_ord",
+        "mean_abs_shap": 0.0057714752421813955
+      }
+    ],
+    "reason_code_coverage": 0.8837209302325582,
+    "reason_code_counts": {
+      "INCOME_PROFILE": 414,
+      "EXISTING_MORTGAGE": 261,
+      "HIGH_ELECTRICITY_PER_PERSON": 184,
+      "HIGH_ENERGY_SPEND_PER_PERSON": 168,
+      "HIGH_ELECTRICITY_SPEND": 147
+    }
+  },
+  "GP04": {
+    "selected": "lgbm",
+    "cv_scores": {
+      "lgbm": 0.5272,
+      "logreg": 0.5222
+    },
+    "sign_violations": [],
+    "models": {
+      "B1_rule": {
+        "n": 363,
+        "n_pos": 99,
+        "base_rate": 0.2727272727272727,
+        "roc_auc": 0.6919191919191919,
+        "pr_auc": 0.4230416048597867,
+        "brier": 0.1705325783977204,
+        "ece": 0.014932474306223756,
+        "precision_at_10pct": 0.4444444444444444,
+        "lift_at_10pct": 1.6296296296296298,
+        "roc_auc_ci95": [
+          0.6340188104336554,
+          0.743982697137155
+        ],
+        "pr_auc_ci95": [
+          0.32667987882911687,
+          0.4907643283255784
+        ]
+      },
+      "B2_logreg": {
+        "n": 363,
+        "n_pos": 99,
+        "base_rate": 0.2727272727272727,
+        "roc_auc": 0.7949571472298745,
+        "pr_auc": 0.5597775626917934,
+        "brier": 0.15991085207240907,
+        "ece": 0.05949996925598573,
+        "precision_at_10pct": 0.6388888888888888,
+        "lift_at_10pct": 2.3425925925925926,
+        "roc_auc_ci95": [
+          0.7429658265428438,
+          0.8368024115231762
+        ],
+        "pr_auc_ci95": [
+          0.47359885225430176,
+          0.6615653585662737
+        ]
+      },
+      "logreg_calibrated": {
+        "n": 363,
+        "n_pos": 99,
+        "base_rate": 0.2727272727272727,
+        "roc_auc": 0.7962962962962964,
+        "pr_auc": 0.5704849765069476,
+        "brier": 0.1581507226793416,
+        "ece": 0.05950522716362376,
+        "precision_at_10pct": 0.6388888888888888,
+        "lift_at_10pct": 2.3425925925925926,
+        "roc_auc_ci95": [
+          0.7452041830897078,
+          0.8378621767629519
+        ],
+        "pr_auc_ci95": [
+          0.48198173293891855,
+          0.6667644888104213
+        ]
+      },
+      "selected_raw": {
+        "n": 363,
+        "n_pos": 99,
+        "base_rate": 0.2727272727272727,
+        "roc_auc": 0.7908823079277625,
+        "pr_auc": 0.5651364436491518,
+        "brier": 0.1587239082681255,
+        "ece": 0.0418757162580136,
+        "precision_at_10pct": 0.6111111111111112,
+        "lift_at_10pct": 2.240740740740741,
+        "roc_auc_ci95": [
+          0.7367364661777919,
+          0.8360693129177593
+        ],
+        "pr_auc_ci95": [
+          0.4752592758351815,
+          0.6624003033937013
+        ]
+      },
+      "selected_calibrated": {
+        "n": 363,
+        "n_pos": 99,
+        "base_rate": 0.2727272727272727,
+        "roc_auc": 0.7908823079277625,
+        "pr_auc": 0.5651364436491518,
+        "brier": 0.15915958285262702,
+        "ece": 0.041525253000006576,
+        "precision_at_10pct": 0.6111111111111112,
+        "lift_at_10pct": 2.240740740740741,
+        "roc_auc_ci95": [
+          0.7367364661777919,
+          0.8360693129177593
+        ],
+        "pr_auc_ci95": [
+          0.4752592758351815,
+          0.6624003033937013
+        ]
+      }
+    },
+    "lift": [
+      {
+        "decile": 1,
+        "n": 37,
+        "positives": 23,
+        "mean_score": 0.6311899193428872,
+        "take_up_rate": 0.6216216216216216,
+        "lift": 2.2792792792792795,
+        "cum_capture": 0.23232323232323232
+      },
+      {
+        "decile": 2,
+        "n": 36,
+        "positives": 21,
+        "mean_score": 0.45076141258290864,
+        "take_up_rate": 0.5833333333333334,
+        "lift": 2.1388888888888893,
+        "cum_capture": 0.4444444444444444
+      },
+      {
+        "decile": 3,
+        "n": 36,
+        "positives": 14,
+        "mean_score": 0.37343568967115953,
+        "take_up_rate": 0.3888888888888889,
+        "lift": 1.425925925925926,
+        "cum_capture": 0.5858585858585859
+      },
+      {
+        "decile": 4,
+        "n": 36,
+        "positives": 16,
+        "mean_score": 0.2809393202823618,
+        "take_up_rate": 0.4444444444444444,
+        "lift": 1.6296296296296298,
+        "cum_capture": 0.7474747474747475
+      },
+      {
+        "decile": 5,
+        "n": 37,
+        "positives": 8,
+        "mean_score": 0.2224790477062395,
+        "take_up_rate": 0.21621621621621623,
+        "lift": 0.7927927927927929,
+        "cum_capture": 0.8282828282828283
+      },
+      {
+        "decile": 6,
+        "n": 36,
+        "positives": 6,
+        "mean_score": 0.16301416846874967,
+        "take_up_rate": 0.16666666666666666,
+        "lift": 0.6111111111111112,
+        "cum_capture": 0.8888888888888888
+      },
+      {
+        "decile": 7,
+        "n": 36,
+        "positives": 5,
+        "mean_score": 0.13210550814453811,
+        "take_up_rate": 0.1388888888888889,
+        "lift": 0.5092592592592593,
+        "cum_capture": 0.9393939393939394
+      },
+      {
+        "decile": 8,
+        "n": 36,
+        "positives": 2,
+        "mean_score": 0.11252535054464824,
+        "take_up_rate": 0.05555555555555555,
+        "lift": 0.20370370370370372,
+        "cum_capture": 0.9595959595959596
+      },
+      {
+        "decile": 9,
+        "n": 36,
+        "positives": 1,
+        "mean_score": 0.08437353088287664,
+        "take_up_rate": 0.027777777777777776,
+        "lift": 0.10185185185185186,
+        "cum_capture": 0.9696969696969697
+      },
+      {
+        "decile": 10,
+        "n": 37,
+        "positives": 3,
+        "mean_score": 0.05331397545105843,
+        "take_up_rate": 0.08108108108108109,
+        "lift": 0.2972972972972973,
+        "cum_capture": 1.0
+      }
+    ],
+    "shap_importance": [
+      {
+        "feature": "avg_app_logins_m",
+        "mean_abs_shap": 0.8145579843693399
+      },
+      {
+        "feature": "avg_web_sessions_m",
+        "mean_abs_shap": 0.16380850999239235
+      },
+      {
+        "feature": "income_band_ord",
+        "mean_abs_shap": 0.14952375413415203
+      },
+      {
+        "feature": "paper_statements_12m",
+        "mean_abs_shap": 0.0
+      }
+    ],
+    "reason_code_coverage": 0.559228650137741,
+    "reason_code_counts": {
+      "DIGITAL_ENGAGEMENT": 159,
+      "DIGITAL_WEB_ENGAGEMENT": 143
+    }
+  }
+}

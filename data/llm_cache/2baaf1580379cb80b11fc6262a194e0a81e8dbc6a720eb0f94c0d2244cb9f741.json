@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A stays fully within the information in the RECORD: it cites the customer's mortgage (evidence) and correctly notes that the impact cannot be estimated due to insufficient data. Version B adds a headline that implies solar panels will make the home \"more cleanly,\" a claim not supported by the RECORD’s insufficient‑data status, making it less faithful and potentially misleading."
+ },
+ "_meta": {
+  "model": "openai/gpt-oss-120b",
+  "input_tokens": 505,
+  "output_tokens": 508,
+  "failures": [],
+  "latency_s": 1.38
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B is much better written and more conversational. Version A includes unnecessary and technical jargon/data-dumping (e.g., 'has mortgage yes; has solar no') which is not customer-facing. Version B flows better and is more professional."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 604,
+  "output_tokens": 60,
+  "failures": [],
+  "latency_s": 3.38
+ }
+}

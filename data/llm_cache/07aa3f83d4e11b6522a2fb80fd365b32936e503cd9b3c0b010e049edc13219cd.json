@@ -1,0 +1,16 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is significantly clearer and more customer-friendly. It uses natural language to explain the relevance ('Since you have a mortgage with us and your home uses gas or oil heating') and the action required. Version B includes raw data artifacts directly in the text ('Key figures: has mortgage yes; gas or oil heating yes'), which looks like a debugging output or unformatted backend data rather than a customer-facing message. Version A also integrates the topic 'replacing your gas boiler with a heat pump' more naturally into the recommendation sentence, whereas Version B separates the figures from the explanation, making it disjointed."
+ },
+ "_meta": {
+  "model": "qwen/qwen3.8-27b",
+  "input_tokens": 663,
+  "output_tokens": 139,
+  "failures": [
+   "openai/gpt-oss-120b: 429",
+   "openai/gpt-oss-120b: 429"
+  ],
+  "latency_s": 10.3
+ }
+}

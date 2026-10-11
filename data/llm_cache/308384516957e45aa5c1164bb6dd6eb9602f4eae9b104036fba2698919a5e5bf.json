@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is more comprehensive as it includes all three reasons mentioned in the record (gas/oil heating, high gas spend, and low EPC rating), whereas Version B omits the high gas spend implication. Version A remains faithful to the record and provides a more complete picture of the evidence. "
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 592,
+  "output_tokens": 66,
+  "failures": [],
+  "latency_s": 2.55
+ }
+}

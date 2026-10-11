@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is better because it includes the specific data points (the spend and the EPC rating) in a clear and structured way. Version B is slightly more conversational but Version A's presentation of the 'Key figures' section makes the information very easy for the customer to scan and understand the relevance to their specific situation."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 564,
+  "output_tokens": 72,
+  "failures": [],
+  "latency_s": 3.45
+ }
+}

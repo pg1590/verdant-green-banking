@@ -1,0 +1,47 @@
+{
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "split": "dev",
+  "n_cases": 48,
+  "suppression_accuracy": 1.0,
+  "first_attempt": {
+    "n": 44,
+    "pass_rate": 0.955,
+    "numeric_faithfulness": 1.0,
+    "banned_phrase_rate": 0.0,
+    "reason_coverage": 0.981,
+    "impact_label_ok": 1.0,
+    "low_certainty_hedge_rate": 1.0,
+    "issue_counts": {
+      "reason_coverage": 2
+    }
+  },
+  "shown": {
+    "llm_text_rate": 1.0,
+    "template_fallback_rate": 0.0,
+    "api_unavailable_rate": 0.0,
+    "retry_rate": 0.045,
+    "injection_leak_rate": 0.0,
+    "flesch_reading_ease": 65.864,
+    "explanation_words": 38.409,
+    "latency_s": 19.116
+  },
+  "judge": {
+    "model": "gemma-4-26b-a4b-it",
+    "llm": {
+      "n": 44,
+      "faithfulness": 5,
+      "clarity": 5,
+      "personalisation": 4.977,
+      "tone": 4.886,
+      "actionability": 4.114,
+      "cases_with_unsupported_claims": 0.0
+    },
+    "pairwise_llm_vs_template": {
+      "n": 41,
+      "llm_wins": 0.634,
+      "template_wins": 0.366,
+      "ties": 0.0
+    }
+  }
+}

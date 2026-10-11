@@ -1,0 +1,25 @@
+{
+ "output": {
+  "headline": "Considering an electric vehicle for your travels?",
+  "text": "Since you cover 15,100 km a year and spend £264 on fuel monthly, you might be interested in this switch. We have noted that you currently have a vehicle loan, though we cannot estimate the impact of changing your car just yet. This information reflects your circumstances as of 30 June 2026.",
+  "reasons_used": [
+   "HIGH_ANNUAL_MILEAGE",
+   "EXISTING_VEHICLE_LOAN",
+   "HIGH_FUEL_SPEND"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 688,
+  "output_tokens": 142,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 18.59
+ }
+}

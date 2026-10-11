@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B is much more natural and customer-facing. Version A includes 'Key figures: has vehicle loan yes', which is a data-dump style fragment that is a poor user experience for a customer. Version B also incorporates the more descriptive 'avoiding tailpipe emissions' from the record into the text naturally."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 477,
+  "output_tokens": 71,
+  "failures": [],
+  "latency_s": 3.18
+ }
+}

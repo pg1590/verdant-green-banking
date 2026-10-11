@@ -1,0 +1,25 @@
+{
+ "output": {
+  "headline": "Generating your own electricity with solar panels",
+  "text": "As you own your detached home and do not have solar panels yet, you could potentially generate your own power. Installing a system is estimated to save about 396 kg CO2e per year and about 5,530 kWh of energy per year. This is based on your property type being a house with its own roof.",
+  "reasons_used": [
+   "NO_EXISTING_SOLAR",
+   "HOMEOWNER",
+   "SUITABLE_PROPERTY_TYPE"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 701,
+  "output_tokens": 133,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 18.33
+ }
+}

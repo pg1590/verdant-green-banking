@@ -1,0 +1,15 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is better because it integrates the data into a narrative that is more relevant to the customer. It clearly connects the customer's digital engagement (app logins) and current paper statement usage to the estimated impact. Version B is a bit more list-like and dry, although both are versions are both faithful to the record and stay within the ability to estimate. Version A's structure is more user-centric and easier to read."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 547,
+  "output_tokens": 96,
+  "failures": [
+   "gemma-4-26b-a4b-it: 500"
+  ],
+  "latency_s": 7.28
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is clearer and more relevant because it uses the specific data point (5,635 kWh) instead of the vague phrase 'on the high side' used in Version B. Version B also contains redundant and awkward phrasing ('We noticed your recorded income profile contributes to this suggestion'), which sounds more like internal system logic than a customer-facing insight. Version A presents the personal factors (income band, mortgage, exact usage) and the impact in a direct, coherent manner without unnecessary meta-commentary."
+ },
+ "_meta": {
+  "model": "qwen/qwen3.8-27b",
+  "input_tokens": 742,
+  "output_tokens": 120,
+  "failures": [
+   "openai/gpt-oss-120b: 429",
+   "openai/gpt-oss-120b: 429"
+  ],
+  "latency_s": 10.08
+ }
+}

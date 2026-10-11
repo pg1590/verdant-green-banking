@@ -1,0 +1,14 @@
+{
+ "output": {
+  "intent": "impact",
+  "product_code": "none",
+  "region": "none"
+ },
+ "_meta": {
+  "model": "openai/gpt-oss-120b",
+  "input_tokens": 496,
+  "output_tokens": 79,
+  "failures": [],
+  "latency_s": 0.99
+ }
+}

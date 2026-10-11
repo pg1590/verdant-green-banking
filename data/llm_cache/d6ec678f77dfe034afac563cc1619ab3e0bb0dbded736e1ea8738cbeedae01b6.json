@@ -1,0 +1,25 @@
+{
+ "output": {
+  "headline": "Making your home more energy efficient",
+  "text": "Your home currently has an E EPC rating, which means there is room to improve its efficiency. As you have a mortgage with us and your average monthly energy spend per household member is £118, we can't estimate the impact of potential changes yet. These insights are based on data from 30 June 2026.",
+  "reasons_used": [
+   "POOR_EPC_RATING",
+   "HIGH_ENERGY_SPEND_PER_PERSON",
+   "EXISTING_MORTGAGE"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 707,
+  "output_tokens": 140,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 14.92
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B integrates the evidence (app logins) more naturally into the narrative, explaining why the recommendation is relevant to the customer ('Since you already bank digitally...'). Version A presents the data as a disconnected list of 'Key figures', which is less engaging and harder for a typical customer to connect to their personal behavior. Version B also links the environmental impact clearly to the proposed action."
+ },
+ "_meta": {
+  "model": "qwen/qwen3.8-27b",
+  "input_tokens": 561,
+  "output_tokens": 95,
+  "failures": [
+   "openai/gpt-oss-120b: 429",
+   "openai/gpt-oss-120b: 429"
+  ],
+  "latency_s": 10.04
+ }
+}

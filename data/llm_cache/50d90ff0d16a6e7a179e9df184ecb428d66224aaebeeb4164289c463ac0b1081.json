@@ -1,0 +1,24 @@
+{
+ "output": {
+  "headline": "Considering switching to an electric vehicle?",
+  "text": "Since you currently drive a petrol, diesel or hybrid car and cover a high mileage each year, you may find an electric vehicle fits your lifestyle. We do not have enough data to estimate the carbon impact of this switch yet.",
+  "reasons_used": [
+   "EXISTING_VEHICLE",
+   "HIGH_ANNUAL_MILEAGE"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 570,
+  "output_tokens": 102,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 17.11
+ }
+}

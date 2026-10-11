@@ -1,0 +1,15 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B is more natural and flows better. Version A's 'Key figures' section is a 'Key figures' section that is clunkyunky/clunky and reads like a list rather than a customer-facing insight. Version B integrates the list of data points into a personal insight. Version B is also more direct and's more relevant to the    'Make the switch to paperless banking' headline. Version B stays faithful to the record.  "
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 518,
+  "output_tokens": 104,
+  "failures": [
+   "gemma-4-26b-a4b-it: 504"
+  ],
+  "latency_s": 51.19
+ }
+}

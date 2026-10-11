@@ -1,0 +1,16 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is significantly clearer and more relevant to the customer. It translates technical codes and evidence labels into natural, human-readable language ('Q4 income profile' vs 'recorded household income band'). It also frames the suggestion positively ('explore ways to improve') rather than robotically listing data points like Version B ('Key figures: ...'). Version A respects the customer's time by avoiding raw data dumping while remaining faithful to the record."
+ },
+ "_meta": {
+  "model": "qwen/qwen3.8-27b",
+  "input_tokens": 552,
+  "output_tokens": 99,
+  "failures": [
+   "openai/gpt-oss-120b: 429",
+   "openai/gpt-oss-120b: 429"
+  ],
+  "latency_s": 10.35
+ }
+}

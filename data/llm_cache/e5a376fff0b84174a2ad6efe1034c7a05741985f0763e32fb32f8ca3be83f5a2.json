@@ -1,0 +1,16 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is significantly clearer and more useful to the customer. It integrates the personal data (income band and existing loan) into a natural narrative without exposing raw variable labels or redundant 'yes' values as Version B does. Version B reads like a data dump, listing 'recorded household income band Q4' and 'has vehicle loan yes' which feels robotic and less relevant to a personal insight. Version A maintains a conversational tone while being perfectly faithful to the record."
+ },
+ "_meta": {
+  "model": "qwen/qwen3.8-27b",
+  "input_tokens": 623,
+  "output_tokens": 113,
+  "failures": [
+   "openai/gpt-oss-120b: 429",
+   "openai/gpt-oss-120b: 429"
+  ],
+  "latency_s": 10.09
+ }
+}

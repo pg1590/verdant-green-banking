@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is more concise and flows better as a customer-facing insight. Version B is slightly more fragmented with the phrase 'Key figures:'. Version A directly connects the electricity spend and the impact, making it more readable for a customer. Both versions are accurately faithful to the RECORD."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 469,
+  "output_tokens": 67,
+  "failures": [],
+  "latency_s": 2.99
+ }
+}

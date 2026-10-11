@@ -1,0 +1,24 @@
+{
+ "output": {
+  "headline": "Considering switching to an electric vehicle?",
+  "text": "Your records show you spend £210 each month on fuel and drive 18,400 km annually. We cannot estimate the impact of switching to an electric vehicle yet as there is not enough data. These insights are based on your spending and travel habits as of 30 June 2026.",
+  "reasons_used": [
+   "HIGH_FUEL_SPEND",
+   "HIGH_ANNUAL_MILEAGE"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 629,
+  "output_tokens": 122,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 20.62
+ }
+}

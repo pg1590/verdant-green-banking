@@ -1,0 +1,23 @@
+{
+ "output": {
+  "headline": "See the potential impact of switching to an electric vehicle",
+  "text": "Since you drive 17,500 km each year, switching to an electric vehicle could help reduce your emissions. Our estimated impact of this change is about 971 kg CO2e per year compared to your current car.",
+  "reasons_used": [
+   "HIGH_ANNUAL_MILEAGE"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 606,
+  "output_tokens": 93,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 18.94
+ }
+}

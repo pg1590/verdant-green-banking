@@ -1,0 +1,25 @@
+{
+ "output": {
+  "headline": "Considering a switch to an electric vehicle?",
+  "text": "Since you have a vehicle loan and currently drive a hybrid car, your regular vehicle running costs of £220 may be impacted by a switch. Moving to an electric vehicle could offer an estimated reduction of about 2,473 kg CO2e per year compared to your current car.",
+  "reasons_used": [
+   "EXISTING_VEHICLE_LOAN",
+   "EXISTING_VEHICLE",
+   "HIGH_AUTOMOTIVE_SPEND"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 723,
+  "output_tokens": 120,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 23.63
+ }
+}

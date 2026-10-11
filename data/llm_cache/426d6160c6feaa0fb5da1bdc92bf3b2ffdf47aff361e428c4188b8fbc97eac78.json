@@ -1,0 +1,16 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B is more conversational and flows better. It integrates the mileage data naturally into the sentence rather than listing it as a 'key figure', making it more relevant and clearer for a customer."
+ },
+ "_meta": {
+  "model": "gemma-4-31b-it",
+  "input_tokens": 435,
+  "output_tokens": 49,
+  "failures": [
+   "gemma-4-26b-a4b-it: 504",
+   "gemma-4-26b-a4b-it: 500"
+  ],
+  "latency_s": 79.82
+ }
+}

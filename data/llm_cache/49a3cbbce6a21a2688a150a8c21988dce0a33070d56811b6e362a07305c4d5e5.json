@@ -1,0 +1,12 @@
+{
+ "output": {
+  "answer": "Yorkshire and The Humber has the highest mean likelihood at 8.8%. It is the top region for EV Finance opportunities."
+ },
+ "_meta": {
+  "model": "openai/gpt-oss-120b",
+  "input_tokens": 356,
+  "output_tokens": 186,
+  "failures": [],
+  "latency_s": 0.72
+ }
+}

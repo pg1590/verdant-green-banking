@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is more customer-centric and flows better. It integrates the specific data points (the energy spend of £106) into the natural flow of the sentence, whereas Version B uses a list-like format that feels more like a database readout. Version A also avoids the repetitive 'we noticed' phrasing and focuses on the practical benefit (reducing energy spend) more clearly."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 657,
+  "output_tokens": 85,
+  "failures": [],
+  "latency_s": 2.88
+ }
+}

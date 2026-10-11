@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is more concise and flows better as a single narrative, making it more readable for a customer. Version B is more repetitive because it' willing to use the 'meaning' of the codes (e.g. 'your fuel spending has been high') and then immediately list the 'evidence' (e.-e.g. 'recorded household income band Q4'). Version A integrates the information more naturally."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 665,
+  "output_tokens": 92,
+  "failures": [],
+  "latency_s": 3.15
+ }
+}

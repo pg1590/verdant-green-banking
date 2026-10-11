@@ -1,0 +1,23 @@
+{
+ "output": {
+  "headline": "Make your banking more sustainable by going paperless",
+  "text": "You currently receive 12 paper statements each year. By switching to paperless banking, you could reduce your environmental footprint by an estimated 2.1 kg CO2e and 24 sheets of paper per year.",
+  "reasons_used": [
+   "PAPER_STATEMENTS"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 601,
+  "output_tokens": 90,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 17.79
+ }
+}

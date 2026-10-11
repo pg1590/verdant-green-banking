@@ -1,0 +1,69 @@
+{
+  "product_code": "GP04",
+  "model_version": "gp04_lgbm_v3",
+  "family": "lgbm",
+  "features": [
+    "avg_app_logins_m",
+    "avg_web_sessions_m",
+    "paper_statements_12m",
+    "income_band_ord"
+  ],
+  "monotone": [
+    1,
+    1,
+    0,
+    0
+  ],
+  "sign_violations": [],
+  "best_params": {
+    "learning_rate": 0.03,
+    "min_child_samples": 50,
+    "n_estimators": 600,
+    "num_leaves": 4,
+    "reg_lambda": 5.0
+  },
+  "cv_score": 0.5271801677483572,
+  "cv_scores": {
+    "lgbm": 0.5272,
+    "logreg": 0.5222
+  },
+  "calibration": "sigmoid",
+  "n_train": 1797,
+  "n_train_pos": 437,
+  "reason_thresholds": {
+    "PAPER_STATEMENTS": 1,
+    "DIGITAL_ENGAGEMENT": 3.3333333333333335,
+    "DIGITAL_WEB_ENGAGEMENT": 1.0833333333333333
+  },
+  "seed": 42,
+  "train_data_sha1": "a893db6ef4bd",
+  "input_sha1": {
+    "features": "a893db6ef4bd",
+    "labels": "2b4be4f9f3ba",
+    "splits": "3bc7c65cac7f",
+    "model.yaml": "e9819fef4fe9",
+    "reason_codes.yaml": "0b02263b0947",
+    "settings.yaml": "6d27011062af",
+    "products.yaml": "f679ed416c4c"
+  },
+  "trained_at": "2026-10-10T18:22:25+00:00",
+  "val_metrics": {
+    "n": 363,
+    "n_pos": 99,
+    "base_rate": 0.2727272727272727,
+    "roc_auc": 0.7908823079277625,
+    "pr_auc": 0.5651364436491518,
+    "brier": 0.15915958285262702,
+    "ece": 0.041525253000006576,
+    "precision_at_10pct": 0.6111111111111112,
+    "lift_at_10pct": 2.240740740740741,
+    "roc_auc_ci95": [
+      0.7367364661777919,
+      0.8360693129177593
+    ],
+    "pr_auc_ci95": [
+      0.4752592758351815,
+      0.6624003033937013
+    ]
+  }
+}

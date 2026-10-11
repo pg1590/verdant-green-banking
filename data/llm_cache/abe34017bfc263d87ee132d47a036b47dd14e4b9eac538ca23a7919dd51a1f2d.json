@@ -1,0 +1,25 @@
+{
+ "output": {
+  "headline": "Generating your own electricity with solar panels",
+  "text": "Your income profile, which falls into the Q4 band, and your high electricity use of 3,385 kWh per household member could make solar power a consideration. With an average energy spend of £172 per household member, this change is estimated to save about 115 kg CO2e per year and about 802 kWh of energy per year.",
+  "reasons_used": [
+   "INCOME_PROFILE",
+   "HIGH_ELECTRICITY_PER_PERSON",
+   "HIGH_ENERGY_SPEND_PER_PERSON"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 794,
+  "output_tokens": 147,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 17.04
+ }
+}

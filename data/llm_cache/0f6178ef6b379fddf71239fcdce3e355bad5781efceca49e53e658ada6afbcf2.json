@@ -1,0 +1,25 @@
+{
+ "output": {
+  "headline": "Generating your own electricity with solar panels",
+  "text": "Your electricity use is on the high side at 4,320 kWh per year, with 2,160 kWh used per household member. Your income profile of Q3 is also a factor we considered. By generating your own power, you could see an estimated impact of about 144 kg CO2e per year and about 998 kWh of energy per year.",
+  "reasons_used": [
+   "HIGH_ELECTRICITY_PER_PERSON",
+   "INCOME_PROFILE",
+   "HIGH_ELECTRICITY_SPEND"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 776,
+  "output_tokens": 147,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 15.01
+ }
+}

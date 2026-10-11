@@ -1,0 +1,16 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B is clearer and more personally relevant because it moves the income profile data to a secondary, explanatory position rather than the primary justification. In Version A, stating the income profile ('Q5') in the main text and headline context feels intrusive and potentially confusingly causal for a product suggestion. Version B uses natural language ('Since your home currently relies...') to explain the trigger, making the insight easier to read and more focused on the customer's benefit (energy efficiency/carbon reduction) while still remaining faithful to the record."
+ },
+ "_meta": {
+  "model": "qwen/qwen3.8-27b",
+  "input_tokens": 668,
+  "output_tokens": 117,
+  "failures": [
+   "openai/gpt-oss-120b: 429",
+   "openai/gpt-oss-120b: 429"
+  ],
+  "latency_s": 10.55
+ }
+}

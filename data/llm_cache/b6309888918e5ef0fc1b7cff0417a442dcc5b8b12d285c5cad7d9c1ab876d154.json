@@ -1,0 +1,23 @@
+{
+ "output": {
+  "headline": "Generating your own electricity with solar panels",
+  "text": "Your electricity spend is currently £111 per month, which is on the high side. By installing solar panels, you could generate an estimated 4,500 kWh of energy per year and reduce your carbon footprint by about 513 kg CO2e per year.",
+  "reasons_used": [
+   "HIGH_ELECTRICITY_SPEND"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 620,
+  "output_tokens": 104,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 19.74
+ }
+}

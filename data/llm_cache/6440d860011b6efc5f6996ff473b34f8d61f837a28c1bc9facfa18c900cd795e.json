@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B is more personal and flows better. It integrates the evidence (app logins and paper statements) into the natural language of the sentence, making it more relevant to the user. Version A reads like a a list of raw data points. Version B stays faithful to the RECORD and does not add any claims. Version A's headline is a bit weaker and less engaging. Version B's headline is more action-oriented and an action-oriented headline is typically more useful for a customer. "
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 524,
+  "output_tokens": 110,
+  "failures": [],
+  "latency_s": 3.4
+ }
+}

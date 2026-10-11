@@ -1,0 +1,81 @@
+# Personas v1 (P1 owns). Each persona gives RELATIVE weights per attribute and
+# mean levels for the hidden traits. src/data_gen/generate.py rakes the weights
+# (iterative proportional fitting) so the NATIONAL mix matches
+# config/calibration_targets.yaml exactly, while each persona keeps its tilt.
+# The persona itself is hidden (latent_traits.parquet), never a feature.
+#
+# Multipliers (vehicle_type, heating, epc, solar) tilt a national distribution
+# for that persona; the generator re-normalises them to the national target.
+
+personas:
+  commuter_family:
+    share: 0.25
+    age_band: {25-34: 1.5, 35-44: 3, 45-54: 3, 55-64: 1}
+    household_size: {2: 1, 3: 3, 4: 3, 5: 1.5}
+    num_vehicles: {1: 2, 2: 3}
+    urban_rural: {urban: 1, town: 3, rural: 1}
+    property_type: {detached: 2, semi_detached: 3, terraced: 2, bungalow: 0.3, flat: 0.3}
+    income_band: {Q1: 0.3, Q2: 1, Q3: 1.5, Q4: 2, Q5: 1.5}
+    traits: {eco_mindedness: 0.0, digital_affinity: 0.3, financial_headroom: 0.2, change_readiness: 0.2}
+  urban_renter:
+    share: 0.20
+    age_band: {18-24: 2, 25-34: 4, 35-44: 1.5}
+    household_size: {1: 3, 2: 3, 3: 1}
+    num_vehicles: {0: 4, 1: 1.5}
+    urban_rural: {urban: 4, town: 1.5, rural: 0.2}
+    property_type: {terraced: 2, flat: 5}
+    income_band: {Q1: 1, Q2: 1.5, Q3: 1.5, Q4: 1, Q5: 0.6}
+    traits: {eco_mindedness: 0.3, digital_affinity: 0.8, financial_headroom: -0.3, change_readiness: 0.3}
+    heating_multiplier: {electric: 2.5}
+  retired_owner:
+    share: 0.18
+    age_band: {55-64: 0.5, 65-74: 3, 75+: 3.5}
+    household_size: {1: 3, 2: 4}
+    num_vehicles: {0: 1.5, 1: 3, 2: 0.7}
+    urban_rural: {urban: 1, town: 2.5, rural: 1.2}
+    property_type: {detached: 2, semi_detached: 2, terraced: 1.5, bungalow: 3, flat: 1}
+    income_band: {Q1: 1.5, Q2: 1.5, Q3: 1, Q4: 0.8, Q5: 0.6}
+    traits: {eco_mindedness: 0.0, digital_affinity: -1.0, financial_headroom: 0.2, change_readiness: -0.5}
+    epc_multiplier: {E: 1.5, F: 1.5, G: 1.5}
+  stretched_household:
+    share: 0.15
+    age_band: {25-34: 2, 35-44: 2, 45-54: 2, 55-64: 1}
+    household_size: {1: 2, 2: 1.5, 3: 1.5, 4: 1.5, 5: 1}
+    num_vehicles: {0: 2, 1: 2.5, 2: 0.5}
+    urban_rural: {urban: 2, town: 2.5, rural: 0.5}
+    property_type: {semi_detached: 1.5, terraced: 3, flat: 2.5}
+    income_band: {Q1: 3, Q2: 2.5, Q3: 0.8}
+    traits: {eco_mindedness: -0.2, digital_affinity: 0.0, financial_headroom: -1.0, change_readiness: -0.2}
+    vehicle_type_multiplier: {diesel: 1.3, ev: 0.3, hybrid: 0.5}
+    epc_multiplier: {D: 1.2, E: 1.3, F: 1.3}
+  rural_owner:
+    share: 0.12
+    age_band: {35-44: 1, 45-54: 2, 55-64: 2.5, 65-74: 2}
+    household_size: {2: 3, 3: 1.5, 4: 1.5}
+    num_vehicles: {1: 1, 2: 4}
+    urban_rural: {urban: 0.1, town: 0.5, rural: 5}
+    property_type: {detached: 4, semi_detached: 1.5, bungalow: 2}
+    income_band: {Q2: 1, Q3: 1.5, Q4: 1.5, Q5: 1.2}
+    traits: {eco_mindedness: 0.0, digital_affinity: -0.3, financial_headroom: 0.3, change_readiness: -0.2}
+    heating_multiplier: {oil: 10, other: 2, gas: 0.6}
+    vehicle_type_multiplier: {diesel: 1.6}
+    epc_multiplier: {E: 2, F: 2.5, G: 3}
+  eco_professional:
+    share: 0.10
+    age_band: {25-34: 2, 35-44: 3, 45-54: 2}
+    household_size: {1: 1, 2: 3, 3: 1.5, 4: 1.5}
+    num_vehicles: {0: 1, 1: 3, 2: 1.5}
+    urban_rural: {urban: 2.5, town: 2, rural: 0.7}
+    property_type: {detached: 2, semi_detached: 2, terraced: 2, flat: 1.5}
+    income_band: {Q3: 1, Q4: 2, Q5: 3}
+    traits: {eco_mindedness: 1.3, digital_affinity: 0.6, financial_headroom: 0.7, change_readiness: 0.8}
+    vehicle_type_multiplier: {ev: 4, hybrid: 3, diesel: 0.4}
+    epc_multiplier: {B: 2, C: 1.2}
+    solar_multiplier: 3
+
+# Partial links from hidden traits to observable data (decision 4). Applied after
+# the persona mean, then each trait is re-standardised to mean 0, sd 1.
+trait_links:
+  financial_headroom: {income_z: 0.5}
+  digital_affinity: {age_z: -0.5}
+  eco_mindedness: {urban: 0.3}

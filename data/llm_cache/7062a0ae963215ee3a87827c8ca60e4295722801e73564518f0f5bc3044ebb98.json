@@ -1,0 +1,24 @@
+{
+ "output": {
+  "headline": "Could going paperless help you reduce your environmental footprint?",
+  "text": "As you already use our app with 58 logins in the last 3 months, switching to paperless banking could help you save 24 sheets of paper per year. Since you still receive 36 paper statements each year, this change might result in an estimated impact of about 2.6 kg CO2e per year.",
+  "reasons_used": [
+   "PAPER_STATEMENTS",
+   "DIGITAL_ENGAGEMENT"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 661,
+  "output_tokens": 125,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 16.98
+ }
+}

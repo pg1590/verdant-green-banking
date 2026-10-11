@@ -1,0 +1,16 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A provides greater transparency and factual accuracy by explicitly mentioning the 'data as of' date (30 June 2026), which is crucial for customer trust and contextualizing the insight. It directly states the EPC rating as a fact and explains that the combination of factors leads to the inability to estimate impact, adhering strictly to the record without adding interpretive language or claiming specific 'environmental' savings when the 'estimated_impact' field is marked as 'INSUFFICIENT_DATA'."
+ },
+ "_meta": {
+  "model": "qwen/qwen3.8-27b",
+  "input_tokens": 642,
+  "output_tokens": 120,
+  "failures": [
+   "openai/gpt-oss-120b: 429",
+   "openai/gpt-oss-120b: 429"
+  ],
+  "latency_s": 10.09
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is more direct and separates the key data points (logins) into a 'Key figures' section, making it easier to scan. Version B merges the data into a sentence that feels a bit more wordy. Both are faithful to the record."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 484,
+  "output_tokens": 60,
+  "failures": [
+   "gemma-4-26b-a4b-it: 504"
+  ],
+  "latency_s": 48.79
+ }
+}

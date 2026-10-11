@@ -1,0 +1,18 @@
+{
+ "output": {
+  "headline": "Solar financing could lower your emissions",
+  "text": "Based on your income band Q5, your mortgage with us and a relatively high energy spend of £106 per person each month, you could consider financing solar panels. Our estimate suggests this could avoid about 71 kg CO2e per year and generate around 496 kWh of clean energy annually.",
+  "reasons_used": [
+   "INCOME_PROFILE",
+   "EXISTING_MORTGAGE",
+   "HIGH_ENERGY_SPEND_PER_PERSON"
+  ]
+ },
+ "_meta": {
+  "model": "openai/gpt-oss-120b",
+  "input_tokens": 878,
+  "output_tokens": 822,
+  "failures": [],
+  "latency_s": 5.39
+ }
+}

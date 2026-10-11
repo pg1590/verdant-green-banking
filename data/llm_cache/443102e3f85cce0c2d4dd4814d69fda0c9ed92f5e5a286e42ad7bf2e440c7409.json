@@ -1,0 +1,15 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B is much more conversational and flows better. Version A is just a list of facts. Version B also correctly identifies the specific heating fuel (oil) from the record, whereas Version A generalizes to 'gas or oil', which is less personal and less accurate to the specific data point provided."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 653,
+  "output_tokens": 67,
+  "failures": [
+   "gemma-4-26b-a4b-it: 504"
+  ],
+  "latency_s": 50.84
+ }
+}

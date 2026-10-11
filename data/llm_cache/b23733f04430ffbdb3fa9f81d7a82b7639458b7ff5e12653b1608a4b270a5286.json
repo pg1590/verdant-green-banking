@@ -1,0 +1,16 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is clearer and more readable for the customer. It integrates the data points smoothly into a narrative flow, whereas Version B feels like a raw dump of the underlying reasons and evidence codes (e.g., 'We noticed your recorded income profile contributes to this suggestion'). Version A correctly identifies the key financial and usage metrics without the clunky phrasing found in B, which lists the evidence in a disjointed, list-like manner within the sentence structure."
+ },
+ "_meta": {
+  "model": "qwen/qwen3.8-27b",
+  "input_tokens": 773,
+  "output_tokens": 102,
+  "failures": [
+   "openai/gpt-oss-120b: 429",
+   "openai/gpt-oss-120b: 429"
+  ],
+  "latency_s": 10.1
+ }
+}

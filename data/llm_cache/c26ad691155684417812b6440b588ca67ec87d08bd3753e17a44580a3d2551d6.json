@@ -1,0 +1,25 @@
+{
+ "output": {
+  "headline": "Generating your own electricity with solar panels",
+  "text": "As you own your semi detached house and do not currently have solar panels, you could generate about 4,280 kWh of energy per year. This estimated impact also suggests a reduction of about 527 kg CO2e per year. These figures reflect the potential of a 4 kWp system on your property type.",
+  "reasons_used": [
+   "NO_EXISTING_SOLAR",
+   "HOMEOWNER",
+   "SUITABLE_PROPERTY_TYPE"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 726,
+  "output_tokens": 132,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 16.05
+ }
+}

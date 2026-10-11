@@ -1,0 +1,16 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is significantly clearer and more customer-focused. It uses natural language to explain the relevance (income band and mortgage) without resorting to technical jargon or irrelevant data dump etiquette like 'recorded household income band Q5; has mortgage yes' found in Version B. Version A maintains a helpful tone, whereas Version B feels like a raw data readout. Both versions omit the crucial detail that kWh is energy that is *saved* or *generated*, not avoided, but Version A's phrasing 'result in... about 692 kWh of energy per year' is slightly less misleading than B's 'avoid... about 692 kWh', though both are weak on this specific technical distinction. Overall, A is the better written, more usable insight."
+ },
+ "_meta": {
+  "model": "qwen/qwen3.8-27b",
+  "input_tokens": 651,
+  "output_tokens": 173,
+  "failures": [
+   "openai/gpt-oss-120b: 429",
+   "openai/gpt-oss-120b: 429"
+  ],
+  "latency_s": 10.21
+ }
+}

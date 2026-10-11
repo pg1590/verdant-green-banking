@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is much more concise and integrates the data points into a natural, conversational flow. Version B reads like a list of reasons/codes, which is less useful to a customer and provides a same-ness to the same data. Version A also correctly identifies the heating type (oil) which is is actually more relevant to the customer's specific situation. Version B's mention of 'gas use' is technically correct according to the heating fuel, 'oil' is being used, but the \"'gas use' is on the high side"
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 827,
+  "output_tokens": 121,
+  "failures": [],
+  "latency_s": 4.14
+ }
+}

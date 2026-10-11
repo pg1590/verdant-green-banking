@@ -1,0 +1,15 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A clearly presents the EPC rating and gas heating status, repeats the estimated CO2 and energy savings, and explicitly notes that the data are limited (reflecting the low certainty in the RECORD). This transparency, along with the \"Key figures\" label, makes the information clearer, more personally relevant, and more useful for a customer than Version B, which omits the uncertainty disclaimer."
+ },
+ "_meta": {
+  "model": "openai/gpt-oss-120b",
+  "input_tokens": 697,
+  "output_tokens": 838,
+  "failures": [
+   "openai/gpt-oss-120b: 429"
+  ],
+  "latency_s": 6.61
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "output": {
+  "headline": "Generating your own electricity with solar panels",
+  "text": "Your recorded household income band of Q5 is one of the factors that contributes to this suggestion. As we have insufficient data, the environmental impact of this option cannot be estimated yet.",
+  "reasons_used": [
+   "INCOME_PROFILE"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 580,
+  "output_tokens": 79,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 16.82
+ }
+}

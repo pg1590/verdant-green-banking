@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B is much more engaging and flows better. It uses the evidence provided (the app logins) to create a more personal and relevant connection to the user, whereas Version A reads like a list of raw data. Version B also uses a more professional tone and 'Make the switch to paperless banking' is a more actionable headline. Both versions are faithful to the record."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 456,
+  "output_tokens": 83,
+  "failures": [],
+  "latency_s": 2.9
+ }
+}

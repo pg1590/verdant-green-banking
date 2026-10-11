@@ -1,0 +1,24 @@
+{
+ "output": {
+  "headline": "Improve your home's energy efficiency",
+  "text": "Your home currently has an EPC rating of F and uses gas or oil heating, which means there may be room to improve your energy efficiency. Replacing your gas boiler with a heat pump could be a way to lower your footprint by an estimated 876 kg CO2e and 4,408 kWh of energy per year.",
+  "reasons_used": [
+   "POOR_EPC_RATING",
+   "GAS_HEATING"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 705,
+  "output_tokens": 122,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 14.6
+ }
+}

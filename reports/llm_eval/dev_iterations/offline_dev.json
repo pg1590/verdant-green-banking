@@ -1,0 +1,39 @@
+{
+  "provider": "offline",
+  "model": "none",
+  "split": "dev",
+  "n_cases": 48,
+  "suppression_accuracy": 1.0,
+  "first_attempt": {
+    "n": 44,
+    "pass_rate": 1.0,
+    "numeric_faithfulness": 1.0,
+    "banned_phrase_rate": 0.0,
+    "reason_coverage": 1.0,
+    "impact_label_ok": 1.0,
+    "low_certainty_hedge_rate": 1.0,
+    "issue_counts": {}
+  },
+  "shown": {
+    "llm_text_rate": 0.0,
+    "template_fallback_rate": 1.0,
+    "api_unavailable_rate": 1.0,
+    "retry_rate": 0.0,
+    "injection_leak_rate": 0.0,
+    "flesch_reading_ease": 57.173,
+    "explanation_words": 47.182,
+    "latency_s": null
+  },
+  "judge": {
+    "model": "gemma-4-26b-a4b-it",
+    "template": {
+      "n": 43,
+      "faithfulness": 5,
+      "clarity": 5,
+      "personalisation": 4.977,
+      "tone": 4.791,
+      "actionability": 4.14,
+      "cases_with_unsupported_claims": 0.0
+    }
+  }
+}

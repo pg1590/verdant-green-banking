@@ -1,0 +1,15 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is more faithful to the record. Version B makes an interpretive claim that 'switching to a heat pump' would 'reduce your carbon footprint', which while logically sound, is not explicitly stated in the record (the record only specifies avoided emissions vs gas boiler). However, Version A is quite robotic and repetitive. Between the two, Version A is the only one that strictly adheres to the text provided in the record without adding external reasoning. Version B is more readable and better written, but the includes the term 'carbon footprint' which is not in the record."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 582,
+  "output_tokens": 121,
+  "failures": [
+   "gemma-4-26b-a4b-it: 504"
+  ],
+  "latency_s": 51.12
+ }
+}

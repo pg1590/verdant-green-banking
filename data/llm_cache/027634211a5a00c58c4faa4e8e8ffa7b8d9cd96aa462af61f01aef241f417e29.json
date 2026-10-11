@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is more cohesive and conversational, integrating the data point about app logins into the sentence structure rather than just listing it as a 'Key figures' bullet point. It is also more relevant to the user because it connects their specific behavior (app logins) to the product (paperless banking) in the headline and text. Both are faithful to the record."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 472,
+  "output_tokens": 80,
+  "failures": [],
+  "latency_s": 2.72
+ }
+}

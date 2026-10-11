@@ -1,0 +1,54 @@
+{
+  "provider": "gemini",
+  "model": "gemini-3.7-flash",
+  "split": "integrated",
+  "n_cases": 40,
+  "case_counts": {
+    "estimated_impact": 16,
+    "insufficient_impact": 6,
+    "data_flags": 4,
+    "suppressed": 8,
+    "prompt_injection": 4,
+    "low_confidence": 2
+  },
+  "suppression_accuracy": 1.0,
+  "first_attempt": {
+    "n": 32,
+    "pass_rate": 1.0,
+    "numeric_faithfulness": 1.0,
+    "banned_phrase_rate": 0.0,
+    "reason_coverage": 1.0,
+    "impact_label_ok": 1.0,
+    "low_certainty_hedge_rate": 1.0,
+    "failure_counts": {}
+  },
+  "shown": {
+    "llm_text_rate": 1.0,
+    "template_fallback_rate": 0.0,
+    "api_unavailable_rate": 0.0,
+    "retry_rate": 0.0,
+    "injection_leak_rate": 0.0,
+    "flesch_reading_ease": 61.875,
+    "text_words": 47.562,
+    "latency_s": 15.943
+  },
+  "judge": {
+    "provider": "groq",
+    "model": "openai/gpt-oss-120b",
+    "LLM": {
+      "n": 32,
+      "faithfulness": 4.969,
+      "clarity": 4.875,
+      "personalisation": 4.938,
+      "tone": 4.938,
+      "actionability": 4.344,
+      "cases_with_unsupported_claims": 0.031
+    },
+    "pairwise_llm_vs_template": {
+      "n": 32,
+      "llm_wins": 0.844,
+      "template_wins": 0.156,
+      "ties": 0.0
+    }
+  }
+}

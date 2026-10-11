@@ -1,0 +1,17 @@
+{
+ "output": {
+  "faithfulness": 5,
+  "clarity": 5,
+  "personalisation": 5,
+  "tone": 5,
+  "actionability": 5,
+  "unsupported_claims": []
+ },
+ "_meta": {
+  "model": "openai/gpt-oss-120b",
+  "input_tokens": 742,
+  "output_tokens": 416,
+  "failures": [],
+  "latency_s": 1.41
+ }
+}

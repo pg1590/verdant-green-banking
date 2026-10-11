@@ -1,0 +1,25 @@
+{
+ "output": {
+  "headline": "Ways to improve your home's energy efficiency",
+  "text": "Your home currently uses gas heating and has a D EPC rating. With an average monthly gas spend of £110, there is potential to improve. Upgrading could lead to an estimated saving of about 1,755 kg CO2e per year and about 5,640 kWh of energy per year.",
+  "reasons_used": [
+   "GAS_HEATING",
+   "HIGH_GAS_SPEND",
+   "LOW_EPC_RATING"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 708,
+  "output_tokens": 122,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 20.11
+ }
+}

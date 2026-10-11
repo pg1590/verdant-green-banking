@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is more cohesive and flows better as a single insight. Version B feels a bit fragmented and reads more like a list of data points. Version A also does a more effective job of integrating the evidence (the logins and web sessions) into the sentence structure, making it more relevant to the user's personal context."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 548,
+  "output_tokens": 76,
+  "failures": [],
+  "latency_s": 2.53
+ }
+}

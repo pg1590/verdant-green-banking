@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is clearer and more personally relevant. It directly ties the customer's existing digital banking behavior to the next logical action, uses a conversational tone, and frames the impact as a personal 'save' rather than a generic 'avoid', making the benefit feel more tangible while staying fully supported by the RECORD."
+ },
+ "_meta": {
+  "model": "openai/gpt-oss-120b",
+  "input_tokens": 667,
+  "output_tokens": 598,
+  "failures": [],
+  "latency_s": 1.73
+ }
+}

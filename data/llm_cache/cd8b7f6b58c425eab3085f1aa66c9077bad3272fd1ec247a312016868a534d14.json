@@ -1,0 +1,16 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B is clearer and more personally relevant because it connects the specific evidence (high gas usage) directly to the benefit (managing consumption), whereas Version A lists the reasons and figures in a disjointed, robotic manner. Version B also uses a helpful headline that frames the problem (energy usage) rather than a vague statement about being 'greener'."
+ },
+ "_meta": {
+  "model": "qwen/qwen3.8-27b",
+  "input_tokens": 790,
+  "output_tokens": 89,
+  "failures": [
+   "openai/gpt-oss-120b: 429",
+   "openai/gpt-oss-120b: 429"
+  ],
+  "latency_s": 10.56
+ }
+}

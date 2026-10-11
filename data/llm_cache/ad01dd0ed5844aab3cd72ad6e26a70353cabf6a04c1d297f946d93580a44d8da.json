@@ -1,0 +1,25 @@
+{
+ "output": {
+  "headline": "Generating your own electricity with solar panels",
+  "text": "As you have a mortgage with us and live in a house with its own roof, you could explore solar panels as you don't have them yet. Our estimated impact shows this could generate about 5,860 kWh of energy per year and reduce emissions by about 7.6 kg CO2e per year.",
+  "reasons_used": [
+   "EXISTING_MORTGAGE",
+   "NO_EXISTING_SOLAR",
+   "SUITABLE_PROPERTY_TYPE"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 731,
+  "output_tokens": 134,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 18.63
+ }
+}

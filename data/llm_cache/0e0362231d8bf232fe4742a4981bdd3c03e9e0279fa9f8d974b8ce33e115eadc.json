@@ -1,0 +1,24 @@
+{
+ "output": {
+  "headline": "Ways to improve your home's energy efficiency",
+  "text": "With your recent £1,830 home improvement spend and an current EPC rating of F, there is clear potential to boost your energy efficiency. Making upgrades could lead to an estimated saving of about 1,385 kg CO2e per year and about 3,030 kWh of energy per year.",
+  "reasons_used": [
+   "HIGH_HOME_IMPROVEMENT_SPEND",
+   "LOW_EPC_RATING"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 685,
+  "output_tokens": 127,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 17.75
+ }
+}

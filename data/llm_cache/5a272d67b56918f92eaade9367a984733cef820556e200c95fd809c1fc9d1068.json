@@ -1,0 +1,24 @@
+{
+ "output": {
+  "headline": "Make the switch to paperless banking",
+  "text": "Since you already log in to your banking app 105 times every three months, you are well-positioned to go digital. Currently, you receive 12 paper statements each year. We do not have enough data to calculate the environmental impact of switching to paperless statements just yet.",
+  "reasons_used": [
+   "PAPER_STATEMENTS",
+   "DIGITAL_ENGAGEMENT"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 619,
+  "output_tokens": 112,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 18.04
+ }
+}

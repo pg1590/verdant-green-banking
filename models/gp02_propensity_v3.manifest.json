@@ -1,0 +1,84 @@
+{
+  "product_code": "GP02",
+  "model_version": "gp02_lgbm_v3",
+  "family": "lgbm",
+  "features": [
+    "epc_rating_ord",
+    "gas_or_oil_heating",
+    "energy_spend_per_person_m",
+    "est_gas_kwh_year",
+    "est_electricity_kwh_year",
+    "has_mortgage",
+    "income_band_ord",
+    "spend_home_improvement_m",
+    "household_size"
+  ],
+  "monotone": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0
+  ],
+  "sign_violations": [],
+  "best_params": {
+    "learning_rate": 0.03,
+    "min_child_samples": 100,
+    "n_estimators": 300,
+    "num_leaves": 8,
+    "reg_lambda": 5.0
+  },
+  "cv_score": 0.14582886461794847,
+  "cv_scores": {
+    "lgbm": 0.1458,
+    "logreg": 0.1396
+  },
+  "calibration": "sigmoid",
+  "n_train": 1871,
+  "n_train_pos": 106,
+  "reason_thresholds": {
+    "EXISTING_MORTGAGE": 1,
+    "POOR_EPC_RATING": 5,
+    "LOW_EPC_RATING": 4,
+    "GAS_HEATING": 1,
+    "HIGH_GAS_SPEND": 17000,
+    "HIGH_HOME_IMPROVEMENT_SPEND": 91.00291666666668,
+    "INCOME_PROFILE": 1,
+    "HIGH_ENERGY_SPEND_PER_PERSON": 101.46416666666667
+  },
+  "seed": 42,
+  "train_data_sha1": "a893db6ef4bd",
+  "input_sha1": {
+    "features": "a893db6ef4bd",
+    "labels": "2b4be4f9f3ba",
+    "splits": "3bc7c65cac7f",
+    "model.yaml": "e9819fef4fe9",
+    "reason_codes.yaml": "0b02263b0947",
+    "settings.yaml": "6d27011062af",
+    "products.yaml": "f679ed416c4c"
+  },
+  "trained_at": "2026-10-10T18:21:48+00:00",
+  "val_metrics": {
+    "n": 388,
+    "n_pos": 19,
+    "base_rate": 0.04896907216494845,
+    "roc_auc": 0.6733704179147054,
+    "pr_auc": 0.09350285099025123,
+    "brier": 0.046006907592651934,
+    "ece": 0.006895767207261297,
+    "precision_at_10pct": 0.1282051282051282,
+    "lift_at_10pct": 2.6180836707152495,
+    "roc_auc_ci95": [
+      0.5623133560208313,
+      0.779415285456815
+    ],
+    "pr_auc_ci95": [
+      0.05268066183457439,
+      0.17161503195503292
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+ "output": {
+  "headline": "Generating your own electricity with solar panels",
+  "text": "Solar panels could help you generate about 833 kWh of energy per year. This estimate represents a reduction of about 120 kg CO2e per year. As you have a mortgage with us and your recorded household income band is Q3, you might consider this option.",
+  "reasons_used": [
+   "EXISTING_MORTGAGE",
+   "INCOME_PROFILE"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 712,
+  "output_tokens": 112,
+  "failures": [
+   "gemini-3.7-flash: quota exhausted (skipped)",
+   "gemini-3.6-flash: quota exhausted (skipped)",
+   "gemini-3.5-flash: quota exhausted (skipped)"
+  ],
+  "latency_s": 1.9
+ }
+}

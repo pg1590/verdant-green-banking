@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B uses a more direct, benefit‑focused headline ('An EV could cut your transport emissions') that clearly tells the customer what they stand to gain, and its text frames the suggestion in a personal, conversational way while still accurately presenting the recorded income band (Q3) and the estimated CO2e reduction (about 1,351 kg per year). All claims are supported by the RECORD, and the wording makes the relevance and usefulness of the insight clearer than Version A's more generic product‑centric headline."
+ },
+ "_meta": {
+  "model": "openai/gpt-oss-120b",
+  "input_tokens": 581,
+  "output_tokens": 340,
+  "failures": [],
+  "latency_s": 1.21
+ }
+}

@@ -1,0 +1,82 @@
+{
+  "product_code": "GP03",
+  "model_version": "gp03_logreg_v3",
+  "family": "logreg",
+  "features": [
+    "electricity_kwh_per_person",
+    "est_electricity_kwh_year",
+    "energy_spend_per_person_m",
+    "is_detached_or_semi",
+    "is_urban",
+    "has_mortgage",
+    "income_band_ord",
+    "has_savings",
+    "epc_rating_ord",
+    "is_electric_heating"
+  ],
+  "monotone": [
+    1,
+    1,
+    1,
+    1,
+    -1,
+    1,
+    1,
+    1,
+    0,
+    0
+  ],
+  "sign_violations": [
+    "has_savings"
+  ],
+  "best_params": {
+    "logisticregression__C": 0.03
+  },
+  "cv_score": 0.130028529485351,
+  "cv_scores": {
+    "lgbm": 0.1215,
+    "logreg": 0.13
+  },
+  "calibration": "sigmoid",
+  "n_train": 3130,
+  "n_train_pos": 129,
+  "reason_thresholds": {
+    "EXISTING_MORTGAGE": 1,
+    "HIGH_ELECTRICITY_SPEND": 4100,
+    "HIGH_ELECTRICITY_PER_PERSON": 2015.1145493014064,
+    "HAS_SAVINGS": 1,
+    "INCOME_PROFILE": 1,
+    "HIGH_ENERGY_SPEND_PER_PERSON": 98.75666666666666
+  },
+  "seed": 42,
+  "train_data_sha1": "a893db6ef4bd",
+  "input_sha1": {
+    "features": "a893db6ef4bd",
+    "labels": "2b4be4f9f3ba",
+    "splits": "3bc7c65cac7f",
+    "model.yaml": "e9819fef4fe9",
+    "reason_codes.yaml": "0b02263b0947",
+    "settings.yaml": "6d27011062af",
+    "products.yaml": "f679ed416c4c"
+  },
+  "trained_at": "2026-10-10T18:22:08+00:00",
+  "val_metrics": {
+    "n": 688,
+    "n_pos": 37,
+    "base_rate": 0.05377906976744186,
+    "roc_auc": 0.715904844937103,
+    "pr_auc": 0.19966276677322,
+    "brier": 0.04795254834303046,
+    "ece": 0.011692342506789254,
+    "precision_at_10pct": 0.21739130434782608,
+    "lift_at_10pct": 4.042303172737955,
+    "roc_auc_ci95": [
+      0.6206418495297805,
+      0.8160558626833404
+    ],
+    "pr_auc_ci95": [
+      0.10526331321625133,
+      0.3583998525383005
+    ]
+  }
+}

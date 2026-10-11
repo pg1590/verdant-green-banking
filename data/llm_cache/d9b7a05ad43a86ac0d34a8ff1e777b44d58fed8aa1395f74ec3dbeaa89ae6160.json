@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is much more concise and provides a better flow for a customer. Version B is a bit more repetitive and uses a list-like structure within the text which is is less natural for a customer-facing insight. Version A is also more direct about the impact, whereas Version B's headline and headline text is slightly more vague. Both are faithful to the RECORD."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 584,
+  "output_tokens": 83,
+  "failures": [],
+  "latency_s": 2.7
+ }
+}

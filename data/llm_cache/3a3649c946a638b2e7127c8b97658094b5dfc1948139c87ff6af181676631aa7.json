@@ -1,0 +1,20 @@
+{
+ "output": {
+  "headline": "Considering switching to an electric vehicle?",
+  "text": "Your recorded household income band of Q5 suggests this could be a good topic for you to explore. Switching to an electric vehicle is estimated to save about 723 kg CO2e per year compared to your current vehicle.",
+  "reasons_used": [
+   "INCOME_PROFILE"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 627,
+  "output_tokens": 88,
+  "failures": [
+   "gemini-3.7-flash: quota exhausted (skipped)",
+   "gemini-3.6-flash: quota exhausted (skipped)",
+   "gemini-3.5-flash: quota exhausted (skipped)"
+  ],
+  "latency_s": 1.07
+ }
+}

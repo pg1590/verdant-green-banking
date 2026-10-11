@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B stays fully faithful to the RECORD while adding helpful context (baseline comparison to a petrol/diesel car and the data date) that makes the estimate clearer and more useful to the customer. Its phrasing is slightly more natural and directly ties the income band to the suggestion, improving relevance without introducing unsupported claims."
+ },
+ "_meta": {
+  "model": "openai/gpt-oss-120b",
+  "input_tokens": 597,
+  "output_tokens": 571,
+  "failures": [],
+  "latency_s": 1.52
+ }
+}

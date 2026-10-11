@@ -1,0 +1,25 @@
+{
+ "output": {
+  "headline": "Generating your own electricity with solar panels",
+  "text": "Your energy spend of £106 per person may be reduced by generating your own power. Because you have a mortgage with us and fall into the Q5 income band, you could explore solar options. This shift could provide an estimated saving of about 71 kg CO2e per year and about 496 kWh of energy per year.",
+  "reasons_used": [
+   "INCOME_PROFILE",
+   "EXISTING_MORTGAGE",
+   "HIGH_ENERGY_SPEND_PER_PERSON"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 780,
+  "output_tokens": 139,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 16.39
+ }
+}

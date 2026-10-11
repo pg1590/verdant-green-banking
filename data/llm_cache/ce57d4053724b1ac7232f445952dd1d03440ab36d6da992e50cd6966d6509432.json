@@ -1,0 +1,25 @@
+{
+ "output": {
+  "headline": "Ways to improve your home's energy efficiency",
+  "text": "Your home currently has an F EPC rating and uses oil for heating, which means there could be room to improve your energy efficiency. Given your recent £1,830 spend on home improvements, you may be interested to know an upgrade could result in an estimated saving of about 930 kg CO2e per year and about 4,230 kWh of energy per year.",
+  "reasons_used": [
+   "LOW_EPC_RATING",
+   "HIGH_HOME_IMPROVEMENT_SPEND",
+   "GAS_HEATING"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 738,
+  "output_tokens": 149,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 15.75
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "output": {
+  "answer": "The model estimates a potential avoidance of 4,706 tonnes CO2e each year. This figure represents the overall CO2 saving if customers act."
+ },
+ "_meta": {
+  "model": "openai/gpt-oss-120b",
+  "input_tokens": 340,
+  "output_tokens": 190,
+  "failures": [],
+  "latency_s": 0.98
+ }
+}

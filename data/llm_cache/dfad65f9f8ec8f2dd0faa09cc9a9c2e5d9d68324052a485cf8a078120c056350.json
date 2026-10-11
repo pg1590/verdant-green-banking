@@ -1,0 +1,12 @@
+{
+ "output": {
+  "answer": "The provided facts do not contain information about EV opportunities, so the question cannot be answered."
+ },
+ "_meta": {
+  "model": "openai/gpt-oss-120b",
+  "input_tokens": 353,
+  "output_tokens": 92,
+  "failures": [],
+  "latency_s": 1.02
+ }
+}

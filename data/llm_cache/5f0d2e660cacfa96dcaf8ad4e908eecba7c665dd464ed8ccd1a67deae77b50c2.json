@@ -1,0 +1,28 @@
+{
+ "output": {
+  "headline": "Ways to make your home more energy efficient",
+  "text": "As you own your home with an F energy rating, you could potentially improve your efficiency. With your oil heating and £167 monthly gas spend, our estimated impact of such changes is 2,246 kg CO2e and 2,540 kWh of energy saved per year. Given your recent £1,830 spend on home improvements and existing mortgage, you might consider further upgrades.",
+  "reasons_used": [
+   "LOW_EPC_RATING",
+   "HOMEOWNER",
+   "HIGH_HOME_IMPROVEMENT_SPEND",
+   "HIGH_GAS_SPEND",
+   "EXISTING_MORTGAGE",
+   "GAS_HEATING"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 909,
+  "output_tokens": 181,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 18.52
+ }
+}

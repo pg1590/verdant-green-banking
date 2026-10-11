@@ -1,0 +1,23 @@
+{
+ "output": {
+  "headline": "Ways to help make your home more energy efficient",
+  "text": "Your average monthly gas spend of £157 suggests your usage is on the high side. Improving your home's energy efficiency could lead to an estimated annual saving of about 2,064 kg CO2e and about 1,930 kWh of energy.",
+  "reasons_used": [
+   "HIGH_GAS_SPEND"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 617,
+  "output_tokens": 104,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 17.76
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "output": {
+  "headline": "Ways to improve your home energy efficiency",
+  "text": "Since you have a mortgage with us, you could explore upgrades to your home, which currently has a D energy rating and relies on gas heating. Making improvements might lead to an estimated reduction of about 962 kg CO2e per year and about 3,820 kWh of energy per year.",
+  "reasons_used": [
+   "GAS_HEATING",
+   "EXISTING_MORTGAGE",
+   "LOW_EPC_RATING"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 723,
+  "output_tokens": 127,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 16.97
+ }
+}

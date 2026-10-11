@@ -1,0 +1,135 @@
+# FR2 transaction categories and boundary decisions. Owner: P2.
+# Every transaction gets exactly ONE of these. Full rationale: docs/categorisation.md
+#
+# The rules baseline (src/categorisation/rules.py) applies the steps below in order;
+# the first step that matches decides. Steps 1-4 are "strong" (high-certainty).
+# In the final categoriser, steps 1-5 always decide; the ML model may replace only a
+# step 6-7 fallback, and only when it is confident (src/categorisation/model.py).
+#   1. forecourt shop purchase            -> Other
+#   2. EV charging (MCC or keyword)        -> Fuel, is_ev_charging = true
+#   3. energy supplier bill + fuel hint    -> Utilities (dual fuel) / Electricity / Gas
+#   4. strong MCC (mcc_hints)              -> that category
+#   5. merchant / description keywords     -> that category
+#   6. weak MCC (weak_mcc)                 -> that category
+#   7. anything else                       -> Other
+#
+# NOTE: MCC 4900 covers ALL utilities (electricity, gas, water), so it cannot
+# separate Electricity / Gas / Utilities on its own: merchant and description text decide.
+#
+# Keywords are matched as whole words/phrases against the CLEANED text (upper case,
+# punctuation and reference numbers removed, "B & Q" -> "B&Q"); see clean_text().
+
+categories:
+  Fuel:
+    includes: "Road fuel (petrol, diesel, LPG) at the pump and public/home EV charging"
+    excludes: "Shop purchases at a fuel station (-> Other); car washes (-> Automotive)"
+    mcc_hints: [5541, 5542, 5552]
+    keywords: [SHELL, BP, ESSO, TEXACO, JET, GULF, MURCO, VALERO, APPLEGREEN, MFG,
+               MOTOR FUEL GROUP, PFS, PETROL, PETROL STATION, FILLING STATION, SERVICE STATION]
+  Electricity:
+    includes: "Single-fuel electricity bills and top-ups"
+    excludes: "Dual-fuel bills (-> Utilities)"
+    mcc_hints: []
+    keywords: []
+  Gas:
+    includes: "Single-fuel mains gas bills and top-ups"
+    excludes: "Dual-fuel bills (-> Utilities); heating oil and LPG deliveries (-> Utilities)"
+    mcc_hints: []
+    keywords: []
+  Public Transport:
+    includes: "Rail, bus, coach, tram, underground, ferry, contactless transit (e.g. TfL)"
+    excludes: "Taxis and ride-hailing (-> Other); flights (-> Other)"
+    mcc_hints: [4111, 4112, 4131]
+    keywords: [TFL, TRANSPORT FOR LONDON, OYSTER, UNDERGROUND, TRAINLINE, NATIONAL RAIL, RAIL,
+               RAILWAY, RAILWAYS, TRAINS, LNER, AVANTI, GWR, GREAT WESTERN, THAMESLINK,
+               SOUTHEASTERN, SCOTRAIL, MERSEYRAIL, CROSSCOUNTRY, NORTHERN RAIL, NORTHERN TRAINS,
+               SOUTHERN RAIL, ELIZABETH LINE, BUS, BUSES, STAGECOACH, ARRIVA, FIRST BUS, FIRSTBUS,
+               GO AHEAD, NATIONAL EXPRESS, MEGABUS, METROLINK, TFGM, BEE NETWORK, WMNETWORK, NEXUS,
+               LOTHIAN, TRANSLINK, TRAM, TRAMS, FERRY, FERRIES, CALMAC, WIGHTLINK, RED FUNNEL]
+  Home Improvement:
+    includes: "DIY and building materials, tradespeople, home energy installers"
+    excludes: "Furniture and appliances (-> Other)"
+    mcc_hints: [1520, 1711, 1731, 1740, 1750, 5200, 5211, 5231, 5251]
+    keywords: [B&Q, WICKES, SCREWFIX, TOOLSTATION, HOMEBASE, TRAVIS PERKINS, JEWSON, BUILDBASE,
+               SELCO, MKM, TOPPS TILES, ROBERT DYAS, PLUMBING, PLUMBER, PLUMBERS, HEATING, BOILER,
+               BOILERS, ELECTRICIAN, ELECTRICIANS, BUILDER, BUILDERS, BUILDING SUPPLIES, ROOFING,
+               INSULATION, GLAZING, DOUBLE GLAZING, PLASTERING, DECORATING, LOFT, HEAT PUMP,
+               HEAT PUMPS, SOLAR]
+  Automotive:
+    includes: "Servicing, MOT, repairs, parts, tyres, car washes, car insurance, parking"
+    excludes: "Fuel and EV charging (-> Fuel); vehicle loan repayments (-> Other, not spend)"
+    mcc_hints: [5532, 5533, 7531, 7534, 7535, 7538, 7542, 7523]
+    keywords: [HALFORDS, KWIK FIT, KWIKFIT, ATS EUROMASTER, NATIONAL TYRES, BLACKCIRCLES, TYRE,
+               TYRES, MOT, MOT CTR, MOT CENTRE, AUTO, AUTOS, AUTO REPAIRS, AUTOCENTRE, GARAGE,
+               CAR WASH, VALETING, CAR PARTS, EURO CAR PARTS, PARKING, CAR PARK, NCP, RINGGO,
+               JUSTPARK, PAYBYPHONE, DART CHARGE, DARTFORD CROSSING, TOLL, DVLA, RAC,
+               CAR INSURANCE, MOTOR INSURANCE]
+    description_keywords: [MOTOR POLICY, CAR INSURANCE, MOTOR INSURANCE]
+  Utilities:
+    includes: "Dual-fuel energy bills, water, broadband, phone, council tax, heating oil/LPG"
+    excludes: "Single-fuel electricity or gas (-> Electricity / Gas)"
+    mcc_hints: [4814, 5983]
+    keywords: [WATER, UNITED UTILITIES, SEVERN TRENT, DWR CYMRU, SCOTTISH WATER, BROADBAND, BT,
+               SKY, VIRGIN MEDIA, TALKTALK, PLUSNET, HYPEROPTIC, COMMUNITYFIBRE, VODAFONE, EE, O2,
+               THREE, GIFFGAFF, COUNCIL, COUNCIL TAX, TV LICENCE, TV LICENSING, HEATING OIL,
+               CERTAS, BOILERJUICE, CALOR, FLOGAS, LPG]
+    description_keywords: [COUNCIL TAX, CTAX]
+  Other:
+    includes: "Everything else"
+    excludes: ""
+    mcc_hints: [4121, 4511, 4722, 5311, 5411, 5499, 5712, 5732, 5812, 5814, 5815, 5942]
+    # Exceptions that would otherwise be caught by a weaker rule (e.g. Netflix uses
+    # the same MCC 4899 as broadband; taxis are Other per D17; loan repayments are not spend).
+    keywords: [NETFLIX, SPOTIFY, DISNEY, AMAZON PRIME, APPLE COM BILL, UBER, BOLT, FREENOW,
+               ADDISON LEE, TAXI, TAXIS, CABS, LIME, EASYJET, RYANAIR, BRITISH AIRWAYS, JET2,
+               IKEA, DUNELM, CURRYS, ARGOS, BLACK HORSE, CAR FINANCE, LOAN, HMRC]
+    description_keywords: [SHOP PURCHASE, HOME POLICY]
+
+# Step 5: when keywords from several categories match, the LONGEST matched phrase wins
+# ("HEATING OIL" -> Utilities beats "HEATING" -> Home Improvement); ties follow this
+# order. Other comes first because its keywords are deliberate exceptions.
+keyword_priority: [Other, Public Transport, Automotive, Home Improvement, Utilities, Fuel]
+
+# Step 6: ambiguous MCCs used only when nothing stronger matched.
+weak_mcc:
+  4900: Utilities   # all utilities; text decides Electricity / Gas first (step 3)
+  4899: Utilities   # cable / pay TV: broadband, but also Netflix (caught by keywords)
+  4816: Utilities   # computer network / information services: mostly broadband
+  9311: Utilities   # tax payments: council tax, but HMRC is caught by Other keywords first
+  6300: Other       # insurance: car insurance is caught by Automotive keywords first
+  9399: Other       # government services (DVLA vehicle tax is caught by keywords first)
+
+# Step 1: fuel-station shop purchases (snacks etc.) are Other, not Fuel.
+forecourt_shop:
+  description_keywords: [SHOP PURCHASE]
+
+# Step 2: EV charging stays in Fuel (team decision) but is flagged, because P1's
+# VEHICLE_FUEL_CONFLICT must come from ROAD fuel only (src/features/build.py).
+ev_charging:
+  mcc: [5552]
+  keywords: [POD POINT, BP PULSE, INSTAVOLT, IONITY, GRIDSERVE, TESLA SUPERCHARGER,
+             CHARGEPOINT, CHARGE POINT, OSPREY, SHELL RECHARGE, EV CHARGE, EV CHARGING,
+             FASTNED, GENIEPOINT, CONNECTED KERB, SOURCE LONDON, UBITRICITY, ZAPMAP]
+
+# Step 3: energy supplier bills. The fuel type comes from hint words in the description
+# or in the merchant name once the supplier's own name is removed ("BRITISH GAS" is not
+# a gas hint by itself: British Gas also sells electricity and dual fuel).
+energy:
+  mcc: [4900]
+  suppliers: [OCTOPUS, OCTOPUS ENERGY, EDF, EDF ENERGY, BRITISH GAS, OVO, OVO ENERGY, E ON,
+              EON, E ON NEXT, SCOTTISHPOWER, SCOTTISH POWER, SSE, SO ENERGY, UTILITA,
+              OUTFOX THE MARKET, CO OPERATIVE ENERGY, EBICO]
+  electricity_hints: [ELEC, ELECTRIC, ELECTRICITY]
+  gas_hints: [GAS]
+
+# D6: dual-fuel bills stay in Utilities here (categories must be mutually
+# exclusive), but the FEATURE layer apportions them into electricity and gas
+# using the Ofgem TDCV medium-consumption ratio x price-cap unit rates, and sets
+# the ENERGY_APPORTIONED_FROM_DUAL_FUEL data flag. A bill with BOTH an electricity
+# and a gas hint also counts as dual fuel.
+dual_fuel:
+  keywords: ["DUAL FUEL", "DUALFUEL", "GAS & ELEC", "GAS AND ELEC", "GAS+ELEC", "GAS & ELECTRIC"]
+
+# Words dropped from merchant names during cleaning (legal suffixes, payment noise).
+merchant_noise: [LTD, LIMITED, PLC, UK, GB, CO, COM, WWW, THE, DD, GROUP, PAYMENT, PAYMENTS,
+                 CARD, CONTACTLESS, ONLINE]

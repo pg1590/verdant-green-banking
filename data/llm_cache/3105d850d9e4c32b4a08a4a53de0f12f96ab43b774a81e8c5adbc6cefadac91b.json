@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B presents the information in a smoother, more concise narrative. It integrates the usage stats directly into the sentence, avoids the redundant phrasing found in A, and frames going paperless as a natural next step, making it feel more personally relevant and actionable while staying fully faithful to the record."
+ },
+ "_meta": {
+  "model": "openai/gpt-oss-120b",
+  "input_tokens": 685,
+  "output_tokens": 394,
+  "failures": [],
+  "latency_s": 1.66
+ }
+}

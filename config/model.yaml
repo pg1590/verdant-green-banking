@@ -1,0 +1,137 @@
+# P3 · Propensity model configuration (FR3). Owner: P3.
+# Column names follow src/schemas/tables.py (P1's feature store). Seed, bootstrap size and
+# excluded features come from config/settings.yaml (shared); they are NOT repeated here.
+version: v3
+paths:
+  features: data/processed/features.parquet
+  labels: data/processed/labels.parquet
+  splits: data/processed/splits.parquet
+  models_dir: models
+  scores: data/processed/scores.parquet          # long format, one row per customer x product
+  p5_predictions: data/processed/p3_predictions.json
+  reports_dir: reports
+  test_predictions: outputs/test_predictions.csv  # columns: tables.TEST_PREDICTION_COLUMNS
+columns:
+  id: customer_id
+  split: split
+  label: took_up
+  product: product_code
+  cutoff: feature_cutoff_date
+  completeness: data_completeness   # 0-1 (P1)
+  conflict_flags: conflict_flags    # list of P5 conflict codes
+  data_flags: data_flags            # comma-separated codes from reason_codes.yaml data_flags
+  fairness_slices: [region, age_band, income_band, urban_rural]
+
+# Numeric encodings of feature-store columns (src/models/data.py: encode). They never rename
+# or overwrite P1's columns.
+#   map: category -> number;  in: 1 if value in list, else 0;  numerator/denominator: ratio.
+# A missing source value stays missing (NaN), so LightGBM can learn from missingness.
+derived:
+  income_band_ord:    {source: income_band, map: {Q1: 1, Q2: 2, Q3: 3, Q4: 4, Q5: 5}}
+  epc_rating_ord:     {source: epc_rating, map: {A: 1, B: 2, C: 3, D: 4, E: 5, F: 6, G: 7}}
+  is_ice_vehicle:     {source: vehicle_type, in: [petrol, diesel, hybrid]}
+  is_homeowner:       {source: home_status, in: [owner_mortgage, owner_outright]}
+  is_house:           {source: property_type, in: [detached, semi_detached, terraced, bungalow]}
+  is_detached_or_semi: {source: property_type, in: [detached, semi_detached]}
+  gas_or_oil_heating: {source: main_heating_fuel, in: [gas, oil]}
+  is_electric_heating: {source: main_heating_fuel, in: [electric]}
+  is_urban:           {source: urban_rural, in: [urban]}
+  electricity_kwh_per_person: {numerator: est_electricity_kwh_year, denominator: household_size}
+
+# Groupings used ONLY for fairness reporting, never as model inputs (age: D9).
+slices:
+  age_band: {source: age, bins: [17, 30, 45, 60, 120], labels: ["18-30", "31-45", "46-60", "60+"]}
+
+training:
+  families: [lgbm, logreg]      # tuned on train CV per product; the higher cv_scoring ships
+  cv_folds: 5
+  isotonic_min_positives: 500   # fewer train positives -> Platt (sigmoid) calibration
+  cv_scoring: average_precision
+  param_grid:                   # LightGBM; small trees: ~100-500 train positives per product
+    num_leaves: [2, 4, 8]
+    n_estimators: [150, 300, 600]
+    learning_rate: [0.03]
+    min_child_samples: [50, 100]
+    reg_lambda: [0.0, 5.0]
+  logreg_grid:                  # baselines.logistic_model
+    logisticregression__C: [0.03, 0.1, 1.0]
+  fast_params:                  # --fast (tests / smoke runs): no grid search
+    num_leaves: 15
+    n_estimators: 150
+    learning_rate: 0.05
+    min_child_samples: 20
+
+confidence:
+  std_norm: 2.0                 # ensemble std IN LOG-ODDS at which the agreement term hits 0
+  conflict_penalty: 0.5         # multiplier when a product-relevant conflict flag is set
+
+reasons:
+  dictionary: config/reason_codes.yaml
+  max_codes: 3
+
+# Model population = P5's catalogue (config/products.yaml), purpose='training'.
+# opportunity:          P5 opportunity code.
+# conflict_codes:       P5 conflict codes that lower confidence for this product.
+# data_flag_penalties:  confidence multiplier per P1 data flag. LOW_DATA_COMPLETENESS and
+#                       CONFLICTING_DATA are already covered by completeness / conflict_codes.
+# features:             {column: monotone direction}. 1 = propensity may only rise with the
+#                       value, -1 = only fall, 0 = unconstrained.
+products:
+  GP01:
+    opportunity: EV_FINANCE
+    baseline_rule_feature: spend_fuel_m
+    conflict_codes: [VEHICLE_FUEL_CONFLICT, VEHICLE_SOLD, VEHICLE_STATUS_CONFLICT]
+    data_flag_penalties: {RECENT_CIRCUMSTANCE_CHANGE: 0.7}
+    features:
+      spend_fuel_m: 1
+      spend_fuel_recent_m: 1
+      spend_fuel_prior_m: 0
+      est_annual_km: 1
+      km_per_vehicle: 1
+      num_vehicles: 1
+      has_vehicle_loan: 1
+      income_band_ord: 1
+      is_urban: 1
+      spend_automotive_m: 1
+      avg_app_logins_m: 0
+  GP02:
+    opportunity: GREEN_HOME
+    baseline_rule_feature: est_gas_kwh_year
+    conflict_codes: [HOME_STATUS_CONFLICT, EPC_CONFLICT]
+    data_flag_penalties: {ENERGY_APPORTIONED_FROM_DUAL_FUEL: 0.85}
+    features:
+      epc_rating_ord: 1               # 1 = A ... 7 = G (worse rating -> more upside)
+      gas_or_oil_heating: 1
+      energy_spend_per_person_m: 1
+      est_gas_kwh_year: 1
+      est_electricity_kwh_year: 0
+      has_mortgage: 1
+      income_band_ord: 1
+      spend_home_improvement_m: 0
+      household_size: 0
+  GP03:
+    opportunity: SOLAR_FINANCE
+    baseline_rule_feature: est_electricity_kwh_year
+    conflict_codes: [HOME_STATUS_CONFLICT, SOLAR_STATUS_CONFLICT]
+    data_flag_penalties: {ENERGY_APPORTIONED_FROM_DUAL_FUEL: 0.85}
+    features:
+      electricity_kwh_per_person: 1
+      est_electricity_kwh_year: 1
+      energy_spend_per_person_m: 1
+      is_detached_or_semi: 1
+      is_urban: -1
+      has_mortgage: 1
+      income_band_ord: 1
+      has_savings: 1
+      epc_rating_ord: 0
+      is_electric_heating: 0
+  GP04:
+    opportunity: PAPERLESS_BANKING
+    baseline_rule_feature: avg_app_logins_m
+    conflict_codes: [STATEMENT_PREF_CONFLICT]
+    data_flag_penalties: {}
+    features:
+      avg_app_logins_m: 1
+      avg_web_sessions_m: 1
+      paper_statements_12m: 0
+      income_band_ord: 0

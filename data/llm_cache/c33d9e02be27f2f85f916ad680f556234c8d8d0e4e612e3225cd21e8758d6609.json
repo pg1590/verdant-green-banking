@@ -1,0 +1,17 @@
+{
+ "output": {
+  "headline": "Explore EV Finance for switching to an electric vehicle",
+  "text": "As you have an existing vehicle loan and your recorded household income band is Q5, EV Finance can help with switching to an electric vehicle. Making the transition has an estimated impact of about 1,014 kg CO2e per year.",
+  "reasons_used": [
+   "INCOME_PROFILE",
+   "EXISTING_VEHICLE_LOAN"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.7-flash",
+  "input_tokens": 688,
+  "output_tokens": 86,
+  "failures": [],
+  "latency_s": 24.21
+ }
+}

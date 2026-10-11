@@ -1,0 +1,15 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is more cohesive and integrates the data points into a single, clear sentence structure, making it more readable for a customer. Version B is a list-like structure that feels more a bit more fragmented. Both versions are faithful to the record. Both versions include the reasons for the insight (re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-phrasing-wise re-ph_"
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 531,
+  "output_tokens": 353,
+  "failures": [
+   "gemma-4-26b-a4b-it: 504"
+  ],
+  "latency_s": 56.59
+ }
+}

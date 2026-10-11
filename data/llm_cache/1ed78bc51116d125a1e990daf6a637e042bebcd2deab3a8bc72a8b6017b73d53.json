@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is more customer-centric and reads more naturally. It integrates the data points (63 logins and 12 statements) into a sentence, whereas Version B is list-like and reads like a raw data dump. Version A also connects the 'why' (the app usage) to the 'how' (going paperless) more effectively."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 518,
+  "output_tokens": 83,
+  "failures": [],
+  "latency_s": 3.26
+ }
+}

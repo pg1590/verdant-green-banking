@@ -1,0 +1,22 @@
+{
+ "output": {
+  "faithfulness": 5,
+  "clarity": 3,
+  "personalisation": 3,
+  "tone": 4,
+  "actionability": 2,
+  "unsupported_claims": [
+   "An EV could cut your transport emissions"
+  ]
+ },
+ "_meta": {
+  "model": "qwen/qwen3.8-27b",
+  "input_tokens": 672,
+  "output_tokens": 70,
+  "failures": [
+   "openai/gpt-oss-120b: 429",
+   "openai/gpt-oss-120b: 429"
+  ],
+  "latency_s": 10.0
+ }
+}

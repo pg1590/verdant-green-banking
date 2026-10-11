@@ -1,0 +1,24 @@
+{
+ "output": {
+  "headline": "Generating your own renewable energy at home",
+  "text": "As you own your home and do not currently have solar panels, you could consider installing them. This estimated setup may help you generate about 1,750 kWh of energy per year and reduce your carbon footprint by about 535 kg CO2e per year.",
+  "reasons_used": [
+   "HOMEOWNER",
+   "NO_EXISTING_SOLAR"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 666,
+  "output_tokens": 102,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 16.27
+ }
+}

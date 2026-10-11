@@ -1,0 +1,25 @@
+{
+ "output": {
+  "headline": "Considering a move to an electric vehicle?",
+  "text": "As you currently have a petrol car, a vehicle loan and regular automotive costs of £211, you could reduce your environmental impact. Switching to an electric vehicle may offer an estimated reduction of about 2,992 kg CO2e per year in tailpipe emissions.",
+  "reasons_used": [
+   "EXISTING_VEHICLE_LOAN",
+   "EXISTING_VEHICLE",
+   "HIGH_AUTOMOTIVE_SPEND"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 724,
+  "output_tokens": 127,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 17.49
+ }
+}

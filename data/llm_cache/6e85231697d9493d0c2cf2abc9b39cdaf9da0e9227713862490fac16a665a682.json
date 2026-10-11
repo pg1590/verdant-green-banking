@@ -1,0 +1,19 @@
+{
+ "output": {
+  "headline": "Explore EV Finance for switching to an electric vehicle",
+  "text": "Your recorded household income band Q3 contributes to this suggestion for EV Finance. Switching to an electric vehicle has an estimated impact of about 1,351 kg CO2e per year.",
+  "reasons_used": [
+   "INCOME_PROFILE"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.6-flash",
+  "input_tokens": 643,
+  "output_tokens": 65,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429"
+  ],
+  "latency_s": 13.52
+ }
+}

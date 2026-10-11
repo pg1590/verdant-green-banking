@@ -1,0 +1,6 @@
+period_start,period_end,elec_unit_p_per_kwh,elec_standing_p_per_day,gas_unit_p_per_kwh,gas_standing_p_per_day,source
+2025-07-01,2025-09-30,25.73,51.37,6.33,29.82,Ofgem 'Energy price cap explained' (archived 2025-07-13 and 2025-08-14); GB average direct debit incl. 5% VAT
+2025-10-01,2025-12-31,26.35,53.68,6.29,34.03,Ofgem 'Energy price cap explained' (archived 2025-08-27 to 2026-02-03); GB average direct debit incl. 5% VAT
+2026-01-01,2026-03-31,27.69,54.75,5.93,35.09,Ofgem 'Energy price cap explained' (archived 2025-12-14 to 2026-05-06); GB average direct debit incl. 5% VAT
+2026-04-01,2026-06-30,24.67,57.21,5.74,29.09,Ofgem announcement 25 Feb 2026 + 'Energy price cap explained' (archived 2026-03-13 to 2026-05-06); GB average direct debit incl. 5% VAT
+2026-07-01,2026-09-30,26.11,57.19,7.33,29.04,Ofgem energy price cap unit-rate page (Jul-Sep 2026; same values as config/emission_factors.csv price rows); GB average direct debit incl. 5% VAT. Used only by post-cutoff trend snapshots

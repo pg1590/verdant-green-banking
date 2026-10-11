@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is clearer and more professional. It follows a natural language flow, whereas Version B includes raw data labels (like 'has solar no') which is not customer-facing and makes it feel like a unparsed data dump. Version A also stays closer to the 'topic' field in the record."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 424,
+  "output_tokens": 69,
+  "failures": [],
+  "latency_s": 3.12
+ }
+}

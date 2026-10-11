@@ -1,0 +1,15 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A includes the disclaimer about limited data, which is correctly reflected in the 'certainty' being 'low' in the RECORD. Version B misses this nuance and presents the the information more directly, which might be income band Q5 alone doesn't make sense to a typical customer. Version A is more faithful to the RECORD's uncertainty. "
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 714,
+  "output_tokens": 78,
+  "failures": [
+   "gemma-4-26b-a4b-it: 504"
+  ],
+  "latency_s": 50.22
+ }
+}

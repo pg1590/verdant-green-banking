@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is much more concise and flows better as a personal insight. Version B is repetitive and includes 'Key figures: recorded household income band Q4; has mortgage yes', which is essentially 'robotic' and includes data points that can bet extracted directly into a dimension of the insight, which is a poor user experience. Version A integrates the key data points into a natural sentence structure."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 658,
+  "output_tokens": 87,
+  "failures": [],
+  "latency_s": 2.69
+ }
+}

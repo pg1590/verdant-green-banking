@@ -1,0 +1,16 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B is much more personal and natural. It integrates the evidence (petrol car, mileage, and costs) directly into the narrative, whereas Version A simply lists them. Version B also explains the context of the CO2 reduction more clearly."
+ },
+ "_meta": {
+  "model": "gemma-4-31b-it",
+  "input_tokens": 612,
+  "output_tokens": 66,
+  "failures": [
+   "gemma-4-26b-a4b-it: 504",
+   "gemma-4-26b-a4b-it: 500"
+  ],
+  "latency_s": 77.53
+ }
+}

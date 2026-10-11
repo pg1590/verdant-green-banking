@@ -1,0 +1,4 @@
+# Optional live providers; core runtime replays cache or uses validated templates.
+-r requirements.txt
+google-genai>=2.29
+anthropic

@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is much more professional and customer-facing. It integrates the data points into a natural sentence structure. Version B includes raw data labels like 'has solar no' and 'home status owner mortgage' which are not helpful for the user and makes it feel like a database readout rather than a personalized insight. Version A also correctly identifies the property type (semi detached) which is makes the insight more relevant."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 600,
+  "output_tokens": 90,
+  "failures": [],
+  "latency_s": 3.2
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "output": {
+  "headline": "Explore generating your own electricity with solar panels",
+  "text": "Because you have a mortgage with us, you might be interested in solar panels for your home. We cannot estimate the impact of this choice yet as we do not have enough data.",
+  "reasons_used": [
+   "EXISTING_MORTGAGE"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 578,
+  "output_tokens": 68,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 14.23
+ }
+}

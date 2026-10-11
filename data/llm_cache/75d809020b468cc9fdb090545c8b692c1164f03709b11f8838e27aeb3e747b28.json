@@ -1,0 +1,17 @@
+{
+ "output": {
+  "faithfulness": 5,
+  "clarity": 5,
+  "personalisation": 5,
+  "tone": 5,
+  "actionability": 4,
+  "unsupported_claims": []
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 615,
+  "output_tokens": 42,
+  "failures": [],
+  "latency_s": 2.31
+ }
+}

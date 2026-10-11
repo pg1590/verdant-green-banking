@@ -1,0 +1,115 @@
+# National calibration targets for the synthetic generator (decision 8: national
+# totals). Owner: P1. Every value cites its source; the schema doc
+# ("Calibration targets") has the links. The generator rakes persona-conditional
+# probabilities so the national mix matches these, and
+# scripts/calibration_report.py compares generated vs target.
+#
+# Shares are fractions of households unless stated. England-only sources are used
+# as UK proxies (stated per block).
+
+region:            # ONS households by size and region 2025 (LFS Apr-Jun 2025), UK
+  North East: 0.0409
+  North West: 0.1124
+  Yorkshire and The Humber: 0.0812
+  East Midlands: 0.0734
+  West Midlands: 0.0868
+  East of England: 0.0928
+  London: 0.1270
+  South East: 0.1359
+  South West: 0.0884
+  Wales: 0.0484
+  Scotland: 0.0869
+  Northern Ireland: 0.0259
+
+household_size:    # ONS Families and households UK 2025, table 5; 5 = five or more
+  1: 0.2955
+  2: 0.3413
+  3: 0.1569
+  4: 0.1452
+  5: 0.0611
+
+age_band:          # Age of household reference person; EHS 2024-25 FA1201, England (first band is 16-24, generated as 18-24)
+  18-24: 0.0261
+  25-34: 0.1482
+  35-44: 0.1755
+  45-54: 0.1680
+  55-64: 0.1830
+  65-74: 0.1430
+  75+: 0.1562
+
+home_status_by_age_band:   # EHS 2024-25 FA1201 "percentages within age", England; renter = social + private
+  18-24: {owner_outright: 0.0274, owner_mortgage: 0.0784, renter: 0.8942}
+  25-34: {owner_outright: 0.0508, owner_mortgage: 0.4257, renter: 0.5235}
+  35-44: {owner_outright: 0.0561, owner_mortgage: 0.5082, renter: 0.4357}
+  45-54: {owner_outright: 0.1938, owner_mortgage: 0.4633, renter: 0.3429}
+  55-64: {owner_outright: 0.4586, owner_mortgage: 0.2494, renter: 0.2920}
+  65-74: {owner_outright: 0.6872, owner_mortgage: 0.0706, renter: 0.2422}
+  75+:   {owner_outright: 0.7852, owner_mortgage: 0.0314, renter: 0.1833}
+home_status:       # implied national check: EHS 2024-25 all tenures, England
+  owner_outright: 0.3555
+  owner_mortgage: 0.2928
+  renter: 0.3517
+
+income_band: {Q1: 0.2, Q2: 0.2, Q3: 0.2, Q4: 0.2, Q5: 0.2}   # quintiles by definition
+
+property_type:     # EHS 2024-25 annex table 2.4, England, all dwellings
+  detached: 0.1790
+  semi_detached: 0.2459
+  terraced: 0.2772
+  bungalow: 0.0774
+  flat: 0.2204
+
+epc_rating:        # EHS 2024-25 annex table 2.3, England (modelled). Source combines A/B; generated as B (A not generated)
+  B: 0.0420
+  C: 0.5204
+  D: 0.3472
+  E: 0.0635
+  F: 0.0209
+  G: 0.0061
+
+main_heating_fuel: # EHS DA6101 2024, England; other = communal 0.0239 + solid fuel 0.0020 + biomass 0.0012
+  gas: 0.8508
+  electric: 0.0905
+  oil: 0.0316
+  other: 0.0271
+
+has_solar: 0.0607  # DESNZ Energy Trends 6.3 (Aug 2026): 1,761,110 domestic installs / 29.0m UK households; lower bound
+
+num_vehicles:      # NTS9902a 2025, England, households with no car / one / two or more ("car or van")
+  0: 0.2487
+  1: 0.4216
+  2: 0.3297
+
+urban_rural:       # DEFRA Rural England population digest (Jan 2026), EC table 1a, England households, Census 2021.
+  urban: 0.1461    # PROXY: London only (2021 classification has no "conurbation" class, so other big cities sit in town)
+  town: 0.6802     # urban excluding London
+  rural: 0.1736    # larger + smaller rural
+
+vehicle_type_of_cars:   # VEH1103a, UK licensed cars, 2026 Q2. hybrid = HEV + PHEV + range-extended; ev = battery electric.
+  petrol: 0.5379        # fuel cell / gas / other (0.07%) dropped and renormalised
+  diesel: 0.2816
+  hybrid: 0.1227
+  ev: 0.0579
+
+annual_miles_per_car: 7100   # NTS0901 2025, England, household cars (check only; spend is scaled to ONS)
+
+weekly_spend_gbp:       # ONS Family Spending FYE2025 workbook 1 sheet A1, UK, GBP per household per week
+  electricity: 20.00                          # 4.4.1
+  gas: 14.10                                  # 4.4.2
+  fuel: 18.40                                 # 7.2.2 petrol, diesel and other motor oils
+  rail: 4.00                                  # 7.3.1
+  bus_coach: 1.30                             # 7.3.2
+  home_maintenance: 11.90                     # 4.2
+  vehicle_parts: 2.80                         # 7.2.1
+  vehicle_servicing: 9.60                     # 7.2.3
+  vehicle_insurance_or_other_motoring: 17.40  # 12.4.3.1 vehicle insurance 14.30 + 7.2.4 other motoring 3.00
+  water_and_dwelling_services: 12.90          # 4.3
+  telecoms: 20.60                             # 8.3 + 8.4 + 8.5
+  council_tax: 32.30                          # 13.1.3 (outside COICOP 1-12)
+  total: 582.50                               # 1-12 all expenditure groups
+
+# ---- Assumptions (no public source; documented in docs/data.md) ----
+assumptions:
+  paper_statement_share: 0.25   # share of customers on paper statements
+  marketing_consent_share: 0.85
+  vehicle_loan_share_of_car_households: 0.35

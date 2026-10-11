@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B is more customer-centric and flows better. Version A is a bit robotic and lists the data points as 'Key figures' followed by a list, which is't as natural. Version B integrates the evidence into the own sentence, and the's a more engaging headline. Both are faithful to the record."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 568,
+  "output_tokens": 76,
+  "failures": [],
+  "latency_s": 5.01
+ }
+}

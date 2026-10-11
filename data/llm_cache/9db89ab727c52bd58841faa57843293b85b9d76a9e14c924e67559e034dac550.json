@@ -1,0 +1,12 @@
+{
+ "output": {
+  "answer": "Wales shows 77 customers for Paperless Banking with a mean likelihood of 37.0%. For EV Finance, 259 customers are shown with a mean likelihood of 8.6%. Solar Finance has 179 customers shown and a mean likelihood of 4.6%. Green Home Loan has 121 customers shown and a mean likelihood of 5.9%."
+ },
+ "_meta": {
+  "model": "openai/gpt-oss-120b",
+  "input_tokens": 332,
+  "output_tokens": 330,
+  "failures": [],
+  "latency_s": 1.06
+ }
+}

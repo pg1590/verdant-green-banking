@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A presents the same factual information as the record but does so more concisely and with a clearer structure. The headline directly mentions generating your own electricity, matching the product focus, and the text lists the key numbers (total and per‑person electricity use, income band) followed by the estimated emissions and energy savings in a single, easy‑to‑read sentence. Version B repeats the high‑usage point, is wordier, and the headline is less specific about the action. Both versions are faithful to the record, but A is clearer, more personally relevant, and more useful for a typical customer."
+ },
+ "_meta": {
+  "model": "openai/gpt-oss-120b",
+  "input_tokens": 778,
+  "output_tokens": 586,
+  "failures": [],
+  "latency_s": 1.93
+ }
+}

@@ -1,0 +1,46 @@
+# Optional opportunities from the brief (slide 4): Green Investments and Green Loans.
+# Owner: P5 (rules), P4 (wording). Read by src/recommend/optional.py.
+#
+# The synthetic data has take-up labels only for the four required products, so there is no
+# model to train for these two. They are shown as RULE-BASED SIGNALS: product rules decide
+# eligibility, the evidence is the customer's own data, and no propensity is invented.
+# There is no sourced impact method for either product, so impact stays INSUFFICIENT_DATA
+# with the reason (no invented savings).
+policy_version: optional-v1
+scope: RULE_BASED_SIGNAL_NO_PROPENSITY_MODEL
+notice: >-
+  Optional opportunities are rule-based signals, not model predictions: there are no synthetic
+  take-up labels to train on. Being shown is not advice, suitability or credit approval.
+thresholds:
+  # ONS Family Spending FYE2025: rail GBP 4.00 + bus/coach GBP 1.30 per household per week
+  # = about GBP 23 a month. Twice the national average marks a low-carbon travel habit.
+  low_carbon_travel_gbp_m: 46
+  # A single-car EV household with this much monthly charging spend charges away from home.
+  public_charging_gbp_m: 30
+  # Ofgem high electricity TDCV in force before July 2026 (config/emission_factors.csv).
+  high_electricity_kwh_year: 4100
+products:
+  GP05:
+    name: Green Investments
+    opportunity: GREEN_INVESTMENTS
+    kind: investment
+    action: {label: Explore sustainable funds, intent: explore_green_investments}
+    requires_one_of: [EXISTING_INVESTMENTS, EXISTING_SAVINGS]
+    requires_signal: [DRIVES_AN_EV, HAS_SOLAR_PANELS, LOW_CARBON_TRAVEL, EFFICIENT_HOME]
+    missing_requirement_reason: NO_EXISTING_INVESTMENTS_OR_SAVINGS
+    missing_signal_reason: NO_SUSTAINABILITY_PREFERENCE_SIGNAL
+    impact_reason: NO_DOCUMENTED_INVESTMENT_IMPACT_METHOD
+  GP06:
+    name: Green Loans
+    opportunity: GREEN_LOANS
+    kind: finance
+    action: {label: Explore green loan options, intent: explore_green_loans}
+    # Purchases not covered by GP01-GP03 (vehicles, home retrofit, solar).
+    intended_use_cases: [home_ev_charger, efficient_appliances]
+    requires_one_of: [EXISTING_CREDIT_CARD, EXISTING_VEHICLE_LOAN, EXISTING_MORTGAGE]
+    requires_signal: [HOME_EV_CHARGER_USE_CASE, EFFICIENT_APPLIANCES_USE_CASE]
+    missing_requirement_reason: NO_EXISTING_BORROWING
+    missing_signal_reason: NO_ELIGIBLE_GREEN_LOAN_USE_CASE
+    impact_reason_by_use_case:
+      home_ev_charger: NO_EMISSIONS_CHANGE_FROM_HOME_CHARGING
+      efficient_appliances: NO_DOCUMENTED_APPLIANCE_SAVING

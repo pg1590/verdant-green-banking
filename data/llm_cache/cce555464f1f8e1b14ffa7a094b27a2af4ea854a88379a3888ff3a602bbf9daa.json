@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B uses a neutral, question‑style headline that directly addresses the customer’s situation without making unsupported claims about emission reductions. Its text clearly references the recorded income band and existing vehicle loan—exactly the reasons and evidence in the record—and accurately states that there is insufficient data to estimate environmental impact, matching the record’s estimated_impact status. Version A’s headline suggests an emission‑cutting benefit not backed by the record, making it less faithful and potentially confusing."
+ },
+ "_meta": {
+  "model": "openai/gpt-oss-120b",
+  "input_tokens": 569,
+  "output_tokens": 396,
+  "failures": [],
+  "latency_s": 2.33
+ }
+}

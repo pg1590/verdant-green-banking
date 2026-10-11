@@ -1,0 +1,67 @@
+# Take-up label rules v0 (PROPOSED: P1 owns, P3 reviews). Applied by src/data_gen/labels.py.
+#
+# For each product and each customer the product is NOT ruled out for:
+#   logit = intercept + sum(coef_k * driver_k) + eps,   eps ~ N(0, noise_sd^2)
+#   took_up ~ Bernoulli(sigmoid(logit))
+# Customers ruled out by P5's rules (check_eligibility, purpose="training", on the
+# TRUE snapshot at the cutoff) always get took_up = 0.
+#
+# - Drivers use the generator's TRUE state (true vehicle, true spend), not the noisy
+#   features the model sees. Continuous drivers are z-scored WITHIN each product's
+#   eligible population (e.g. fuel spend among car owners).
+# - latent_* drivers are hidden traits (D1): they never become features, so a
+#   perfect model still can't recover the labels exactly.
+# - intercept is solved by bisection so the mean probability among eligible
+#   customers equals target_rate (keeps base rates stable when coefs change).
+# - Driver definitions: DRIVERS in src/data_gen/labels.py. Rationale: docs/data.md.
+
+seed_offset: 1000          # labels use seed + seed_offset, independent of the data draw
+
+# v1 (decision 5): same target rates; weight spread across several observable drivers
+# (incl. the new columns), hidden traits at moderate weight. Chosen for realism.
+products:
+  GP01:                    # EV Finance
+    target_rate: 0.08
+    noise_sd: 0.5
+    coefs:
+      log_fuel_per_vehicle: 0.6    # heavy use per car -> biggest saving from switching
+      log_fuel_spend: 0.3
+      has_vehicle_loan: 0.6        # used to financing a car
+      two_plus_cars: 0.4           # second cars switch first
+      urban: 0.3                   # easier public charging
+      income: 0.3
+      latent_eco_mindedness: 0.6
+      latent_financial_headroom: 0.4
+      latent_change_readiness: 0.3
+  GP02:                    # Green Home Loan
+    target_rate: 0.06
+    noise_sd: 0.5
+    coefs:
+      epc_poor: 0.8                # E-G vs D
+      gas_or_oil_heating: 0.5
+      log_energy_per_person: 0.6   # inefficient home, not just a big family
+      has_mortgage: 0.5            # existing lending relationship on the home
+      income: 0.2
+      latent_eco_mindedness: 0.6
+      latent_change_readiness: 0.4
+      latent_financial_headroom: 0.3
+  GP03:                    # Solar Finance
+    target_rate: 0.05
+    noise_sd: 0.5
+    coefs:
+      log_electricity_per_person: 0.7
+      detached_or_semi: 0.5        # bigger roof
+      has_mortgage: 0.4
+      not_urban: 0.3               # suburban/rural roofs, less shading
+      income: 0.5
+      latent_eco_mindedness: 0.6
+      latent_financial_headroom: 0.5
+  GP04:                    # Paperless Banking
+    target_rate: 0.25
+    noise_sd: 0.5
+    coefs:
+      log_app_logins: 0.8          # already active digitally
+      younger: 0.4                 # observable age; age is excluded from the MODEL (D9) but real in behaviour
+      age_65_plus: -0.3
+      latent_digital_affinity: 0.6
+      latent_change_readiness: 0.3

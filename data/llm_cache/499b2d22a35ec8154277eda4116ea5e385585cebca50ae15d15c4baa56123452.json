@@ -1,0 +1,24 @@
+{
+ "output": {
+  "headline": "Make your banking more sustainable by going paperless",
+  "text": "Since you use our app 63 times every three months, you could reduce waste by switching to digital statements. You currently receive 12 paper statements each year. Making this change is estimated to save about 3 kg CO2e per year and about 72 sheets of paper per year.",
+  "reasons_used": [
+   "DIGITAL_ENGAGEMENT",
+   "PAPER_STATEMENTS"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 659,
+  "output_tokens": 116,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 18.18
+ }
+}

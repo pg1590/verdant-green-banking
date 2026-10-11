@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A presents the information in short, plain sentences that directly link the household's income band, high mileage, and recent fuel spend to the suggestion to switch to an EV, and it clearly states the estimated carbon reduction. The language is simpler and more personable, making it easier for a typical customer to understand why the recommendation applies to them and how much impact it could have. Version B uses a longer, more complex sentence structure and repeats the reasons without the same clear, actionable phrasing, reducing clarity and relevance."
+ },
+ "_meta": {
+  "model": "openai/gpt-oss-120b",
+  "input_tokens": 753,
+  "output_tokens": 404,
+  "failures": [],
+  "latency_s": 1.46
+ }
+}

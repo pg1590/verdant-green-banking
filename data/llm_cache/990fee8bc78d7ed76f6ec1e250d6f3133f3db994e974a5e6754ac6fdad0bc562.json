@@ -1,0 +1,24 @@
+{
+ "output": {
+  "headline": "Ways to improve your home's energy efficiency",
+  "text": "As you have a mortgage with us and use gas for your heating, you could reduce your carbon footprint. An estimate suggests that upgrading your home could save about 1,981 kg CO2e per year and about 4,540 kWh of energy per year. These figures reflect data from 30 June 2026.",
+  "reasons_used": [
+   "EXISTING_MORTGAGE",
+   "GAS_HEATING"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 666,
+  "output_tokens": 128,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 17.69
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "output": {
+  "headline": "Switching to an electric vehicle could lower your emissions",
+  "text": "Since you drive 15,700 km annually in a hybrid with a vehicle loan, switching to an electric vehicle could avoid about 2,583 kg CO2e per year as an estimate. This considers your £235 average monthly automotive spend, your £211 average monthly fuel spend, and your current vehicle type.",
+  "reasons_used": [
+   "HIGH_ANNUAL_MILEAGE",
+   "HIGH_AUTOMOTIVE_SPEND",
+   "EXISTING_VEHICLE",
+   "EXISTING_VEHICLE_LOAN",
+   "HIGH_FUEL_SPEND"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 850,
+  "output_tokens": 167,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 17.98
+ }
+}

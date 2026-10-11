@@ -1,0 +1,25 @@
+{
+ "output": {
+  "headline": "Generating your own electricity with solar panels",
+  "text": "As you own your semi detached house outright and have an average monthly electricity spend of £207, you could explore solar power. Installing solar panels may result in an estimated reduction of about 477 kg CO2e per year and about 2,750 kWh of energy per year.",
+  "reasons_used": [
+   "HIGH_ELECTRICITY_SPEND",
+   "SUITABLE_PROPERTY_TYPE",
+   "HOMEOWNER"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 731,
+  "output_tokens": 126,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 16.37
+ }
+}

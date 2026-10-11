@@ -1,0 +1,24 @@
+{
+ "output": {
+  "headline": "Considering switching to an electric vehicle?",
+  "text": "Your existing vehicle loan and Q4 recorded household income band are why we are highlighting this topic. The environmental impact of this switch cannot be estimated yet as we do not have enough data.",
+  "reasons_used": [
+   "INCOME_PROFILE",
+   "EXISTING_VEHICLE_LOAN"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 637,
+  "output_tokens": 84,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 15.28
+ }
+}

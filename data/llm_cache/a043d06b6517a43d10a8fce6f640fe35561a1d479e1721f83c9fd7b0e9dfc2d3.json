@@ -1,0 +1,12 @@
+{
+ "output": {
+  "answer": "Focus on the 399 customers shown for solar finance in London. They have a mean likelihood of 4.5%."
+ },
+ "_meta": {
+  "model": "openai/gpt-oss-120b",
+  "input_tokens": 281,
+  "output_tokens": 187,
+  "failures": [],
+  "latency_s": 1.25
+ }
+}

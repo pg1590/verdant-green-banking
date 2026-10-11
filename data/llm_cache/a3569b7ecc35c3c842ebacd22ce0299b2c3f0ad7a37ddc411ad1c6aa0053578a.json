@@ -1,0 +1,24 @@
+{
+ "output": {
+  "headline": "Could solar panels be right for your home?",
+  "text": "Since your home is a house with its own roof and you do not have solar panels yet, this may be an option for you. The impact of generating your own electricity can't be estimated yet based on the information available as of 30 June 2026.",
+  "reasons_used": [
+   "SUITABLE_PROPERTY_TYPE",
+   "NO_EXISTING_SOLAR"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 572,
+  "output_tokens": 115,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 18.13
+ }
+}

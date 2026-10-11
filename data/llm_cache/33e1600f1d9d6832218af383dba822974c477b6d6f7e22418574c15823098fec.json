@@ -1,0 +1,14 @@
+{
+ "output": {
+  "intent": "region",
+  "product_code": "none",
+  "region": "Wales"
+ },
+ "_meta": {
+  "model": "openai/gpt-oss-120b",
+  "input_tokens": 493,
+  "output_tokens": 81,
+  "failures": [],
+  "latency_s": 0.69
+ }
+}

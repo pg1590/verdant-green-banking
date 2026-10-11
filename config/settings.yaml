@@ -1,0 +1,48 @@
+seed: 42
+data:
+  n_customers: 10000
+  n_sample_customers: 200
+  format: parquet
+calendar:
+  data_start: 2025-07-01
+  feature_window_start: 2025-07-01
+  feature_cutoff_date: 2026-06-30
+  label_window_start: 2026-07-01
+  label_window_end: 2026-09-30
+  data_end: 2026-09-30
+  recent_months: 3
+splits:
+  train: 0.7
+  val: 0.15
+  test: 0.15
+carbon:
+  factor_edition: DESNZ GHG Conversion Factors 2026
+  horizon_years: 1
+model:
+  excluded_features:
+  - age
+  bootstrap_models: 5
+llm:
+  provider: auto
+  model: gemini-3.7-flash
+  fallback_models:
+  - gemini-3.6-flash
+  - gemini-3.5-flash
+  - gemini-3.1-flash-lite
+  temperature: null
+  cache_dir: data/llm_cache
+  max_retries: 1
+  min_interval_s: 1.0
+  groq_models:
+  - openai/gpt-oss-120b
+  groq_judge_models:
+  - openai/gpt-oss-120b
+  judge_provider: gemini
+  judge_models:
+  - gemma-4-26b-a4b-it
+  - gemma-4-31b-it
+features:
+  road_fuel_conflict_gbp_m: 40
+  fuel_stopped_gbp_m: 5
+  circumstance_drop_ratio: 0.25
+  low_completeness: 0.8

@@ -1,0 +1,291 @@
+# Reason-code dictionary. Owner: P3 (which codes exist and when they fire); P4 owns the wording
+# (src/llm/phrases.py). P3 emits at most one code per model feature: the first in this file
+# whose evidence gate passes, so list the more specific code first.
+reason_codes:
+  HIGH_FUEL_SPEND:
+    products:
+    - GP01
+    feature: spend_fuel_m
+    threshold:
+      type: percentile
+      value: 75
+    customer_text: high fuel spend
+    model_feature: spend_fuel_m
+    evidence_key: spend_fuel_m
+  RECENT_HIGH_FUEL_SPEND:
+    products:
+    - GP01
+    feature: spend_fuel_recent_m
+    threshold:
+      type: percentile
+      value: 75
+    customer_text: high fuel spend in recent months
+    model_feature: spend_fuel_recent_m
+    evidence_key: spend_fuel_recent_m
+  HIGH_MILEAGE_PER_VEHICLE:
+    products:
+    - GP01
+    feature: km_per_vehicle
+    threshold:
+      type: percentile
+      value: 75
+    customer_text: high mileage per car
+    model_feature: km_per_vehicle
+    evidence_key: km_per_vehicle
+  MULTIPLE_VEHICLES:
+    products:
+    - GP01
+    feature: num_vehicles
+    threshold:
+      type: absolute
+      value: 2
+    customer_text: two or more cars in the household
+    model_feature: num_vehicles
+    evidence_key: num_vehicles
+  HIGH_ANNUAL_MILEAGE:
+    products:
+    - GP01
+    feature: est_annual_km
+    threshold:
+      type: percentile
+      value: 75
+    customer_text: high annual mileage
+    model_feature: est_annual_km
+    evidence_key: est_annual_km
+  EXISTING_VEHICLE:
+    products:
+    - GP01
+    feature: vehicle_type
+    threshold:
+      type: flag
+      value:
+      - petrol
+      - diesel
+      - hybrid
+    customer_text: an existing petrol, diesel or hybrid vehicle
+    model_feature: is_ice_vehicle
+    evidence_key: has_combustion_vehicle
+  EXISTING_VEHICLE_LOAN:
+    products:
+    - GP01
+    feature: has_vehicle_loan
+    threshold:
+      type: flag
+      value: true
+    customer_text: an existing vehicle loan
+    model_feature: has_vehicle_loan
+    evidence_key: has_vehicle_loan
+  HIGH_AUTOMOTIVE_SPEND:
+    products:
+    - GP01
+    feature: spend_automotive_m
+    threshold:
+      type: percentile
+      value: 75
+    customer_text: regular vehicle running costs
+    model_feature: spend_automotive_m
+    evidence_key: spend_automotive_m
+  HOMEOWNER:
+    products:
+    - GP02
+    - GP03
+    feature: home_status
+    threshold:
+      type: flag
+      value:
+      - owner_mortgage
+      - owner_outright
+    customer_text: you own your home
+    model_feature: is_homeowner
+    evidence_key: is_homeowner
+  EXISTING_MORTGAGE:
+    products:
+    - GP02
+    - GP03
+    feature: has_mortgage
+    threshold:
+      type: flag
+      value: true
+    customer_text: an existing mortgage
+    model_feature: has_mortgage
+    evidence_key: has_mortgage
+  POOR_EPC_RATING:  # listed before LOW_EPC_RATING: one code per feature, most specific first
+    products:
+    - GP02
+    feature: epc_rating
+    threshold:
+      type: flag
+      value:
+      - E
+      - F
+      - G
+    customer_text: your home's energy rating is poor
+    model_feature: epc_rating_ord
+    evidence_key: epc_rating_ord
+  LOW_EPC_RATING:
+    products:
+    - GP02
+    feature: epc_rating
+    threshold:
+      type: flag
+      value:
+      - D
+      - E
+      - F
+      - G
+    customer_text: your home's energy rating has room to improve
+    model_feature: epc_rating_ord
+    evidence_key: epc_rating_ord
+  GAS_HEATING:
+    products:
+    - GP02
+    feature: main_heating_fuel
+    threshold:
+      type: flag
+      value:
+      - gas
+      - oil
+    customer_text: your home is heated by gas or oil
+    model_feature: gas_or_oil_heating
+    evidence_key: is_gas_or_oil_heated
+  HIGH_GAS_SPEND:
+    products:
+    - GP02
+    feature: est_gas_kwh_year
+    threshold:
+      type: external
+      source: Ofgem TDCV high band, gas (pre-Jul-2026; config/emission_factors.csv
+        gas_tdcv_high_2023_kwh)
+      value: 17000
+    customer_text: high gas use
+    model_feature: est_gas_kwh_year
+    evidence_key: est_gas_kwh_year
+  HIGH_HOME_IMPROVEMENT_SPEND:
+    products:
+    - GP02
+    feature: spend_home_improvement_m
+    threshold:
+      type: percentile
+      value: 75
+    customer_text: recent home improvement spending
+    model_feature: spend_home_improvement_m
+    evidence_key: spend_home_improvement_m
+  HIGH_ELECTRICITY_SPEND:
+    products:
+    - GP03
+    feature: est_electricity_kwh_year
+    threshold:
+      type: external
+      source: Ofgem TDCV high band, electricity (pre-Jul-2026; electricity_tdcv_high_2023_kwh)
+      value: 4100
+    customer_text: high electricity use
+    model_feature: est_electricity_kwh_year
+    evidence_key: est_electricity_kwh_year
+  HIGH_ELECTRICITY_PER_PERSON:  # model feature = est_electricity_kwh_year / household_size
+    products:
+    - GP03
+    feature: est_electricity_kwh_year
+    threshold:
+      type: percentile
+      value: 75
+    customer_text: high electricity use per household member
+    model_feature: electricity_kwh_per_person
+    evidence_key: electricity_kwh_per_person
+  SUITABLE_PROPERTY_TYPE:
+    products:
+    - GP03
+    feature: property_type
+    threshold:
+      type: flag
+      value:
+      - detached
+      - semi_detached
+      - terraced
+      - bungalow
+    customer_text: a house with its own roof
+    model_feature: is_house
+    evidence_key: is_house
+  NO_EXISTING_SOLAR:
+    products:
+    - GP03
+    feature: has_solar
+    threshold:
+      type: flag
+      value: false
+    customer_text: no solar panels yet
+    model_feature: has_solar
+    evidence_key: has_solar
+  PAPER_STATEMENTS:
+    products:
+    - GP04
+    feature: paper_statements_12m
+    threshold:
+      type: absolute
+      value: 1
+    customer_text: you still receive paper statements
+    model_feature: paper_statements_12m
+    evidence_key: paper_statements_12m
+  DIGITAL_ENGAGEMENT:
+    products:
+    - GP04
+    feature: avg_app_logins_m
+    threshold:
+      type: percentile
+      value: 60
+    customer_text: you already bank digitally
+    model_feature: avg_app_logins_m
+    evidence_key: avg_app_logins_m
+  HAS_SAVINGS:
+    products:
+    - GP03
+    feature: has_savings
+    model_feature: has_savings
+    evidence_key: has_savings
+    threshold:
+      type: flag
+      value: true
+    customer_text: you hold savings with us
+  INCOME_PROFILE:
+    products:
+    - GP01
+    - GP02
+    - GP03
+    feature: income_band
+    model_feature: income_band_ord
+    evidence_key: income_band_ord
+    threshold:
+      type: flag
+      value:
+      - Q1
+      - Q2
+      - Q3
+      - Q4
+      - Q5
+    customer_text: your recorded income profile contributes to this suggestion
+  HIGH_ENERGY_SPEND_PER_PERSON:
+    products:
+    - GP02
+    - GP03
+    feature: energy_spend_per_person_m
+    model_feature: energy_spend_per_person_m
+    evidence_key: energy_spend_per_person_m
+    threshold:
+      type: percentile
+      value: 75
+    customer_text: high energy spending per household member
+  DIGITAL_WEB_ENGAGEMENT:
+    products:
+    - GP04
+    feature: avg_web_sessions_m
+    model_feature: avg_web_sessions_m
+    evidence_key: avg_web_sessions_m
+    threshold:
+      type: percentile
+      value: 60
+    customer_text: you already use online banking
+data_flags:
+  LOW_DATA_COMPLETENESS: Some profile or transaction data is missing.
+  CONFLICTING_DATA: Two data sources disagree (e.g. vehicle record vs fuel spend).
+  RECENT_CIRCUMSTANCE_CHANGE: Spending changed sharply in the last 3 months.
+  ENERGY_APPORTIONED_FROM_DUAL_FUEL: Electricity and gas use estimated from a dual-fuel
+    bill.

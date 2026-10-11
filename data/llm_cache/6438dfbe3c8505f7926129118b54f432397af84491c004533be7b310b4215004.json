@@ -1,0 +1,23 @@
+{
+ "output": {
+  "headline": "A look at switching to an electric vehicle",
+  "text": "Based on your income profile of Q4, you may consider an electric vehicle. This change could result in an estimated reduction of about 717 kg CO2e per year compared to your current petrol or diesel car. This figure is based on data as of 30 June 2026.",
+  "reasons_used": [
+   "INCOME_PROFILE"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 641,
+  "output_tokens": 107,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 15.84
+ }
+}

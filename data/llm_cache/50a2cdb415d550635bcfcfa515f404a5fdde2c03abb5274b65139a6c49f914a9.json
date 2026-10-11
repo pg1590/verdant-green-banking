@@ -1,0 +1,23 @@
+{
+ "output": {
+  "headline": "Make your banking more sustainable by going paperless",
+  "text": "Since you already bank digitally with 6.8 average monthly app logins, you could save about 0.1 kg CO2e per year and about 12 sheets of paper per year. This estimate is based on avoiding paper production by switching to digital statements.",
+  "reasons_used": [
+   "DIGITAL_ENGAGEMENT"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 647,
+  "output_tokens": 101,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 16.37
+ }
+}

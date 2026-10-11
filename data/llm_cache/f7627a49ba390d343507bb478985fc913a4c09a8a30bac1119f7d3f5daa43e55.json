@@ -1,0 +1,25 @@
+{
+ "output": {
+  "headline": "Considering switching to an electric vehicle?",
+  "text": "Your household income profile in the Q4 band and the high mileage of 14,532 km per car suggest this could be a good fit. Your fuel spending has reached £149 in recent months. Switching may help you reduce your carbon footprint by an estimated 1,918 kg CO2e per year.",
+  "reasons_used": [
+   "INCOME_PROFILE",
+   "HIGH_MILEAGE_PER_VEHICLE",
+   "RECENT_HIGH_FUEL_SPEND"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 787,
+  "output_tokens": 138,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 14.17
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is more concise and flows better as a customer-facing insight. Version B is repetitive (stating both digital engagement and online banking separately) and uses a more mechanical phrasing like 'Key figures:' which is less natural for a customer."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 563,
+  "output_tokens": 57,
+  "failures": [],
+  "latency_s": 2.18
+ }
+}

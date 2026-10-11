@@ -1,0 +1,24 @@
+{
+ "output": {
+  "headline": "Could an electric vehicle suit your driving habits?",
+  "text": "Your monthly fuel spend of £231 and yearly travel of 21,200 km suggest you could reduce your environmental footprint by switching to an electric vehicle. This change might offer an estimated reduction of about 1,441 kg CO2e per year. As your driving patterns are high, this shift could be a meaningful way to lower your impact.",
+  "reasons_used": [
+   "HIGH_FUEL_SPEND",
+   "HIGH_ANNUAL_MILEAGE"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 670,
+  "output_tokens": 134,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 16.95
+ }
+}

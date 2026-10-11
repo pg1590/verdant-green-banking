@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B is much more polished and professional. Version A is a bit repetitive and reads like a list of raw data from the database (e.g., 'has vehicle loan yes'). Version B integrates the data into a coherent sentence that is more useful to the customer. Both are faithful to the record."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 586,
+  "output_tokens": 69,
+  "failures": [],
+  "latency_s": 2.87
+ }
+}

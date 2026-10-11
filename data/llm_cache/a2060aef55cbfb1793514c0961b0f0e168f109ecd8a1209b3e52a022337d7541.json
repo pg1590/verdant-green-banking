@@ -1,0 +1,25 @@
+{
+ "output": {
+  "headline": "Could a heat pump help lower your energy use?",
+  "text": "Your high gas use of 19,542 kWh, combined with your energy spend of £229 per household member, may suggest that installing a heat pump could be an option for you. Based on your income band of Q5, this estimated change could save about 2,719 kg CO2e per year and about 13,680 kWh of energy per year.",
+  "reasons_used": [
+   "HIGH_ENERGY_SPEND_PER_PERSON",
+   "INCOME_PROFILE",
+   "HIGH_GAS_SPEND"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 797,
+  "output_tokens": 153,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 14.72
+ }
+}

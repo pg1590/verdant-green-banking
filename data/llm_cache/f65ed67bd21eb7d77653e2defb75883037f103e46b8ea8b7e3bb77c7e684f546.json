@@ -1,0 +1,24 @@
+{
+ "output": {
+  "headline": "Make the switch to paperless banking",
+  "text": "Since you already log in to our app 76 times every three months, you could benefit from going paperless. You currently receive 24 paper statements each year. Switching could save an estimated 4.1 kg CO2e and 24 sheets of paper annually.",
+  "reasons_used": [
+   "DIGITAL_ENGAGEMENT",
+   "PAPER_STATEMENTS"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 661,
+  "output_tokens": 110,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 25.66
+ }
+}

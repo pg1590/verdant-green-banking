@@ -1,0 +1,24 @@
+{
+ "output": {
+  "headline": "Ways to improve your home energy efficiency",
+  "text": "As your home currently uses gas for heating and you have an existing mortgage with us, you could benefit from our Green Home Loan. This upgrade has an estimated impact of about 4 kg CO2e per year and about 1,290 kWh of energy per year.",
+  "reasons_used": [
+   "GAS_HEATING",
+   "EXISTING_MORTGAGE"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 662,
+  "output_tokens": 110,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 18.36
+ }
+}

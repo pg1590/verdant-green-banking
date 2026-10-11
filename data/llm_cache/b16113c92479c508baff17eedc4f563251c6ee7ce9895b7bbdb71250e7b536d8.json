@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is more faithful to the RECORD. Version B makes a claim about the EV fitting the user's lifestyle, which is not supported by the record. Version A also correctly states the certainty is low by saying 'Based on the limited data we have'."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 392,
+  "output_tokens": 60,
+  "failures": [],
+  "latency_s": 2.64
+ }
+}

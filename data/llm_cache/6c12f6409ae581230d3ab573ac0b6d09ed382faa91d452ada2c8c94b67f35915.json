@@ -1,0 +1,25 @@
+{
+ "output": {
+  "headline": "Considering switching to an electric vehicle?",
+  "text": "Your monthly automotive spend of £145, existing vehicle loan, and high annual mileage of 22,000 km show that moving to an electric vehicle could be relevant for you. Based on this, there is an estimated reduction of about 8.3 kg CO2e per year in tailpipe emissions.",
+  "reasons_used": [
+   "HIGH_AUTOMOTIVE_SPEND",
+   "EXISTING_VEHICLE_LOAN",
+   "HIGH_ANNUAL_MILEAGE"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 727,
+  "output_tokens": 137,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 17.05
+ }
+}

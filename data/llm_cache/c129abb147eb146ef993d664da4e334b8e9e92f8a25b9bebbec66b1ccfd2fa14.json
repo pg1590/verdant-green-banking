@@ -1,0 +1,25 @@
+{
+ "output": {
+  "headline": "Could a heat pump help lower your home energy usage?",
+  "text": "Your recent home improvement spending of £155 and gas usage of 27,472 kWh suggest this move may interest you, alongside your current income band of Q4. Replacing your gas boiler with a heat pump could provide an estimated reduction of about 3,822 kg CO2e per year and about 19,230 kWh of energy per year. This potential change could help you manage your high gas consumption.",
+  "reasons_used": [
+   "HIGH_HOME_IMPROVEMENT_SPEND",
+   "INCOME_PROFILE",
+   "HIGH_GAS_SPEND"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 794,
+  "output_tokens": 162,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 14.96
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is more faithful to the record. It explicitly mentions the evidence/reasons/reasons. It is also more direct and clear. Version B includes a internal product name 'EV Finance' which is- not in the customer-facing text part of the- and is less clear. Version A uses 'cut your transport emissions' as a- and more customer-facing headline- and is B more product-centric. A is more useful and useful to the customer."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 527,
+  "output_tokens": 104,
+  "failures": [],
+  "latency_s": 3.22
+ }
+}

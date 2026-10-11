@@ -1,0 +1,22 @@
+{
+ "output": {
+  "faithfulness": 4,
+  "clarity": 5,
+  "personalisation": 4,
+  "tone": 4,
+  "actionability": 4,
+  "unsupported_claims": [
+   "Since you already bank digitally with 4.6 app logins and 1.2 web sessions monthly..."
+  ]
+ },
+ "_meta": {
+  "model": "qwen/qwen3.8-27b",
+  "input_tokens": 781,
+  "output_tokens": 84,
+  "failures": [
+   "openai/gpt-oss-120b: 429",
+   "openai/gpt-oss-120b: 429"
+  ],
+  "latency_s": 10.01
+ }
+}

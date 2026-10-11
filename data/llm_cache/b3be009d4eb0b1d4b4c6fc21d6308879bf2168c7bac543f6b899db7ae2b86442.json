@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A uses a clearer, more concise headline that directly ties the customer's existing digital behavior to the sustainability benefit, making the relevance and impact easier to grasp. Its wording avoids redundancy and presents the estimated impact in a straightforward sentence, offering better clarity and usefulness while staying fully faithful to the RECORD."
+ },
+ "_meta": {
+  "model": "openai/gpt-oss-120b",
+  "input_tokens": 680,
+  "output_tokens": 349,
+  "failures": [],
+  "latency_s": 1.07
+ }
+}

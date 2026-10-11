@@ -1,0 +1,25 @@
+{
+ "output": {
+  "headline": "Could solar panels help you generate your own electricity?",
+  "text": "As you have a mortgage with us, live in a detached house, and have an average monthly electricity spend of £241, you may be interested in solar power. An estimated impact of generating your own energy could be about 634 kg CO2e and 5,650 kWh per year.",
+  "reasons_used": [
+   "EXISTING_MORTGAGE",
+   "SUITABLE_PROPERTY_TYPE",
+   "HIGH_ELECTRICITY_SPEND"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 735,
+  "output_tokens": 135,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 17.67
+ }
+}

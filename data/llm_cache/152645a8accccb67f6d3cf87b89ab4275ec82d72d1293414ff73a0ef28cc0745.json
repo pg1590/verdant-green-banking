@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A uses a more personal headline that directly links the paperless option to the customer's existing digital banking habits, making the relevance clearer. Its prose integrates the evidence (3.7 monthly app logins) and the estimated impact in a single, easy‑to‑read sentence, which is both clearer and more useful for a typical customer while staying fully faithful to the RECORD."
+ },
+ "_meta": {
+  "model": "openai/gpt-oss-120b",
+  "input_tokens": 601,
+  "output_tokens": 226,
+  "failures": [],
+  "latency_s": 1.03
+ }
+}

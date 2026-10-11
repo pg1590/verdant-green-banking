@@ -1,0 +1,24 @@
+{
+ "output": {
+  "headline": "Considering switching to an electric vehicle?",
+  "text": "With an average monthly automotive spend of £242 and an estimated annual mileage of 25,900 km, switching to an electric vehicle could reduce your impact by an estimated 3,080 kg CO2e per year. This figure is based on comparing avoided tailpipe emissions against your current vehicle.",
+  "reasons_used": [
+   "HIGH_AUTOMOTIVE_SPEND",
+   "HIGH_ANNUAL_MILEAGE"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 670,
+  "output_tokens": 124,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 21.88
+ }
+}

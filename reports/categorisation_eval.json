@@ -1,0 +1,599 @@
+{
+  "model_version": "fr2_tfidf_lr_v1",
+  "train_transactions": 2240940,
+  "eval_transactions": 736485,
+  "heldout_brands": [
+    "BIRMINGHAM",
+    "BP",
+    "BRISTOL",
+    "CAR",
+    "EDF",
+    "LIVERPOOL",
+    "LONDON",
+    "OVO",
+    "PRET",
+    "SHELL",
+    "STAGECOACH",
+    "TESCO",
+    "VIRGIN",
+    "WICKES"
+  ],
+  "metrics": {
+    "all": {
+      "rules": {
+        "n": 736485,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_f1": {
+          "Fuel": 1.0,
+          "Electricity": 1.0,
+          "Gas": 1.0,
+          "Public Transport": 1.0,
+          "Home Improvement": 1.0,
+          "Automotive": 1.0,
+          "Utilities": 1.0,
+          "Other": 1.0
+        },
+        "support": {
+          "Fuel": 61805,
+          "Electricity": 13076,
+          "Gas": 9300,
+          "Public Transport": 91620,
+          "Home Improvement": 9106,
+          "Automotive": 25501,
+          "Utilities": 77603,
+          "Other": 448474
+        }
+      },
+      "model": {
+        "n": 736485,
+        "accuracy": 0.9566942979150967,
+        "macro_f1": 0.9268485192422826,
+        "per_class_f1": {
+          "Fuel": 0.8578649724219787,
+          "Electricity": 0.9945792164853331,
+          "Gas": 0.9998924846790668,
+          "Public Transport": 0.9965633864281038,
+          "Home Improvement": 0.8549919782796496,
+          "Automotive": 0.7768414671112458,
+          "Utilities": 0.9601539156309736,
+          "Other": 0.9739007329019096
+        },
+        "support": {
+          "Fuel": 61805,
+          "Electricity": 13076,
+          "Gas": 9300,
+          "Public Transport": 91620,
+          "Home Improvement": 9106,
+          "Automotive": 25501,
+          "Utilities": 77603,
+          "Other": 448474
+        }
+      },
+      "final": {
+        "n": 736485,
+        "accuracy": 0.9809636313027421,
+        "macro_f1": 0.9674121153300294,
+        "per_class_f1": {
+          "Fuel": 0.9415668005026512,
+          "Electricity": 1.0,
+          "Gas": 0.9998924846790668,
+          "Public Transport": 0.9985407842601448,
+          "Home Improvement": 0.9894347021021676,
+          "Automotive": 0.8569135774949288,
+          "Utilities": 0.961093325241967,
+          "Other": 0.9918552483593084
+        },
+        "support": {
+          "Fuel": 61805,
+          "Electricity": 13076,
+          "Gas": 9300,
+          "Public Transport": 91620,
+          "Home Improvement": 9106,
+          "Automotive": 25501,
+          "Utilities": 77603,
+          "Other": 448474
+        }
+      }
+    },
+    "seen brands": {
+      "rules": {
+        "n": 485238,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_f1": {
+          "Fuel": 1.0,
+          "Electricity": 1.0,
+          "Gas": 1.0,
+          "Public Transport": 1.0,
+          "Home Improvement": 1.0,
+          "Automotive": 1.0,
+          "Utilities": 1.0,
+          "Other": 1.0
+        },
+        "support": {
+          "Fuel": 32360,
+          "Electricity": 8603,
+          "Gas": 9300,
+          "Public Transport": 68708,
+          "Home Improvement": 6858,
+          "Automotive": 19222,
+          "Utilities": 49960,
+          "Other": 290227
+        }
+      },
+      "model": {
+        "n": 485238,
+        "accuracy": 0.9999814524006776,
+        "macro_f1": 0.9999343577447379,
+        "per_class_f1": {
+          "Fuel": 0.9999536457609048,
+          "Electricity": 1.0,
+          "Gas": 1.0,
+          "Public Transport": 1.0,
+          "Home Improvement": 0.9996355950732454,
+          "Automotive": 0.9998959579670187,
+          "Utilities": 1.0,
+          "Other": 0.9999896631567341
+        },
+        "support": {
+          "Fuel": 32360,
+          "Electricity": 8603,
+          "Gas": 9300,
+          "Public Transport": 68708,
+          "Home Improvement": 6858,
+          "Automotive": 19222,
+          "Utilities": 49960,
+          "Other": 290227
+        }
+      },
+      "final": {
+        "n": 485238,
+        "accuracy": 0.9999814524006776,
+        "macro_f1": 0.9999343577447379,
+        "per_class_f1": {
+          "Fuel": 0.9999536457609048,
+          "Electricity": 1.0,
+          "Gas": 1.0,
+          "Public Transport": 1.0,
+          "Home Improvement": 0.9996355950732454,
+          "Automotive": 0.9998959579670187,
+          "Utilities": 1.0,
+          "Other": 0.9999896631567341
+        },
+        "support": {
+          "Fuel": 32360,
+          "Electricity": 8603,
+          "Gas": 9300,
+          "Public Transport": 68708,
+          "Home Improvement": 6858,
+          "Automotive": 19222,
+          "Utilities": 49960,
+          "Other": 290227
+        }
+      }
+    },
+    "unseen brands": {
+      "rules": {
+        "n": 251247,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class_f1": {
+          "Fuel": 1.0,
+          "Electricity": 1.0,
+          "Public Transport": 1.0,
+          "Home Improvement": 1.0,
+          "Automotive": 1.0,
+          "Utilities": 1.0,
+          "Other": 1.0
+        },
+        "support": {
+          "Fuel": 29445,
+          "Electricity": 4473,
+          "Public Transport": 22912,
+          "Home Improvement": 2248,
+          "Automotive": 6279,
+          "Utilities": 27643,
+          "Other": 158247
+        }
+      },
+      "model": {
+        "n": 251247,
+        "accuracy": 0.8730930120558653,
+        "macro_f1": 0.6550553162124964,
+        "per_class_f1": {
+          "Fuel": 0.7407369667944619,
+          "Electricity": 0.9839863713798978,
+          "Public Transport": 0.9862757058208435,
+          "Home Improvement": 0.056338028169014086,
+          "Automotive": 0.0,
+          "Utilities": 0.8956534417677839,
+          "Other": 0.9223966995554739
+        },
+        "support": {
+          "Fuel": 29445,
+          "Electricity": 4473,
+          "Public Transport": 22912,
+          "Home Improvement": 2248,
+          "Automotive": 6279,
+          "Utilities": 27643,
+          "Other": 158247
+        }
+      },
+      "final": {
+        "n": 251247,
+        "accuracy": 0.9442341600098708,
+        "macro_f1": 0.81601431420771,
+        "per_class_f1": {
+          "Fuel": 0.8841295657328733,
+          "Electricity": 1.0,
+          "Public Transport": 0.9941394675036765,
+          "Home Improvement": 0.9592760180995475,
+          "Automotive": 0.0,
+          "Utilities": 0.8979518913739057,
+          "Other": 0.9766032567439666
+        },
+        "support": {
+          "Fuel": 29445,
+          "Electricity": 4473,
+          "Public Transport": 22912,
+          "Home Improvement": 2248,
+          "Automotive": 6279,
+          "Utilities": 27643,
+          "Other": 158247
+        }
+      }
+    }
+  },
+  "slices": {
+    "missing MCC": {
+      "rules": 1.0,
+      "model": 0.7450397342932165,
+      "final": 0.7562035926061175,
+      "n": 57507
+    },
+    "EV charging": {
+      "rules": 1.0,
+      "model": 1.0,
+      "final": 1.0,
+      "n": 3161
+    },
+    "fuel-station shop purchases": {
+      "rules": 1.0,
+      "model": 0.0,
+      "final": 1.0,
+      "n": 13079
+    },
+    "energy-supplier bills": {
+      "rules": 1.0,
+      "model": 0.9955941630472144,
+      "final": 1.0,
+      "n": 32003
+    },
+    "dual-fuel bills": {
+      "rules": 1.0,
+      "model": 1.0,
+      "final": 1.0,
+      "n": 9627
+    }
+  },
+  "confusion": {
+    "all": [
+      [
+        61441,
+        0,
+        0,
+        0,
+        169,
+        34,
+        0,
+        161
+      ],
+      [
+        0,
+        13076,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        9300,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        266,
+        0,
+        0,
+        91354,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        9084,
+        15,
+        6,
+        0
+      ],
+      [
+        1,
+        0,
+        2,
+        0,
+        0,
+        19221,
+        6277,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        77603,
+        0
+      ],
+      [
+        6994,
+        0,
+        0,
+        1,
+        3,
+        90,
+        0,
+        441386
+      ]
+    ],
+    "unseen brands": [
+      [
+        29083,
+        0,
+        0,
+        0,
+        167,
+        34,
+        0,
+        161
+      ],
+      [
+        0,
+        4473,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        266,
+        0,
+        0,
+        22646,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        2226,
+        15,
+        6,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        6277,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        27643,
+        0
+      ],
+      [
+        6994,
+        0,
+        0,
+        1,
+        0,
+        87,
+        0,
+        151165
+      ]
+    ]
+  },
+  "final_source_mix": {
+    "rule (strong)": 0.6736,
+    "model": 0.3264
+  },
+  "hand_labelled": {
+    "rules": {
+      "n": 105,
+      "accuracy": 0.9904761904761905,
+      "macro_f1": 0.9925893635571055,
+      "per_class_f1": {
+        "Fuel": 1.0,
+        "Electricity": 1.0,
+        "Gas": 1.0,
+        "Public Transport": 1.0,
+        "Home Improvement": 1.0,
+        "Automotive": 1.0,
+        "Utilities": 0.967741935483871,
+        "Other": 0.972972972972973
+      },
+      "support": {
+        "Fuel": 25,
+        "Electricity": 4,
+        "Gas": 6,
+        "Public Transport": 15,
+        "Home Improvement": 9,
+        "Automotive": 12,
+        "Utilities": 16,
+        "Other": 18
+      }
+    },
+    "model": {
+      "n": 105,
+      "accuracy": 0.6952380952380952,
+      "macro_f1": 0.6096224340175953,
+      "per_class_f1": {
+        "Fuel": 1.0,
+        "Electricity": 0.4,
+        "Gas": 0.5454545454545454,
+        "Public Transport": 0.75,
+        "Home Improvement": 0.5,
+        "Automotive": 0.4,
+        "Utilities": 0.6363636363636364,
+        "Other": 0.6451612903225806
+      },
+      "support": {
+        "Fuel": 25,
+        "Electricity": 4,
+        "Gas": 6,
+        "Public Transport": 15,
+        "Home Improvement": 9,
+        "Automotive": 12,
+        "Utilities": 16,
+        "Other": 18
+      }
+    },
+    "final": {
+      "n": 105,
+      "accuracy": 0.9333333333333333,
+      "macro_f1": 0.9329559987766819,
+      "per_class_f1": {
+        "Fuel": 1.0,
+        "Electricity": 1.0,
+        "Gas": 0.9230769230769231,
+        "Public Transport": 0.967741935483871,
+        "Home Improvement": 0.9411764705882353,
+        "Automotive": 0.8571428571428571,
+        "Utilities": 0.8333333333333334,
+        "Other": 0.9411764705882353
+      },
+      "support": {
+        "Fuel": 25,
+        "Electricity": 4,
+        "Gas": 6,
+        "Public Transport": 15,
+        "Home Improvement": 9,
+        "Automotive": 12,
+        "Utilities": 16,
+        "Other": 18
+      }
+    }
+  },
+  "hand_labelled_errors": [
+    {
+      "txn_id": "S0011",
+      "merchant_name": "BLACK HORSE LTD",
+      "description": "DIRECT DEBIT",
+      "mcc": null,
+      "true_category": "Other",
+      "final": "Utilities",
+      "source": "model",
+      "note": "Car finance repayment (team decision: Other - a loan repayment is not spend)"
+    },
+    {
+      "txn_id": "S0013",
+      "merchant_name": "DVLA-AB12CDE",
+      "description": "DIRECT DEBIT",
+      "mcc": 9399,
+      "true_category": "Automotive",
+      "final": "Utilities",
+      "source": "model",
+      "note": "Vehicle tax; contains a number plate"
+    },
+    {
+      "txn_id": "S0022",
+      "merchant_name": "ADMIRAL INSURANCE",
+      "description": "DIRECT DEBIT MOTOR POLICY",
+      "mcc": 6300,
+      "true_category": "Automotive",
+      "final": "Utilities",
+      "source": "model",
+      "note": "Car insurance"
+    },
+    {
+      "txn_id": "S0023",
+      "merchant_name": "DART CHARGE",
+      "description": "ONLINE PAYMENT",
+      "mcc": 4784,
+      "true_category": "Automotive",
+      "final": "Public Transport",
+      "source": "model",
+      "note": "Road toll"
+    },
+    {
+      "txn_id": "S0050",
+      "merchant_name": "R JONES PLUMBING HEATING",
+      "description": "FASTER PAYMENT",
+      "mcc": null,
+      "true_category": "Home Improvement",
+      "final": "Utilities",
+      "source": "model",
+      "note": "Sole trader paid by bank transfer; no MCC and no known brand"
+    },
+    {
+      "txn_id": "S0058",
+      "merchant_name": "TV LICENCE MBP",
+      "description": "DIRECT DEBIT",
+      "mcc": null,
+      "true_category": "Utilities",
+      "final": "Gas",
+      "source": "model",
+      "note": "TV licence (not listed by team; labelled Utilities)"
+    },
+    {
+      "txn_id": "S0081",
+      "merchant_name": "AA INSURANCE",
+      "description": "DIRECT DEBIT HOME POLICY",
+      "mcc": 6300,
+      "true_category": "Other",
+      "final": "Utilities",
+      "source": "model",
+      "note": "Motoring brand but a home insurance policy"
+    }
+  ]
+}

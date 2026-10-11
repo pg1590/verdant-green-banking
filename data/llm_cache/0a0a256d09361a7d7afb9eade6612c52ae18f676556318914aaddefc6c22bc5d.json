@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is more conversational and flows better, making it more relevant to a customer. Version B is reads like a list of raw data points which is less customer-facing and less polished. Version A correctly identifies the specific values from the evidence rather than than just listing the facts."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 577,
+  "output_tokens": 64,
+  "failures": [],
+  "latency_s": 2.4
+ }
+}

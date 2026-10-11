@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is much more professional and natural-sounding. Version B includes raw data labels (e.g., 'has mortgage yes; heating fuel gas') which are a far more technical/database-like format that is a customer-facing insight. Although Version A accurately reflects theundermining the ability to improve energy efficiency, it is much more readable and more relevant to theundermining the ability to improve energy efficiency, it is much more readable and more relevant to the customer."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 537,
+  "output_tokens": 109,
+  "failures": [],
+  "latency_s": 4.45
+ }
+}

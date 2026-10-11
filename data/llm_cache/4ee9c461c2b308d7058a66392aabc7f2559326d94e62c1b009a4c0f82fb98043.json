@@ -1,0 +1,12 @@
+{
+ "output": {
+  "answer": "The provided facts do not include any information about solar in London. Therefore we cannot determine where to focus for solar in that area based on the given data."
+ },
+ "_meta": {
+  "model": "openai/gpt-oss-120b",
+  "input_tokens": 354,
+  "output_tokens": 192,
+  "failures": [],
+  "latency_s": 0.71
+ }
+}

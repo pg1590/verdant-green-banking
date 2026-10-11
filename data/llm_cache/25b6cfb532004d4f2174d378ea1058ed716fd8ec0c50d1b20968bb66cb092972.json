@@ -1,0 +1,14 @@
+{
+ "output": {
+  "intent": "out_of_scope",
+  "product_code": "none",
+  "region": "none"
+ },
+ "_meta": {
+  "model": "openai/gpt-oss-120b",
+  "input_tokens": 497,
+  "output_tokens": 82,
+  "failures": [],
+  "latency_s": 0.91
+ }
+}

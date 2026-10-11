@@ -1,0 +1,21 @@
+{
+ "output": {
+  "headline": "Generating your own electricity with solar panels",
+  "text": "Because you have a mortgage with us and your recorded household income band is Q3, you might consider solar panels for your home. We cannot estimate the impact of this change yet as we do not have enough data to calculate it. These suggestions are based on your personal banking profile information.",
+  "reasons_used": [
+   "EXISTING_MORTGAGE",
+   "INCOME_PROFILE"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 650,
+  "output_tokens": 111,
+  "failures": [
+   "gemini-3.7-flash: quota exhausted (skipped)",
+   "gemini-3.6-flash: quota exhausted (skipped)",
+   "gemini-3.5-flash: quota exhausted (skipped)"
+  ],
+  "latency_s": 1.25
+ }
+}

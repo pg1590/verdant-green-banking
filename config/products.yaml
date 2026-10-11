@@ -1,0 +1,59 @@
+# P5 -> P3: this is the shared GP01-GP04 catalogue for training eligibility.
+# Read docs/integration.md and use eligible_customer_product_pairs() at feature cutoff.
+# P1: supply the required customer attributes and explicit conflict flags.
+# P2: these intended use cases identify the impact calculation to attach.
+# P4: explain only final eligible structured outputs; do not reinterpret these rules.
+# Policy changes affect all teammates: agree them with P5 before changing this file.
+schema_version: '1.0'
+policy_version: 'demo-v1'
+policy_status: HACKATHON_DISPLAY_RULES
+policy_notice: >-
+  Synthetic product relevance and display rules for this prototype, not published
+  Lloyds lending criteria. Eligible to show never means approved for credit.
+  Affordability, creditworthiness, property suitability and authorised institution
+  checks remain required before any application or installation.
+products:
+  GP01:
+    name: EV Finance
+    opportunity: EV_FINANCE
+    kind: finance
+    intended_use_cases: [replace_ice_vehicle, replace_existing_ev, first_ev_purchase]
+    action: {label: Explore EV options, intent: explore_ev}
+    rules:
+      - {field: age, op: gte, value: 18, reason: UNDER_18}
+      - {field: vehicle_type, op: in, value: [none, petrol, diesel, hybrid, ev], reason: INVALID_VEHICLE_TYPE}
+      - {field: ev_replacement_use_case, op: eq, value: true, when: {field: vehicle_type, eq: ev}, reason: ALREADY_HAS_EV, missing_reason: ALREADY_HAS_EV}
+      - {field: ev_purchase_use_case, op: eq, value: true, when: {field: vehicle_type, eq: none}, reason: NO_EV_PURCHASE_USE_CASE, missing_reason: NO_EV_PURCHASE_USE_CASE}
+  GP02:
+    name: Green Home Loan
+    opportunity: GREEN_HOME
+    kind: finance
+    intended_use_cases: [insulation, heat_pump, efficient_heating, energy_efficiency_retrofit]
+    excluded_use_cases: [solar_installation, cosmetic_renovation]
+    action: {label: Explore home efficiency options, intent: explore_green_home}
+    rules:
+      - {field: age, op: gte, value: 18, reason: UNDER_18}
+      - {field: home_status, op: in, value: [owner_mortgage, owner_outright], reason: NOT_HOMEOWNER}
+      - {field: green_home_use_case, op: in, value: [insulation, heat_pump, efficient_heating, energy_efficiency_retrofit], optional: true, reason: UNSUPPORTED_GREEN_HOME_USE_CASE}
+      - {field: epc_rating, op: in, value: [D, E, F, G], unless_present: green_home_use_case, reason: NO_IDENTIFIED_HOME_UPGRADE, missing_reason: MISSING_HOME_UPGRADE_EVIDENCE}
+  GP03:
+    name: Solar Finance
+    opportunity: SOLAR_FINANCE
+    kind: finance
+    intended_use_cases: [new_rooftop_solar_installation]
+    action: {label: Explore solar options, intent: explore_solar}
+    rules:
+      - {field: age, op: gte, value: 18, reason: UNDER_18}
+      - {field: home_status, op: in, value: [owner_mortgage, owner_outright], reason: NOT_HOMEOWNER}
+      - {field: has_solar, op: eq, value: false, reason: ALREADY_HAS_SOLAR}
+      - {field: property_type, op: in, value: [detached, semi_detached, terraced, bungalow], reason: PROPERTY_REQUIRES_SUITABILITY_REVIEW}
+      - {field: solar_use_case, op: in, value: [new_rooftop_solar_installation], optional: true, reason: UNSUPPORTED_SOLAR_USE_CASE}
+  GP04:
+    name: Paperless Banking
+    opportunity: PAPERLESS_BANKING
+    kind: service
+    intended_use_cases: [switch_paper_statements_to_digital]
+    action: {label: Review paperless settings, intent: review_paperless}
+    rules:
+      - {field: statement_pref, op: eq, value: paper, reason: ALREADY_DIGITAL}
+      - {field: requires_paper_statements, op: eq, value: false, optional: true, reason: PAPER_STATEMENTS_REQUIRED}

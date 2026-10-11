@@ -1,0 +1,24 @@
+{
+ "output": {
+  "headline": "Ideas for making your home more energy efficient",
+  "text": "Since your home is currently heated by gas or oil, you could explore ways to improve its energy efficiency. We have suggested this based on your Q4 income profile. At the moment, there is not enough data to estimate the impact of these changes on your home's emissions.",
+  "reasons_used": [
+   "INCOME_PROFILE",
+   "GAS_HEATING"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 637,
+  "output_tokens": 108,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 14.35
+ }
+}

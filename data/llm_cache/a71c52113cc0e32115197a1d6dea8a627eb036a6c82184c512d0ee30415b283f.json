@@ -1,0 +1,24 @@
+{
+ "output": {
+  "headline": "Ways to improve your home's energy efficiency",
+  "text": "As you have a mortgage with us and your home currently has an EPC rating of F, there could be room to improve its efficiency. Upgrading your home could lead to an estimated reduction of about 2,249 kg CO2e per year and about 4,930 kWh of energy per year.",
+  "reasons_used": [
+   "EXISTING_MORTGAGE",
+   "LOW_EPC_RATING"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 670,
+  "output_tokens": 123,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 15.99
+ }
+}

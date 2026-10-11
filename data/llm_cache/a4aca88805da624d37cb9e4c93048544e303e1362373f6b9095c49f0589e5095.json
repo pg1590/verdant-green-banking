@@ -1,0 +1,24 @@
+{
+ "output": {
+  "headline": "Go paperless to help the environment",
+  "text": "Since you use our app 113 times every three months but still receive 12 paper statements each year, you could reduce your environmental footprint by switching to digital. This change is estimated to save about 9.6 kg CO2e per year and about 24 sheets of paper per year.",
+  "reasons_used": [
+   "DIGITAL_ENGAGEMENT",
+   "PAPER_STATEMENTS"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 662,
+  "output_tokens": 116,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 18.0
+ }
+}

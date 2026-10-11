@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A directly tells the customer the key benefit—an electric vehicle could cut their transport emissions by about 1,014 kg CO₂e per year—while still referencing the same income and loan data from the record. Its headline focuses on the environmental impact, which is the core insight, making it clearer and more personally relevant than the more generic product‑oriented headline of Version B. All statements are supported by the record, and A presents the information in a concise, benefit‑focused way that a typical customer would find most useful."
+ },
+ "_meta": {
+  "model": "openai/gpt-oss-120b",
+  "input_tokens": 642,
+  "output_tokens": 504,
+  "failures": [],
+  "latency_s": 1.74
+ }
+}

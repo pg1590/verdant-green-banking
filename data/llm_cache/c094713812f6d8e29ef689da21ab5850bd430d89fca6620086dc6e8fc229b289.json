@@ -1,0 +1,14 @@
+{
+ "output": {
+  "intent": "top_segments",
+  "product_code": "GP01",
+  "region": "none"
+ },
+ "_meta": {
+  "model": "openai/gpt-oss-120b",
+  "input_tokens": 495,
+  "output_tokens": 182,
+  "failures": [],
+  "latency_s": 0.73
+ }
+}

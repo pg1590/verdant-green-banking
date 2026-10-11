@@ -1,0 +1,16 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B provides a more professional and coherent reading experience. While Version A uses the passive and slightly awkward phrasing 'We noticed your recorded income profile contributes to this suggestion,' Version B clearly explains that the income band is a *factor* in the recommendation. Additionally, Version B's explanation of the missing data ('As we have insufficient data...') is more direct and professional than Version A's 'We can't estimate... yet'. Both versions are faithful to the record, but B is clearer and better written for a customer."
+ },
+ "_meta": {
+  "model": "qwen/qwen3.8-27b",
+  "input_tokens": 461,
+  "output_tokens": 117,
+  "failures": [
+   "openai/gpt-oss-120b: 429",
+   "openai/gpt-oss-120b: 429"
+  ],
+  "latency_s": 10.04
+ }
+}

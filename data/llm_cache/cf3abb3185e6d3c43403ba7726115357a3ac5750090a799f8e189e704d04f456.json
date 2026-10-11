@@ -1,0 +1,24 @@
+{
+ "output": {
+  "headline": "Considering switching to an electric vehicle?",
+  "text": "Because you have an existing vehicle loan and based on your Q4 household income band, you might consider an electric vehicle. This change could lead to an estimated reduction of about 1,006 kg CO2e per year compared to your current car.",
+  "reasons_used": [
+   "INCOME_PROFILE",
+   "EXISTING_VEHICLE_LOAN"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 702,
+  "output_tokens": 107,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 17.0
+ }
+}

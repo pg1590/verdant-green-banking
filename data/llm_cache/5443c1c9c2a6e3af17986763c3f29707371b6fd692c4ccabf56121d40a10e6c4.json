@@ -1,0 +1,24 @@
+{
+ "output": {
+  "headline": "Improve your home's energy efficiency with a heat pump",
+  "text": "Your home currently has an EPC rating of E and relies on gas or oil heating. By switching to a heat pump, you could save an estimated 1,635 kg CO2e per year and 8,226 kWh of energy per year.",
+  "reasons_used": [
+   "POOR_EPC_RATING",
+   "GAS_HEATING"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 721,
+  "output_tokens": 112,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 16.35
+ }
+}

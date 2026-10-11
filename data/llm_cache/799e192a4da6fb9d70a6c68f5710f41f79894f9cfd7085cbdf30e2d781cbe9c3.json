@@ -1,0 +1,17 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is more concise and integrates the personal data naturally into the narrative. Version B feels fragmented and overly cautious ('Based on the limited data we have'), making it less engaging for a customer."
+ },
+ "_meta": {
+  "model": "gemma-4-31b-it",
+  "input_tokens": 619,
+  "output_tokens": 58,
+  "failures": [
+   "gemma-4-26b-a4b-it: 500",
+   "gemma-4-26b-a4b-it: 500",
+   "gemma-4-31b-it: 503"
+  ],
+  "latency_s": 57.99
+ }
+}

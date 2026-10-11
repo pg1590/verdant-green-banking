@@ -1,0 +1,20 @@
+{
+ "output": {
+  "headline": "A look at switching to an electric vehicle",
+  "text": "Based on your Q3 income band, you could consider an electric vehicle. This change offers an estimated reduction of about 1,121 kg CO2e per year compared to your current car.",
+  "reasons_used": [
+   "INCOME_PROFILE"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 643,
+  "output_tokens": 85,
+  "failures": [
+   "gemini-3.7-flash: quota exhausted (skipped)",
+   "gemini-3.6-flash: quota exhausted (skipped)",
+   "gemini-3.5-flash: quota exhausted (skipped)"
+  ],
+  "latency_s": 1.41
+ }
+}

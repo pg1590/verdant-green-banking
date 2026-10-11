@@ -1,0 +1,14 @@
+{
+ "output": {
+  "intent": "top_segments",
+  "product_code": "GP03",
+  "region": "London"
+ },
+ "_meta": {
+  "model": "openai/gpt-oss-120b",
+  "input_tokens": 496,
+  "output_tokens": 235,
+  "failures": [],
+  "latency_s": 1.34
+ }
+}

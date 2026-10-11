@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is much more natural and customer-facing. Version B includes raw data field names like 'has mortgage yes' which is irrelevant to the customer and makes it look like a template error. Version A flows well and presents the information clearly."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 562,
+  "output_tokens": 60,
+  "failures": [],
+  "latency_s": 2.16
+ }
+}

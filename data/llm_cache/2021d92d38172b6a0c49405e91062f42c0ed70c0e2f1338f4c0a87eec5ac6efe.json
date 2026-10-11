@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B directly references the customer’s specific data (19,542 kWh gas use, £229 spend per household member, income band Q5) and ties each figure to the heat‑pump suggestion, making the insight feel personal and actionable. It presents the same impact estimate as the record without unnecessary qualifiers, resulting in clearer, more relevant, and more useful communication for the typical customer."
+ },
+ "_meta": {
+  "model": "openai/gpt-oss-120b",
+  "input_tokens": 797,
+  "output_tokens": 934,
+  "failures": [],
+  "latency_s": 3.2
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is more conversational and flows better. It uses the evidence provided in the data to create a more personal connection (linking the app logins to the ease of switching) rather than just listing the key figures as a bulleted list, making it more engaging for a customer. It stays faithful to the record and contains no unsupported claims."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 519,
+  "output_tokens": 78,
+  "failures": [
+   "gemma-4-26b-a4b-it: 504"
+  ],
+  "latency_s": 50.67
+ }
+}

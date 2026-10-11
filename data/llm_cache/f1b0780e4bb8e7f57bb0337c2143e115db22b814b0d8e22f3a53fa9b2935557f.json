@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is much more conversational and natural. Version B includes raw data labels like 'has solar no; property type detached', which is not customer-facing and is not a clear insight. Version A flows well and incorporates the headlines and evidence into a prose-style text. It stays faithful to the record. "
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 575,
+  "output_tokens": 73,
+  "failures": [],
+  "latency_s": 2.94
+ }
+}

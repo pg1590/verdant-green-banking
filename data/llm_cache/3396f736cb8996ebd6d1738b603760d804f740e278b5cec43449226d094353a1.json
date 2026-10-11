@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A uses a concise, customer‑focused headline and plain language that directly links the loan product to the personal benefit of lowering the carbon footprint. It clearly references the mortgage and gas heating facts from the record and presents the estimated savings in a single, easy‑to‑read sentence. Version B repeats the evidence in a technical “Key figures” format and its headline is less specific, making it slightly harder for a typical customer to grasp the relevance and actionable insight. Both versions stay faithful to the record, but A is clearer, more personally relevant, and more useful."
+ },
+ "_meta": {
+  "model": "openai/gpt-oss-120b",
+  "input_tokens": 673,
+  "output_tokens": 392,
+  "failures": [],
+  "latency_s": 1.76
+ }
+}

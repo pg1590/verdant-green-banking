@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is more faithful to the record. It explicitly mentions that the data is limited (matching the certainty 'low'), and it includes the specific reasons (high fuel spend and high mileage) provided in the record. Version B is slightly more conversational but omits the reference to the impact being an estimate and the low certainty of the data."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 560,
+  "output_tokens": 76,
+  "failures": [],
+  "latency_s": 6.81
+ }
+}

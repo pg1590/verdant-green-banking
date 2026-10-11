@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is more faithful to the record. Version B makes a claim about solar panels powering the home 'more cleanly', which is not supported by the record (the record only mentions the topic 'generating your own electricity')."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 409,
+  "output_tokens": 55,
+  "failures": [],
+  "latency_s": 2.47
+ }
+}

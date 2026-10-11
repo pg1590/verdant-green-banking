@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is much more natural and user-friendly. It integrates the data points (petrol car, loan, and specific monthly cost) into a smooth narrative. Version B is clunky and reads like a list of raw data, which is less helpful for a customer-facing insight."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 575,
+  "output_tokens": 66,
+  "failures": [],
+  "latency_s": 2.64
+ }
+}

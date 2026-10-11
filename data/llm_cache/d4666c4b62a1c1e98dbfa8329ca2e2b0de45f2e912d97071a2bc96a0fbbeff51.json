@@ -1,0 +1,15 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is much clearer and more professional. Version B includes technical/raw data strings like 'has mortgage yes' which would be not user-friendly for a customer."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 373,
+  "output_tokens": 42,
+  "failures": [
+   "gemma-4-26b-a4b-it: 500"
+  ],
+  "latency_s": 5.37
+ }
+}

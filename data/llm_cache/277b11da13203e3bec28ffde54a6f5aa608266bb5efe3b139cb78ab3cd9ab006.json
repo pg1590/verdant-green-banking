@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is much clearer and more professional. It flows naturally as a customer-facing insight, whereas Version B includes internal-style data labels (e.g., 'Key figures: has mortgage yes') which are a poor user experience and are not useful for a customer."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 578,
+  "output_tokens": 63,
+  "failures": [],
+  "latency_s": 2.32
+ }
+}

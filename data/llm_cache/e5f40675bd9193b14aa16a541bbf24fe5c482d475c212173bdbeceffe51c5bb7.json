@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is much more natural and readable. Version B includes a list of 'Key figures' that reads like a raw data dump and is not helpful for a customer-facing insight. Version A flows well and integrates the information from the RECORD into a customer-friendly text."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 592,
+  "output_tokens": 66,
+  "failures": [],
+  "latency_s": 3.72
+ }
+}

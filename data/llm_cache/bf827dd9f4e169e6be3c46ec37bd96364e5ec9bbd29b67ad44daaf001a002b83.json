@@ -1,0 +1,25 @@
+{
+ "output": {
+  "headline": "Switching to an electric vehicle could lower your emissions",
+  "text": "As you currently drive a petrol car for 15,700 km annually with a monthly running cost of £155, an electric vehicle may be worth considering. Switching could lead to an estimated reduction of about 2,796 kg CO2e per year compared to your current car. This figure reflects the emissions you could avoid by moving away from a petrol engine.",
+  "reasons_used": [
+   "EXISTING_VEHICLE",
+   "HIGH_ANNUAL_MILEAGE",
+   "HIGH_AUTOMOTIVE_SPEND"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 730,
+  "output_tokens": 151,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 22.39
+ }
+}

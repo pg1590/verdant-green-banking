@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" fill="none">
+<title>A neighbourhood with solar roofs, green transport and trees</title>
+<circle cx="475" cy="167" r="142" fill="#e5f2cf"/>
+<circle cx="618" cy="64" r="30" fill="#f6d978"/>
+<path d="M28 283C113 237 208 290 312 264S524 245 739 284" stroke="#9dc5aa" stroke-width="2"/>
+<path d="M48 304H718" stroke="#c9dacc" stroke-width="2"/>
+<path d="M267 146L381 58L496 146" fill="#2e6856"/>
+<path d="M285 146H478V284H285V146Z" fill="#fcfff8"/>
+<path d="M310 129L381 74L452 129" stroke="#f4fff0" stroke-width="2"/>
+<path d="M363 116L393 91L433 122L408 142L363 116Z" fill="#6d9b9a" stroke="#123e32" stroke-width="3"/>
+<path d="M377 105L419 132M389 96L430 123M377 125L405 102" stroke="#c1e4d0" stroke-width="1.5"/>
+<rect x="312" y="167" width="48" height="49" rx="3" fill="#cde5d7"/>
+<path d="M336 168V215M313 190H359" stroke="#397864" stroke-width="3"/>
+<rect x="409" y="164" width="44" height="53" rx="3" fill="#cde5d7"/>
+<path d="M431 166V215M410 190H452" stroke="#397864" stroke-width="3"/>
+<path d="M373 231H400V284H373V231Z" fill="#4a7b5f"/>
+<circle cx="391" cy="258" r="2.5" fill="#e6efca"/>
+<path d="M280 225H317V284H280V225Z" fill="#d9e8c6"/>
+<path d="M480 280V158M528 280V190" stroke="#507e52" stroke-width="5"/>
+<ellipse cx="480" cy="144" rx="31" ry="43" fill="#a9cb80"/>
+<ellipse cx="528" cy="180" rx="25" ry="33" fill="#71a67f"/>
+<path d="M176 280V166" stroke="#507e52" stroke-width="6"/>
+<path d="M176 119C131 147 127 188 156 200C161 232 211 230 218 199C246 182 225 135 176 119Z" fill="#b8d891"/>
+<path d="M176 180L157 164M176 199L197 175" stroke="#507e52" stroke-width="3"/>
+<rect x="573" y="197" width="27" height="81" rx="6" fill="#215a49"/>
+<rect x="579" y="205" width="15" height="20" rx="3" fill="#d9edb9"/>
+<path d="M588 208L583 216H589L586 222" stroke="#215a49" stroke-width="2"/>
+<path d="M600 231C624 227 619 260 611 262" stroke="#215a49" stroke-width="3"/>
+<path d="M560 251L543 226H478L455 253L429 258V283H568V258L560 251Z" fill="#a2c8b7" stroke="#184d3b" stroke-width="2"/>
+<path d="M483 231H507V251H468L483 231ZM513 231H539L551 251H513V231Z" fill="#eff9f0"/>
+<circle cx="456" cy="282" r="14" fill="#183c32"/><circle cx="456" cy="282" r="7" fill="#d1dfd3"/>
+<circle cx="546" cy="282" r="14" fill="#183c32"/><circle cx="546" cy="282" r="7" fill="#d1dfd3"/>
+<path d="M661 282V161" stroke="#598b72" stroke-width="4"/>
+<path d="M659 162C621 159 619 126 629 111C655 114 671 133 659 162Z" fill="#94bd7e"/>
+<path d="M663 189C691 186 708 159 700 145C679 148 659 163 663 189Z" fill="#b4d28e"/>
+<path d="M189 281H261V233H189V281Z" fill="#4f8b70"/>
+<rect x="201" y="243" width="47" height="27" rx="2" fill="#eff7e4"/>
+<path d="M211 251H239M211 258H229" stroke="#96b69b" stroke-width="2"/>
+<path d="M166 289L184 277M600 290L615 281M620 297L635 282" stroke="#71a67f" stroke-width="3" stroke-linecap="round"/>
+<path d="M372 300V324H420" stroke="#c5d8cc" stroke-width="3"/>
+<path d="M552 91C561 82 570 82 579 91M105 93C114 85 123 85 132 93" stroke="#6a9b82" stroke-width="2" stroke-linecap="round"/>
+</svg>

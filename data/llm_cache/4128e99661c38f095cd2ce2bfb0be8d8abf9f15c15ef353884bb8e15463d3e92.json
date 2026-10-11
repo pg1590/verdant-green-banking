@@ -1,0 +1,24 @@
+{
+ "output": {
+  "headline": "Make your home more energy efficient",
+  "text": "Since your home currently relies on gas or oil heating, you could reduce your carbon footprint by switching to a heat pump. This estimated change represents a shift of about 677 kg CO2e per year and about 3,406 kWh of energy per year. This suggestion is based on your household income band Q5 and the type of heating system you use.",
+  "reasons_used": [
+   "INCOME_PROFILE",
+   "GAS_HEATING"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 703,
+  "output_tokens": 118,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 14.37
+ }
+}

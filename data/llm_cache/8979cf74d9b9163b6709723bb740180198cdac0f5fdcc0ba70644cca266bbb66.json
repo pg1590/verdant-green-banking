@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is much better written and flows more naturally. Version B is repetitive and includes unnecessary data labels like 'has mortgage yes' which are not customer-facing quality text. Version A correctly integrates the data into a sentence. Version A is also more concise and than B."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 610,
+  "output_tokens": 63,
+  "failures": [],
+  "latency_s": 3.15
+ }
+}

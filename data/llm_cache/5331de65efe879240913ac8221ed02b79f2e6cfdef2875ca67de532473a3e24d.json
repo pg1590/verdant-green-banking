@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B is much more readable and better structured for a customer. Version A just lists all the reasoning codes in their literal meaning format, which feels like a customer-facing insight. It is more personal and flows much better. Version B's claims are accurate to the record. Both versions use the most important information from the prompt. Version B is the clear winner for clarity and relevance."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 751,
+  "output_tokens": 89,
+  "failures": [],
+  "latency_s": 3.1
+ }
+}

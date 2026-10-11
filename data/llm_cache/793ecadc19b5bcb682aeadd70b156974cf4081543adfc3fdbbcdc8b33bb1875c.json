@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B is much more customer-facing and uses natural language. Version A includes raw data labels like 'home status owner mortgage; has solar no', which is very unpolished and makes for a poor customer experience. Version B also flows better and provides the information in a}\n"
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 518,
+  "output_tokens": 67,
+  "failures": [],
+  "latency_s": 2.77
+ }
+}

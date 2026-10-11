@@ -1,0 +1,27 @@
+{
+ "output": {
+  "headline": "Generating your own electricity with solar panels",
+  "text": "As a homeowner with a detached house and an existing mortgage with us, you might consider solar panels. With an average monthly electricity spend of £107 and no existing solar setup, this could be an option. Our estimated impact shows you could generate about 1,310 kWh of energy per year, which may reduce your emissions by about 735 kg CO2e per year.",
+  "reasons_used": [
+   "HIGH_ELECTRICITY_SPEND",
+   "SUITABLE_PROPERTY_TYPE",
+   "HOMEOWNER",
+   "NO_EXISTING_SOLAR",
+   "EXISTING_MORTGAGE"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 844,
+  "output_tokens": 167,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 17.67
+ }
+}

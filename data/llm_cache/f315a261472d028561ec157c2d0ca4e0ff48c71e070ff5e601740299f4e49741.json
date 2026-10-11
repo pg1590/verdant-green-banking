@@ -1,0 +1,24 @@
+{
+ "output": {
+  "headline": "Ways to improve your home's energy efficiency",
+  "text": "Since your home is heated by gas or oil and has an energy rating that could be improved, you may be interested in ways to make it more efficient. We do not have enough data to estimate the impact of these changes yet.",
+  "reasons_used": [
+   "GAS_HEATING",
+   "LOW_EPC_RATING"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 569,
+  "output_tokens": 101,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 16.6
+ }
+}

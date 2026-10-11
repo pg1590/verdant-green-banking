@@ -1,0 +1,25 @@
+{
+ "output": {
+  "headline": "Ways to improve your home's energy efficiency",
+  "text": "Your home currently uses oil for heating and has an F EPC rating, suggesting there is room to improve its efficiency. Since you have spent £5,200 on home improvements recently, you might explore further upgrades. The environmental impact of these changes cannot be estimated yet.",
+  "reasons_used": [
+   "GAS_HEATING",
+   "LOW_EPC_RATING",
+   "HIGH_HOME_IMPROVEMENT_SPEND"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 689,
+  "output_tokens": 114,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 16.82
+ }
+}

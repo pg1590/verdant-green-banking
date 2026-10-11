@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B is better structured and more relevant to the customer. It uses a clearer headline and summarizes the key points more effectively, while Version A reads like a continuous block of text. Version B also explicitly labels the 'key figures', making it easier for scanability. Both versions are faithful to the RECORD."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 565,
+  "output_tokens": 72,
+  "failures": [],
+  "latency_s": 2.44
+ }
+}

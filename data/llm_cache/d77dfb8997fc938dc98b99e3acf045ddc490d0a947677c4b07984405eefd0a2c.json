@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B is more concise and flows better. It integrates the data points naturally into the sentence structure, whereas Version A includes 'Key figures: average monthly electricity spend £220; has mortgage yes', which is feels like raw data points rather than a customer-facing insight. Version B is also more helpful by including the data as of date, '30 June 2026', which is present in the* RECORD. "
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 551,
+  "output_tokens": 99,
+  "failures": [],
+  "latency_s": 3.36
+ }
+}

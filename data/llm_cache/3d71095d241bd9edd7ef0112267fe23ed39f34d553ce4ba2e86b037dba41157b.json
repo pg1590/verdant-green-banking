@@ -1,0 +1,24 @@
+{
+ "output": {
+  "headline": "Generating your own electricity with solar panels",
+  "text": "Since you have a mortgage with us and your average monthly electricity spend is £220, you could consider solar panels. This change could save an estimated 576 kg CO2e per year and about 1,100 kWh of energy per year. These figures are based on data as of 30 June 2026.",
+  "reasons_used": [
+   "HIGH_ELECTRICITY_SPEND",
+   "EXISTING_MORTGAGE"
+  ]
+ },
+ "_meta": {
+  "model": "gemini-3.1-flash-lite",
+  "input_tokens": 676,
+  "output_tokens": 122,
+  "failures": [
+   "gemini-3.7-flash: 429",
+   "gemini-3.7-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.6-flash: 429",
+   "gemini-3.5-flash: 429",
+   "gemini-3.5-flash: 429"
+  ],
+  "latency_s": 19.41
+ }
+}

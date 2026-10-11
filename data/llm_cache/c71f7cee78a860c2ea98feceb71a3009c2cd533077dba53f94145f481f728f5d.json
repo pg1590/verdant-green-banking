@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B has a much more engaging and relevant headline that focuses on the outcome (cutting emissions) rather than just the product name. It also uses clearer, more natural language to explain the connection to the customer's income profile, whereas Version A is quite repetitive and clunky. Version B also clarifies that the 'avoided emissions' mentioned in the much more relevant context of the record. "
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 459,
+  "output_tokens": 89,
+  "failures": [],
+  "latency_s": 2.89
+ }
+}

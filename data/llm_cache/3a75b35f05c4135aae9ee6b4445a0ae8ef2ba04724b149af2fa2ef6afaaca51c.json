@@ -1,0 +1,20 @@
+{
+ "output": {
+  "faithfulness": 5,
+  "clarity": 4,
+  "personalisation": 3,
+  "tone": 5,
+  "actionability": 4,
+  "unsupported_claims": []
+ },
+ "_meta": {
+  "model": "qwen/qwen3.8-27b",
+  "input_tokens": 689,
+  "output_tokens": 56,
+  "failures": [
+   "openai/gpt-oss-120b: 429",
+   "openai/gpt-oss-120b: 429"
+  ],
+  "latency_s": 10.04
+ }
+}

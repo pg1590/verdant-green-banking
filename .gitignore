@@ -1,0 +1,38 @@
+# Local environments, credentials and editor state
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+.claude/
+.codex/
+.agents/
+.vscode/
+.idea/
+
+# Python and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+.DS_Store
+Thumbs.db
+logs/
+*.log
+
+# Generated data, local feedback and temporary experiments
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/memory/
+data/mock/
+data/reference/large/
+models/mock_*
+outputs/test_runs.log
+outputs/llm_explanations.jsonl

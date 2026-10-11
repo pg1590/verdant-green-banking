@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "A",
+  "reason": "Version A is more natural and readable. Version B is essentially a list of data points (Key figures: ...) which feels more like a backend database output rather than a customer-facing insight. Version A successfully weaves the facts from the record into a coherent sentence."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 541,
+  "output_tokens": 60,
+  "failures": [],
+  "latency_s": 2.36
+ }
+}

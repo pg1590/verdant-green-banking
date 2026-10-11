@@ -1,0 +1,146 @@
+{
+  "data_mode": "TEAM_OUTPUTS",
+  "customers_analysed": 10013,
+  "customer_split_counts": {
+    "scenario": 13,
+    "test": 1500,
+    "train": 7000,
+    "val": 1500
+  },
+  "score_scope": "Synthetic population scores may include training customers; model performance is evaluated separately on held-out cohorts.",
+  "customers_with_opportunities": 6934,
+  "eligible_opportunities": 11935,
+  "opportunities_by_product": {
+    "GP01": 4968,
+    "GP02": 2210,
+    "GP03": 3366,
+    "GP04": 1391
+  },
+  "potential_impact": {
+    "kg_co2e_per_year": {
+      "value": 4618507.423,
+      "coverage_customers": 3807
+    },
+    "energy_kwh_per_year": {
+      "value": 9104756.7,
+      "coverage_customers": 1748
+    },
+    "paper_sheets_per_year": {
+      "value": 16692.0,
+      "coverage_customers": 1391
+    }
+  },
+  "impact_aggregation": "CO2e/energy: one highest-ranked eligible finance opportunity per customer; no fallback for missing impact. Paperless sheets and CO2e are separate. Annual unweighted potential, not achieved impact.",
+  "impact_coverage_customers": 3807,
+  "finance_estimate_customers": 3807,
+  "finance_opportunity_customers": 6525,
+  "digital_impact": {
+    "paper_sheets_per_year": {
+      "value": 16692.0,
+      "coverage_customers": 1391
+    },
+    "kg_co2e_per_year": {
+      "value": 112.671,
+      "coverage_customers": 1391
+    }
+  },
+  "factor_editions": [
+    "DESNZ GHG Conversion Factors 2026"
+  ],
+  "digital_adoption_opportunities": 1391,
+  "suppressed_opportunities": 28117,
+  "data_timestamps": [
+    "2026-06-30"
+  ],
+  "portfolio_history": [
+    {
+      "date": "2026-06-30",
+      "customers_with_opportunities": 6934,
+      "eligible_opportunities": 11935,
+      "opportunities_by_product": {
+        "GP01": 4968,
+        "GP02": 2210,
+        "GP03": 3366,
+        "GP04": 1391
+      },
+      "kg_co2e_per_year": 4618507.423,
+      "customers_analysed": 10013,
+      "window_start": "2025-07-01",
+      "window_end": "2026-06-30",
+      "model_versions": [
+        "gp01_logreg_v3",
+        "gp02_lgbm_v3",
+        "gp03_logreg_v3",
+        "gp04_lgbm_v3"
+      ],
+      "series": "RETROSPECTIVE_RESCORING_FIXED_COHORT"
+    },
+    {
+      "date": "2026-07-31",
+      "customers_with_opportunities": 6907,
+      "eligible_opportunities": 11901,
+      "opportunities_by_product": {
+        "GP01": 4958,
+        "GP02": 2209,
+        "GP03": 3368,
+        "GP04": 1366
+      },
+      "kg_co2e_per_year": 4559634.631,
+      "customers_analysed": 10013,
+      "window_start": "2025-08-01",
+      "window_end": "2026-07-31",
+      "model_versions": [
+        "gp01_logreg_v3",
+        "gp02_lgbm_v3",
+        "gp03_logreg_v3",
+        "gp04_lgbm_v3"
+      ],
+      "series": "RETROSPECTIVE_RESCORING_FIXED_COHORT"
+    },
+    {
+      "date": "2026-08-31",
+      "customers_with_opportunities": 6902,
+      "eligible_opportunities": 11918,
+      "opportunities_by_product": {
+        "GP01": 4959,
+        "GP02": 2212,
+        "GP03": 3367,
+        "GP04": 1380
+      },
+      "kg_co2e_per_year": 4516725.591,
+      "customers_analysed": 10013,
+      "window_start": "2025-09-01",
+      "window_end": "2026-08-31",
+      "model_versions": [
+        "gp01_logreg_v3",
+        "gp02_lgbm_v3",
+        "gp03_logreg_v3",
+        "gp04_lgbm_v3"
+      ],
+      "series": "RETROSPECTIVE_RESCORING_FIXED_COHORT"
+    },
+    {
+      "date": "2026-09-30",
+      "customers_with_opportunities": 6906,
+      "eligible_opportunities": 11904,
+      "opportunities_by_product": {
+        "GP01": 4948,
+        "GP02": 2216,
+        "GP03": 3371,
+        "GP04": 1369
+      },
+      "kg_co2e_per_year": 4523886.491,
+      "customers_analysed": 10013,
+      "window_start": "2025-10-01",
+      "window_end": "2026-09-30",
+      "model_versions": [
+        "gp01_logreg_v3",
+        "gp02_lgbm_v3",
+        "gp03_logreg_v3",
+        "gp04_lgbm_v3"
+      ],
+      "series": "RETROSPECTIVE_RESCORING_FIXED_COHORT"
+    }
+  ],
+  "policy_notice": "Synthetic product relevance and display rules for this prototype, not published Lloyds lending criteria. Eligible to show never means approved for credit. Affordability, creditworthiness, property suitability and authorised institution checks remain required before any application or installation."
+}

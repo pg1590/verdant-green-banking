@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B is much more professional and flows better. Version A includes 'Key figures: heating fuel gas; has mortgage yes' which is a direct, raw data dump that a typical customer would find unhelpful and unpolished. Version B correctly incorporates the data into a natural language sentence."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 511,
+  "output_tokens": 68,
+  "failures": [],
+  "latency_s": 3.01
+ }
+}

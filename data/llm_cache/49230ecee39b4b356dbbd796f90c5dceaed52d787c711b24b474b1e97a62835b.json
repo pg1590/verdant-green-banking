@@ -1,0 +1,13 @@
+{
+ "output": {
+  "winner": "B",
+  "reason": "Version B is much more useful and personable. It integrates the specific evidence (oil, EPC rating F, and the £5,200 spend) into the natural language, whereas Version A simply lists them at the end like a data dump. Version B is also more relevant to the customer' customer profile by linking the specific spend to a ability to explore further upgrades."
+ },
+ "_meta": {
+  "model": "gemma-4-26b-a4b-it",
+  "input_tokens": 529,
+  "output_tokens": 83,
+  "failures": [],
+  "latency_s": 3.61
+ }
+}
